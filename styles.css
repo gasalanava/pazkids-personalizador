@@ -146,3 +146,122 @@ button,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* === Ajuste catálogo móvil Paz Kids: parches pequeños, carrusel táctil y sin bloqueo de scroll === */
+@media (max-width: 720px) {
+  .side {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .side .card {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px 2px 12px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    touch-action: pan-x;
+  }
+
+  .tabs button {
+    flex: 0 0 auto;
+    min-height: 42px;
+    padding: 9px 13px;
+    font-size: .86rem;
+    scroll-snap-align: start;
+  }
+
+  .patch-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 4px 4px 14px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    touch-action: pan-x;
+  }
+
+  .patch-item {
+    flex: 0 0 78px;
+    width: 78px;
+    height: 78px;
+    min-width: 78px;
+    min-height: 78px;
+    max-width: 78px;
+    max-height: 78px;
+    aspect-ratio: auto;
+    border-radius: 18px;
+    padding: 8px;
+    scroll-snap-align: start;
+  }
+
+  .patch-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .patch-grid::after {
+    content: "";
+    flex: 0 0 6px;
+  }
+
+  .head.compact {
+    margin-bottom: 8px;
+  }
+
+  .input,
+  select.input {
+    min-height: 48px;
+    font-size: .95rem;
+  }
+
+  .note {
+    font-size: .82rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .patch-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    grid-template-columns: none;
+  }
+
+  .patch-item {
+    flex-basis: 70px;
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    max-width: 70px;
+    max-height: 70px;
+    padding: 7px;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 721px) {
+  .patch-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "brand": {
+    "name": "Paz Kids",
+    "whatsappNumber": "573175168683",
+    "instagram": "@pazkids.col",
+    "logo": "assets/logo/logo-pazkids.png"
+  },
+  "jackets": {
+    "front": "assets/chaquetas/chaqueta-frente.png",
+    "back": "assets/chaquetas/chaqueta-espalda.png"
+  },
+  "letterCollections": [
+    {
+      "id": "letras-de-colores",
+      "nombre": "Letras de colores",
+      "principal": true,
+      "defaultSize": 62,
+      "letters": {
+        "A": "assets/parches/letras/letras-de-colores/A.png",
+        "B": "assets/parches/letras/letras-de-colores/B.png",
+        "C": "assets/parches/letras/letras-de-colores/C.png",
+        "D": "assets/parches/letras/letras-de-colores/D.png",
+        "E": "assets/parches/letras/letras-de-colores/E.png",
+        "F": "assets/parches/letras/letras-de-colores/F.png",
+        "G": "assets/parches/letras/letras-de-colores/G.png",
+        "H": "assets/parches/letras/letras-de-colores/H.png",
+        "I": "assets/parches/letras/letras-de-colores/I.png",
+        "J": "assets/parches/letras/letras-de-colores/J.png",
+        "K": "assets/parches/letras/letras-de-colores/K.png",
+        "L": "assets/parches/letras/letras-de-colores/L.png",
+        "M": "assets/parches/letras/letras-de-colores/M.png",
+        "N": "assets/parches/letras/letras-de-colores/N.png",
+        "O": "assets/parches/letras/letras-de-colores/O.png",
+        "P": "assets/parches/letras/letras-de-colores/P.png",
+        "Q": "assets/parches/letras/letras-de-colores/Q.png",
+        "R": "assets/parches/letras/letras-de-colores/R.png",
+        "S": "assets/parches/letras/letras-de-colores/S.png",
+        "T": "assets/parches/letras/letras-de-colores/T.png",
+        "U": "assets/parches/letras/letras-de-colores/U.png",
+        "V": "assets/parches/letras/letras-de-colores/V.png",
+        "W": "assets/parches/letras/letras-de-colores/W.png",
+        "X": "assets/parches/letras/letras-de-colores/X.png",
+        "Y": "assets/parches/letras/letras-de-colores/Y.png",
+        "Z": "assets/parches/letras/letras-de-colores/Z.png"
+      }
+    },
+    {
+      "id": "azul",
+      "nombre": "Azules",
+      "principal": false,
+      "defaultSize": 62,
+      "letters": {
+        "A": "assets/parches/letras/azul/A.png",
+        "B": "assets/parches/letras/azul/B.png",
+        "C": "assets/parches/letras/azul/C.png",
+        "D": "assets/parches/letras/azul/D.png",
+        "E": "assets/parches/letras/azul/E.png",
+        "F": "assets/parches/letras/azul/F.png",
+        "G": "assets/parches/letras/azul/G.png",
+        "H": "assets/parches/letras/azul/H.png",
+        "I": "assets/parches/letras/azul/I.png",
+        "J": "assets/parches/letras/azul/J.png",
+        "K": "assets/parches/letras/azul/K.png",
+        "L": "assets/parches/letras/azul/L.png",
+        "M": "assets/parches/letras/azul/M.png",
+        "N": "assets/parches/letras/azul/N.png",
+        "O": "assets/parches/letras/azul/O.png",
+        "P": "assets/parches/letras/azul/P.png",
+        "Q": "assets/parches/letras/azul/Q.png",
+        "R": "assets/parches/letras/azul/R.png",
+        "S": "assets/parches/letras/azul/S.png",
+        "T": "assets/parches/letras/azul/T.png",
+        "U": "assets/parches/letras/azul/U.png",
+        "V": "assets/parches/letras/azul/V.png",
+        "W": "assets/parches/letras/azul/W.png",
+        "X": "assets/parches/letras/azul/X.png",
+        "Y": "assets/parches/letras/azul/Y.png",
+        "Z": "assets/parches/letras/azul/Z.png"
+      }
+    },
+    {
+      "id": "negras",
+      "nombre": "Negras",
+      "principal": false,
+      "defaultSize": 62,
+      "letters": {
+        "A": "assets/parches/letras/negras/A.png",
+        "B": "assets/parches/letras/negras/B.png",
+        "C": "assets/parches/letras/negras/C.png",
+        "D": "assets/parches/letras/negras/D.png",
+        "E": "assets/parches/letras/negras/E.png",
+        "F": "assets/parches/letras/negras/F.png",
+        "G": "assets/parches/letras/negras/G.png",
+        "H": "assets/parches/letras/negras/H.png",
+        "I": "assets/parches/letras/negras/I.png",
+        "J": "assets/parches/letras/negras/J.png",
+        "K": "assets/parches/letras/negras/K.png",
+        "L": "assets/parches/letras/negras/L.png",
+        "M": "assets/parches/letras/negras/M.png",
+        "N": "assets/parches/letras/negras/N.png",
+        "O": "assets/parches/letras/negras/O.png",
+        "P": "assets/parches/letras/negras/P.png",
+        "Q": "assets/parches/letras/negras/Q.png",
+        "R": "assets/parches/letras/negras/R.png",
+        "S": "assets/parches/letras/negras/S.png",
+        "T": "assets/parches/letras/negras/T.png",
+        "U": "assets/parches/letras/negras/U.png",
+        "V": "assets/parches/letras/negras/V.png",
+        "W": "assets/parches/letras/negras/W.png",
+        "X": "assets/parches/letras/negras/X.png",
+        "Y": "assets/parches/letras/negras/Y.png",
+        "Z": "assets/parches/letras/negras/Z.png"
+      }
+    },
+    {
+      "id": "rojas-v2",
+      "nombre": "Rojas",
+      "principal": false,
+      "defaultSize": 62,
+      "letters": {
+        "A": "assets/parches/letras/rojas-v2/A.png",
+        "B": "assets/parches/letras/rojas-v2/B.png",
+        "C": "assets/parches/letras/rojas-v2/C.png",
+        "D": "assets/parches/letras/rojas-v2/D.png",
+        "E": "assets/parches/letras/rojas-v2/E.png",
+        "F": "assets/parches/letras/rojas-v2/F.png",
+        "G": "assets/parches/letras/rojas-v2/G.png",
+        "H": "assets/parches/letras/rojas-v2/H.png",
+        "I": "assets/parches/letras/rojas-v2/I.png",
+        "J": "assets/parches/letras/rojas-v2/J.png",
+        "K": "assets/parches/letras/rojas-v2/K.png",
+        "L": "assets/parches/letras/rojas-v2/L.png",
+        "M": "assets/parches/letras/rojas-v2/M.png",
+        "N": "assets/parches/letras/rojas-v2/N.png",
+        "O": "assets/parches/letras/rojas-v2/O.png",
+        "P": "assets/parches/letras/rojas-v2/P.png",
+        "Q": "assets/parches/letras/rojas-v2/Q.png",
+        "R": "assets/parches/letras/rojas-v2/R.png",
+        "S": "assets/parches/letras/rojas-v2/S.png",
+        "T": "assets/parches/letras/rojas-v2/T.png",
+        "U": "assets/parches/letras/rojas-v2/U.png",
+        "V": "assets/parches/letras/rojas-v2/V.png",
+        "W": "assets/parches/letras/rojas-v2/W.png",
+        "X": "assets/parches/letras/rojas-v2/X.png",
+        "Y": "assets/parches/letras/rojas-v2/Y.png",
+        "Z": "assets/parches/letras/rojas-v2/Z.png"
+      }
+    },
+    {
+      "id": "rosadas-v1",
+      "nombre": "Rosadas",
+      "principal": false,
+      "defaultSize": 62,
+      "letters": {
+        "A": "assets/parches/letras/rosadas-v1/A.png",
+        "B": "assets/parches/letras/rosadas-v1/B.png",
+        "C": "assets/parches/letras/rosadas-v1/C.png",
+        "D": "assets/parches/letras/rosadas-v1/D.png",
+        "E": "assets/parches/letras/rosadas-v1/E.png",
+        "F": "assets/parches/letras/rosadas-v1/F.png",
+        "G": "assets/parches/letras/rosadas-v1/G.png",
+        "H": "assets/parches/letras/rosadas-v1/H.png",
+        "I": "assets/parches/letras/rosadas-v1/I.png",
+        "J": "assets/parches/letras/rosadas-v1/J.png",
+        "K": "assets/parches/letras/rosadas-v1/K.png",
+        "L": "assets/parches/letras/rosadas-v1/L.png",
+        "M": "assets/parches/letras/rosadas-v1/M.png",
+        "N": "assets/parches/letras/rosadas-v1/N.png",
+        "O": "assets/parches/letras/rosadas-v1/O.png",
+        "P": "assets/parches/letras/rosadas-v1/P.png",
+        "Q": "assets/parches/letras/rosadas-v1/Q.png",
+        "R": "assets/parches/letras/rosadas-v1/R.png",
+        "S": "assets/parches/letras/rosadas-v1/S.png",
+        "T": "assets/parches/letras/rosadas-v1/T.png",
+        "U": "assets/parches/letras/rosadas-v1/U.png",
+        "V": "assets/parches/letras/rosadas-v1/V.png",
+        "W": "assets/parches/letras/rosadas-v1/W.png",
+        "X": "assets/parches/letras/rosadas-v1/X.png",
+        "Y": "assets/parches/letras/rosadas-v1/Y.png",
+        "Z": "assets/parches/letras/rosadas-v1/Z.png"
+      }
+    }
+  ],
+  "patches": [
+    {
+      "id": "abeja",
+      "nombre": "Abeja",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/abeja.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "leon",
+      "nombre": "Leon",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/leon.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "oso-fashion",
+      "nombre": "Oso Fashion",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/oso-fashion.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "osop",
+      "nombre": "Osop",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/osop.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "pepapi",
+      "nombre": "Pepapi",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/pepapi.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "raton",
+      "nombre": "Raton",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/raton.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "dino-gris",
+      "nombre": "Dino Gris",
+      "categoria": "Dinosaurios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dinosaurios/dino-gris.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "dino-naranja",
+      "nombre": "Dino Naranja",
+      "categoria": "Dinosaurios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dinosaurios/dino-naranja.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "dino-rosa",
+      "nombre": "Dino Rosa",
+      "categoria": "Dinosaurios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dinosaurios/dino-rosa.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "dino-verde",
+      "nombre": "Dino Verde",
+      "categoria": "Dinosaurios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dinosaurios/dino-verde.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "cupcake-gris",
+      "nombre": "Cupcake Gris",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces/cupcake-gris.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "cupcake-rosa",
+      "nombre": "Cupcake Rosa",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces/cupcake-rosa.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "estrella-arcoiris",
+      "nombre": "Estrella Arcoiris",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-arcoiris.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "estrella-dorada",
+      "nombre": "Estrella Dorada",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-dorada.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "estrella-naranja",
+      "nombre": "Estrella Naranja",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-naranja.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "estrella-roja",
+      "nombre": "Estrella Roja",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-roja.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "estrella-rosa",
+      "nombre": "Estrella Rosa",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-rosa.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "flores",
+      "nombre": "Flores",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flores.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "gato-dorado",
+      "nombre": "Gato Dorado",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-dorado.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "gato-plateado",
+      "nombre": "Gato Plateado",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-plateado.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "mano-turca",
+      "nombre": "Mano Turca",
+      "categoria": "Místicos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/misticos/mano-turca.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "ojo-turco",
+      "nombre": "Ojo Turco",
+      "categoria": "Místicos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/misticos/ojo-turco.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "unicornio-colores",
+      "nombre": "Unicornio Colores",
+      "categoria": "Unicornios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/unicornios/unicornio-colores.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "unicornio-pastel",
+      "nombre": "Unicornio Pastel",
+      "categoria": "Unicornios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/unicornios/unicornio-pastel.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "50",
+      "nombre": "50",
+      "categoria": "Varios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/varios/50.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "carro-capota",
+      "nombre": "Carro Capota",
+      "categoria": "Vehículos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/vehiculos/carro-capota.png",
+      "defaultSize": 76
+    },
+    {
+      "id": "cohete-verde",
+      "nombre": "Cohete Verde",
+      "categoria": "Vehículos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/vehiculos/cohete-verde.png",
+      "defaultSize": 76
+    }
+  ]
+}

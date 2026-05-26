@@ -131,9 +131,12 @@ function nameOf(patch) { return patch.kind === 'letter' ? `Letra ${patch.letter}
 function patchCategories() { return [...new Set(S.cat.patches.map(patch => patch.categoria))]; }
 
 function letterAnchor(view = S.view) {
+  // Zona recomendada para nombres: franja superior de la chaqueta,
+  // sobre el canesú/hombros. Las letras salen allí por defecto
+  // y luego el usuario puede moverlas libremente.
   return view === 'back'
-    ? { x: 405, y: 248 }
-    : { x: 405, y: 285 };
+    ? { x: 405, y: 222 }
+    : { x: 405, y: 275 };
 }
 
 function detailAnchor(view = S.view) {
@@ -357,10 +360,12 @@ function createName() {
   const view = S.view;
   const anchor = letterAnchor(view);
   const chars = [...clean];
-  const maxWidth = 650;
-  const gap = 10;
-  const base = Math.min(68, Math.max(44, (maxWidth - gap * (chars.length - 1)) / Math.max(chars.length, 1)));
-  const step = base * .82 + gap;
+  // Nombre compacto y ordenado para que quede en la franja superior,
+  // no desbordado hacia los hombros.
+  const maxWidth = view === 'back' ? 560 : 520;
+  const gap = 7;
+  const base = Math.min(62, Math.max(42, (maxWidth - gap * (chars.length - 1)) / Math.max(chars.length, 1)));
+  const step = base * .76 + gap;
   let total = chars.reduce((sum, char) => sum + (char === ' ' ? step * .65 : step), 0) - gap;
   let x = anchor.x - total / 2;
   let created = 0;
@@ -578,32 +583,19 @@ function preventTouchScrollWhileDragging(event) {
 }
 
 function lockPageWhileDragging(lock) {
+  // No fijamos el body con position: fixed, porque en móvil eso vuelve la
+  // página rígida y dificulta llegar a la caneca. Solo bloqueamos el gesto
+  // del navegador mientras el dedo está realmente moviendo un parche.
   document.documentElement.classList.toggle('dragging-patch', lock);
   document.body.classList.toggle('dragging-patch', lock);
 
   if (lock) {
-    if (S.pageLocked) return;
     S.pageLocked = true;
     S.scrollLockY = window.scrollY || window.pageYOffset || 0;
-    document.body.style.position = 'fixed';
-    document.body.style.top = `-${S.scrollLockY}px`;
-    document.body.style.left = '0';
-    document.body.style.right = '0';
-    document.body.style.width = '100%';
-    document.body.style.overflow = 'hidden';
     return;
   }
 
-  if (!S.pageLocked) return;
-  const y = S.scrollLockY || 0;
   S.pageLocked = false;
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.left = '';
-  document.body.style.right = '';
-  document.body.style.width = '';
-  document.body.style.overflow = '';
-  requestAnimationFrame(() => window.scrollTo(0, y));
 }
 
 function showTrash(show, hot) {

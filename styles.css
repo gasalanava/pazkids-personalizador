@@ -738,3 +738,43 @@ html.dragging-patch .app,
 html.dragging-patch .card {
   overscroll-behavior: contain;
 }
+
+
+/* === Ajuste 2026-05: caneca más accesible y arrastre menos rígido === */
+html.dragging-patch,
+html.dragging-patch body {
+  overflow-y: auto !important;
+  overscroll-behavior: contain !important;
+  touch-action: auto !important;
+}
+
+html.dragging-patch .stage,
+html.dragging-patch #svg,
+html.dragging-patch .node {
+  touch-action: none !important;
+}
+
+@media (max-width: 720px) {
+  .trash-zone {
+    position: fixed !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: max(14px, env(safe-area-inset-bottom)) !important;
+    z-index: 9998 !important;
+    display: flex !important;
+    width: min(360px, calc(100vw - 28px)) !important;
+    margin: 0 !important;
+    opacity: 0;
+    transform: translateX(-50%) translateY(18px);
+    pointer-events: none;
+  }
+
+  .trash-zone.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .trash-zone.hot {
+    transform: translateX(-50%) translateY(0) scale(1.05);
+  }
+}

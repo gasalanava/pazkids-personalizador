@@ -13,17 +13,26 @@ const S = {
   activeColl: null,
   designName: '',
   cache: new Map(),
-  meta: new Map()
+  meta: new Map(),
+  pointers: new Map(),
+  gesture: null,
+  trashHot: false,
+  controlsOpen: false,
+  draggedSinceDown: false
 };
 
 const D = {
   logo: $('#brandLogo'),
   svg: $('#svg'),
+  stage: $('#stage'),
+  trash: $('#trashZone'),
   jacket: $('#jacket'),
   items: $('#items'),
   front: $('#frontBtn'),
   back: $('#backBtn'),
   controls: $('#controls'),
+  controlsToggle: $('#controlsToggle'),
+  controlsBody: $('#controlsBody'),
   collection: $('#collection'),
   letterPreview: $('#letterPreview'),
   name: $('#name'),
@@ -188,13 +197,17 @@ function renderItems() {
     hit.setAttribute('height', size.h + 36);
     hit.setAttribute('rx', '18');
     hit.setAttribute('fill', 'transparent');
+    hit.setAttribute('pointer-events', 'all');
     group.appendChild(hit);
 
     group.addEventListener('pointerdown', down);
     D.items.appendChild(group);
   });
 
-  D.controls.hidden = !selected();
+  const hasSelected = Boolean(selected());
+  D.controls.hidden = !hasSelected;
+  D.controls.classList.toggle('open', hasSelected && (S.controlsOpen || isDesktopEditor()));
+  if (D.controlsToggle) D.controlsToggle.setAttribute('aria-expanded', D.controls.classList.contains('open') ? 'true' : 'false');
 }
 
 function renderSelectors() {
@@ -363,8 +376,35 @@ function point(event) {
   const rect = D.svg.getBoundingClientRect();
   return {
     x: (event.clientX - rect.left) / rect.width * VB.w,
-    y: (event.clientY - rect.top) / rect.height * VB.h
+    y: (event.clientY - rect.top) / rect.height * VB.h,
+    clientX: event.clientX,
+    clientY: event.clientY
   };
+}
+
+function isDesktopEditor() {
+  return window.matchMedia('(min-width: 721px)').matches;
+}
+
+function distance(a, b) {
+  return Math.hypot(b.x - a.x, b.y - a.y);
+}
+
+function angle(a, b) {
+  return Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI;
+}
+
+function center(a, b) {
+  return {
+    x: (a.x + b.x) / 2,
+    y: (a.y + b.y) / 2,
+    clientX: (a.clientX + b.clientX) / 2,
+    clientY: (a.clientY + b.clientY) / 2
+  };
+}
+
+function getPatch(id) {
+  return S.patches.find(item => item.id === id);
 }
 
 function down(event) {
@@ -372,54 +412,180 @@ function down(event) {
   event.stopPropagation();
 
   const id = event.currentTarget.dataset.id;
-  const patch = S.patches.find(item => item.id === id);
+  const patch = getPatch(id);
   if (!patch) return;
 
   const position = point(event);
   S.selected = id;
-  S.drag = {
-    id,
-    pointerId: event.pointerId,
-    dx: position.x - patch.x,
-    dy: position.y - patch.y
-  };
+  S.draggedSinceDown = false;
+  S.pointers.set(event.pointerId, position);
 
+  if (S.gesture && S.gesture.id !== id) {
+    S.pointers.clear();
+    S.pointers.set(event.pointerId, position);
+  }
+
+  startGestureForSelected(id, event.pointerId);
   lockPageWhileDragging(true);
+  showTrash(true, false);
 
   try { D.svg.setPointerCapture(event.pointerId); } catch {}
   render();
 }
 
+function startGestureForSelected(id, primaryPointerId) {
+  const patch = getPatch(id);
+  if (!patch) return;
+
+  const entries = [...S.pointers.entries()];
+
+  if (entries.length >= 2) {
+    const first = entries[0][1];
+    const second = entries[1][1];
+    const c = center(first, second);
+    S.gesture = {
+      mode: 'transform',
+      id,
+      startX: patch.x,
+      startY: patch.y,
+      startSize: patch.size,
+      startRotation: patch.rotation,
+      startDistance: Math.max(distance(first, second), 1),
+      startAngle: angle(first, second),
+      startCenter: c
+    };
+    return;
+  }
+
+  const current = S.pointers.get(primaryPointerId);
+  S.gesture = {
+    mode: 'move',
+    id,
+    pointerId: primaryPointerId,
+    dx: current.x - patch.x,
+    dy: current.y - patch.y
+  };
+}
+
 function move(event) {
-  if (!S.drag) return;
+  if (!S.gesture || !S.pointers.has(event.pointerId)) return;
   event.preventDefault();
   event.stopPropagation();
 
-  const patch = S.patches.find(item => item.id === S.drag.id);
+  S.pointers.set(event.pointerId, point(event));
+  const patch = getPatch(S.gesture.id);
   if (!patch) return;
 
-  const position = point(event);
-  patch.x = clamp(position.x - S.drag.dx, 20, VB.w - 20);
-  patch.y = clamp(position.y - S.drag.dy, 20, VB.h - 20);
+  if (S.pointers.size >= 2) {
+    if (S.gesture.mode !== 'transform') startGestureForSelected(patch.id, event.pointerId);
+    applyTransformGesture(patch);
+  } else {
+    if (S.gesture.mode !== 'move') startGestureForSelected(patch.id, event.pointerId);
+    applyMoveGesture(patch, event.pointerId);
+  }
+
+  S.draggedSinceDown = true;
+  updateTrashHot(currentClientPoint());
   renderItems();
   renderSummary();
 }
 
+function applyMoveGesture(patch, pointerId) {
+  const current = S.pointers.get(pointerId);
+  if (!current || !S.gesture) return;
+  patch.x = clamp(current.x - S.gesture.dx, 20, VB.w - 20);
+  patch.y = clamp(current.y - S.gesture.dy, 20, VB.h - 20);
+}
+
+function applyTransformGesture(patch) {
+  const points = [...S.pointers.values()];
+  if (points.length < 2 || !S.gesture) return;
+
+  const first = points[0];
+  const second = points[1];
+  const c = center(first, second);
+  const scale = distance(first, second) / Math.max(S.gesture.startDistance, 1);
+  const rotationDelta = angle(first, second) - S.gesture.startAngle;
+  const min = patch.kind === 'letter' ? 28 : 70;
+  const max = patch.kind === 'letter' ? 120 : 360;
+
+  patch.size = clamp(S.gesture.startSize * scale, min, max);
+  patch.rotation = (S.gesture.startRotation + rotationDelta + 360) % 360;
+  patch.x = clamp(S.gesture.startX + (c.x - S.gesture.startCenter.x), 20, VB.w - 20);
+  patch.y = clamp(S.gesture.startY + (c.y - S.gesture.startCenter.y), 20, VB.h - 20);
+}
+
+function currentClientPoint() {
+  const points = [...S.pointers.values()];
+  if (!points.length) return null;
+  if (points.length === 1) return points[0];
+  return center(points[0], points[1]);
+}
+
 function up(event) {
-  if (!S.drag) return;
-  try { D.svg.releasePointerCapture(S.drag.pointerId); } catch {}
-  S.drag = null;
+  if (!S.gesture) return;
+  event.preventDefault();
+  event.stopPropagation();
+
+  const endedPoint = S.pointers.get(event.pointerId) || point(event);
+  const activeId = S.gesture.id;
+
+  try { D.svg.releasePointerCapture(event.pointerId); } catch {}
+  S.pointers.delete(event.pointerId);
+
+  if (S.pointers.size >= 1) {
+    startGestureForSelected(activeId, [...S.pointers.keys()][0]);
+    renderSummary();
+    return;
+  }
+
+  const shouldDelete = isPointInTrash(endedPoint) || S.trashHot;
+  S.gesture = null;
+  S.pointers.clear();
   lockPageWhileDragging(false);
+  showTrash(false, false);
+
+  if (shouldDelete) {
+    S.patches = S.patches.filter(item => item.id !== activeId);
+    S.selected = null;
+    render();
+    toast('Detalle eliminado.');
+    return;
+  }
+
   renderSummary();
 }
 
 function preventTouchScrollWhileDragging(event) {
-  if (S.drag) event.preventDefault();
+  if (S.gesture) event.preventDefault();
 }
 
 function lockPageWhileDragging(lock) {
   document.documentElement.classList.toggle('dragging-patch', lock);
   document.body.classList.toggle('dragging-patch', lock);
+}
+
+function showTrash(show, hot) {
+  if (!D.trash) return;
+  D.trash.classList.toggle('visible', show);
+  D.trash.classList.toggle('hot', hot);
+  D.trash.querySelector('.trash-copy').textContent = hot ? 'Suelta para eliminar' : 'Arrastra aquí para eliminar';
+  S.trashHot = hot;
+}
+
+function updateTrashHot(clientPoint) {
+  const hot = isPointInTrash(clientPoint);
+  showTrash(true, hot);
+}
+
+function isPointInTrash(clientPoint) {
+  if (!D.trash || !clientPoint) return false;
+  const rect = D.trash.getBoundingClientRect();
+  const margin = 14;
+  return clientPoint.clientX >= rect.left - margin &&
+    clientPoint.clientX <= rect.right + margin &&
+    clientPoint.clientY >= rect.top - margin &&
+    clientPoint.clientY <= rect.bottom + margin;
 }
 
 function bgClick(event) {
@@ -615,6 +781,14 @@ function bind() {
   D.name.onkeydown = event => {
     if (event.key === 'Enter') createName();
   };
+
+  if (D.controlsToggle) {
+    D.controlsToggle.onclick = () => {
+      S.controlsOpen = !D.controls.classList.contains('open');
+      D.controls.classList.toggle('open', S.controlsOpen);
+      D.controlsToggle.setAttribute('aria-expanded', S.controlsOpen ? 'true' : 'false');
+    };
+  }
 
   D.svg.addEventListener('pointermove', move);
   D.svg.addEventListener('pointerup', up);

@@ -583,3 +583,139 @@ label {
     grid-column: auto;
   }
 }
+
+/* === Ajuste gestos Paz Kids: caneca, menú plegable y edición táctil === */
+.stage-card {
+  position: relative;
+}
+
+.trash-zone {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: min(360px, 100%);
+  min-height: 54px;
+  margin: 12px auto 0;
+  padding: 10px 14px;
+  border-radius: 999px;
+  color: #7a6d76;
+  background: rgba(255, 255, 255, .78);
+  border: 2px dashed rgba(237, 127, 118, .40);
+  box-shadow: 0 10px 24px rgba(47, 42, 64, .08);
+  font-weight: 900;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+  transition: transform .16s ease, background .16s ease, border-color .16s ease, color .16s ease;
+}
+
+.trash-zone.visible {
+  display: flex;
+}
+
+.trash-zone.hot {
+  transform: scale(1.04);
+  color: #fff;
+  background: linear-gradient(135deg, #ef6262, #ed7f76);
+  border-color: transparent;
+}
+
+.trash-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.trash-copy {
+  font-size: .92rem;
+  line-height: 1.15;
+}
+
+.controls {
+  overflow: hidden;
+}
+
+.controls-toggle {
+  width: 100%;
+  min-height: 46px;
+  border-radius: 14px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: #564d58;
+  background: #fff;
+  border: 1px solid #ffe1dd;
+  font-weight: 950;
+}
+
+.controls-toggle .chevron {
+  font-size: 1.15rem;
+  transition: transform .15s ease;
+}
+
+.controls.open .controls-toggle .chevron {
+  transform: rotate(180deg);
+}
+
+.controls-body {
+  margin-top: 10px;
+}
+
+.controls:not(.open) .controls-body {
+  display: none;
+}
+
+.gesture-hint {
+  margin: 0 0 10px;
+  color: #6d6670;
+  font-size: .86rem;
+  line-height: 1.35;
+}
+
+.node image {
+  pointer-events: none;
+}
+
+.node rect {
+  pointer-events: auto;
+}
+
+.node {
+  pointer-events: auto;
+}
+
+/* En escritorio el menú queda abierto como herramienta de precisión */
+@media (min-width: 721px) {
+  .controls {
+    display: block;
+  }
+
+  .controls .controls-body {
+    display: block !important;
+  }
+
+  .controls-toggle .chevron {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .trash-zone {
+    position: sticky;
+    bottom: 10px;
+    z-index: 40;
+    width: min(330px, calc(100% - 14px));
+    min-height: 52px;
+    margin-top: 10px;
+  }
+
+  .controls {
+    padding: 8px;
+  }
+
+  .gesture-hint {
+    font-size: .82rem;
+  }
+}

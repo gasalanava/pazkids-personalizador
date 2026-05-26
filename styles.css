@@ -810,3 +810,42 @@ html.dragging-patch .node * {
 .node .hit-rect {
   pointer-events: all;
 }
+
+
+/* === Ajuste video: posición correcta de letras y arrastre estable === */
+html.dragging-patch,
+body.dragging-patch {
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+  touch-action: none !important;
+}
+
+body.dragging-patch {
+  max-width: 100vw !important;
+}
+
+.stage,
+#svg {
+  touch-action: pan-y !important;
+}
+
+.node,
+.node *,
+.node .hit-rect {
+  touch-action: none !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+
+html.dragging-patch .stage,
+html.dragging-patch #svg,
+html.dragging-patch .node,
+html.dragging-patch .node * {
+  touch-action: none !important;
+}
+
+@media (max-width: 720px) {
+  .trash-zone {
+    bottom: calc(18px + env(safe-area-inset-bottom)) !important;
+  }
+}

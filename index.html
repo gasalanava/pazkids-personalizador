@@ -1,35 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="theme-color" content="#f8b9c7" />
-<title>Paz Kids | Personaliza tu chaqueta jean</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#f8b9c7" />
+  <title>Paz Kids | Personaliza tu chaqueta jean</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="hero">
-  <div class="hero-brand">
+  <header class="hero">
     <img id="brandLogo" class="logo" alt="Paz Kids" />
-    <div><p class="eyebrow">Chaquetas jean personalizadas</p><h1>Paz Kids</h1><p class="hero-copy">Diseña tu chaqueta, descarga la imagen y envíanos tu pedido por WhatsApp.</p></div>
-  </div>
-</header>
-<main class="app">
-  <section class="card intro"><strong>Cómo funciona:</strong> elige frente o espalda, agrega letras o parches, muévelos con el dedo, ajusta tamaño, descarga tu diseño y pídelo por WhatsApp.</section>
-  <section class="grid">
-    <section class="card stage-card">
-      <div class="head"><div><span>Diseño en vivo</span><h2>Tu chaqueta</h2></div><div class="switch"><button id="frontBtn" class="active">Frente</button><button id="backBtn">Espalda</button></div></div>
-      <div class="stage"><svg id="svg" viewBox="0 0 810 1012" xmlns="http://www.w3.org/2000/svg"><defs><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="rgba(38,39,48,.22)"/></filter></defs><rect width="810" height="1012" fill="transparent"/><g id="jacket" filter="url(#sh)"></g><g id="items"></g></svg></div>
-      <div id="controls" class="controls" hidden><strong>Parche seleccionado</strong><div class="control-grid"><button id="smaller">− Tamaño</button><button id="bigger">+ Tamaño</button><button id="rotL">↺ Girar</button><button id="rotR">↻ Girar</button><button id="dup">Duplicar</button><button id="frontLayer">Adelante</button><button id="backLayer">Atrás</button><button id="otherView">Otra vista</button><button id="del" class="danger">Eliminar</button></div></div>
+    <p class="hero-copy">Aquí puedes crear junto a tu hijo la chaqueta de sus sueños. Al finalizar, guarda el diseño y pídela por WhatsApp a Paz Kids.</p>
+  </header>
+
+  <main class="app">
+    <section class="card intro">
+      <strong>Cómo funciona:</strong> elige frente o espalda y juega con tu hijo a crear una chaqueta única. Agreguen letras y parches de colores, muévanlos con el dedo y ubíquenlos donde más les gusten. Pueden probar con su nombre, su nickname o parches especiales para hacerla única.
     </section>
-    <aside class="side">
-      <section class="card"><div class="head compact"><div><span>Letras tipo parche</span><h2>Crear nombre</h2></div></div><label>Colección de letras</label><select id="collection" class="input"></select><label>Nombre opcional</label><div class="name-row"><input id="name" class="input" maxlength="16" placeholder="Ej: ANTONIA"/><button id="createName" class="primary">Crear</button></div><label>Ubicar nombre en</label><select id="nameView" class="input"><option value="front" selected>Frente</option><option value="back">Espalda</option><option value="current">Vista actual</option></select><p class="note">El nombre se crea con letras-parche independientes. No es texto fijo.</p></section>
-      <section class="card"><div class="head compact"><div><span>Catálogo</span><h2>Parches</h2></div></div><div id="tabs" class="tabs"></div><div id="patchGrid" class="patch-grid"></div></section>
-    </aside>
-  </section>
-  <section class="card summary"><div class="head compact"><div><span>Pedido</span><h2>Resumen</h2></div></div><p id="summary">Aún no has agregado parches.</p><div class="actions"><button id="save">Guardar diseño</button><button id="load">Cargar guardado</button><button id="download">Descargar imagen</button><button id="clear">Limpiar</button><button id="whatsapp" class="wa">Pedir por WhatsApp</button></div></section>
-</main>
-<div id="toast" class="toast"></div>
-<script src="app.js"></script>
+
+    <section class="grid">
+      <section class="card stage-card">
+        <div class="head stage-head">
+          <div>
+            <span>Vista previa de tu chaqueta</span>
+            <h2>Aquí verás cómo va tomando forma la chaqueta de sus sueños.</h2>
+          </div>
+          <div class="switch" aria-label="Seleccionar vista de la chaqueta">
+            <button id="frontBtn" class="active" type="button">Frente</button>
+            <button id="backBtn" type="button">Espalda</button>
+          </div>
+        </div>
+
+        <div class="stage" id="stage">
+          <svg id="svg" viewBox="0 0 810 1012" xmlns="http://www.w3.org/2000/svg" aria-label="Vista previa de chaqueta personalizada">
+            <defs>
+              <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="rgba(38,39,48,.22)" />
+              </filter>
+            </defs>
+            <rect width="810" height="1012" fill="transparent" />
+            <g id="jacket" filter="url(#sh)"></g>
+            <g id="items"></g>
+          </svg>
+        </div>
+
+        <div id="controls" class="controls" hidden>
+          <strong>Parche seleccionado</strong>
+          <div class="control-grid">
+            <button id="smaller" type="button">− Tamaño</button>
+            <button id="bigger" type="button">+ Tamaño</button>
+            <button id="rotL" type="button">↺ Girar</button>
+            <button id="rotR" type="button">↻ Girar</button>
+            <button id="dup" type="button">Duplicar</button>
+            <button id="frontLayer" type="button">Adelante</button>
+            <button id="backLayer" type="button">Atrás</button>
+            <button id="otherView" type="button">Otra vista</button>
+            <button id="del" class="danger" type="button">Eliminar</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="side">
+        <section class="card letters-card">
+          <div class="head compact text-head">
+            <div>
+              <span>PARCHES DE LETRAS</span>
+              <h2>Crea su nombre o nickname</h2>
+              <p class="section-instruction">Elige letras de colores y ubícalas sobre la chaqueta.</p>
+            </div>
+          </div>
+
+          <label for="collection">Colección de letras</label>
+          <select id="collection" class="input"></select>
+
+          <div id="letterPreview" class="letter-preview" aria-label="Letras disponibles"></div>
+
+          <label for="name">Nombre o nickname</label>
+          <div class="name-row">
+            <input id="name" class="input" maxlength="16" placeholder="Ej: ANTONIA" autocomplete="off" />
+            <button id="createName" class="primary" type="button">Crear nombre</button>
+          </div>
+          <p class="note">El nombre se crea con letras-parche independientes en la vista que tengas seleccionada arriba.</p>
+        </section>
+
+        <section class="card patches-card">
+          <div class="head compact text-head">
+            <div>
+              <span>PARCHES Y DETALLES</span>
+              <h2>Elige los favoritos de tu hijo</h2>
+            </div>
+          </div>
+          <div id="tabs" class="tabs" aria-label="Categorías de parches"></div>
+          <div id="patchGrid" class="patch-grid" aria-label="Catálogo de parches"></div>
+        </section>
+      </aside>
+    </section>
+
+    <section class="card summary">
+      <div class="head compact text-head">
+        <div>
+          <span>TU DISEÑO</span>
+          <h2>Resumen de tu proyecto</h2>
+        </div>
+      </div>
+      <p id="summary">Aún no has agregado parches.</p>
+      <div class="actions">
+        <button id="download" type="button">Guardar imagen del diseño</button>
+        <button id="clear" type="button">Empezar de nuevo</button>
+        <button id="whatsapp" class="wa" type="button">Cotiza tu diseño por WhatsApp</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
 </body>
 </html>

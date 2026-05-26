@@ -135,7 +135,8 @@ function letterAnchor(view = S.view) {
   // sobre el canesú/hombros. Las letras salen allí por defecto
   // y luego el usuario puede moverlas libremente.
   return view === 'back'
-    ? { x: 405, y: 222 }
+    // Debajo del cuello y antes de la costura horizontal de la espalda.
+    ? { x: 405, y: 286 }
     : { x: 405, y: 275 };
 }
 
@@ -195,10 +196,12 @@ function renderItems() {
       outline.setAttribute('stroke', '#ed7f76');
       outline.setAttribute('stroke-width', '4');
       outline.setAttribute('stroke-dasharray', '10 7');
+      outline.classList.add('selection-outline');
       group.appendChild(outline);
     }
 
     const image = E('image');
+    image.classList.add('patch-image');
     image.setAttribute('href', src(path));
     image.setAttribute('x', -size.w / 2);
     image.setAttribute('y', -size.h / 2);
@@ -208,6 +211,7 @@ function renderItems() {
     group.appendChild(image);
 
     const hit = E('rect');
+    hit.classList.add('hit-rect');
     hit.setAttribute('x', -size.w / 2 - 18);
     hit.setAttribute('y', -size.h / 2 - 18);
     hit.setAttribute('width', size.w + 36);
@@ -438,21 +442,28 @@ function down(event) {
   if (!patch) return;
 
   const position = point(event);
+  const wasSelected = S.selected === id;
   S.selected = id;
   S.draggedSinceDown = false;
-  S.pointers.set(event.pointerId, position);
 
-  if (S.gesture && S.gesture.id !== id) {
+  // Si empieza un nuevo parche, limpiamos punteros anteriores. Si llega un
+  // segundo dedo sobre el mismo parche, conservamos el primero para permitir
+  // pellizcar/girar.
+  if (!S.gesture || S.gesture.id !== id) {
     S.pointers.clear();
-    S.pointers.set(event.pointerId, position);
   }
+  S.pointers.set(event.pointerId, position);
 
   startGestureForSelected(id, event.pointerId);
   lockPageWhileDragging(true);
   showTrash(true, false);
 
-  try { event.currentTarget.setPointerCapture(event.pointerId); } catch {}
-  render();
+  // Capturamos desde el SVG, no desde el nodo que se vuelve a pintar, para
+  // que el dedo no se quede "pegado" si el DOM cambia durante el movimiento.
+  try { D.svg.setPointerCapture(event.pointerId); } catch {}
+
+  if (!wasSelected) renderItems();
+  renderSummary();
 }
 
 function startGestureForSelected(id, primaryPointerId) {
@@ -508,8 +519,47 @@ function move(event) {
 
   S.draggedSinceDown = true;
   updateTrashHot(currentClientPoint());
-  renderItems();
+  updateRenderedPatch(patch);
   renderSummary();
+}
+
+
+function updateRenderedPatch(patch) {
+  const group = D.items.querySelector(`[data-id="${patch.id}"]`);
+  if (!group) {
+    renderItems();
+    return;
+  }
+
+  const path = imgPath(patch);
+  if (!path) return;
+  const size = sizeOf(path, patch.size);
+
+  group.setAttribute('transform', `translate(${patch.x} ${patch.y}) rotate(${patch.rotation})`);
+
+  const outline = group.querySelector('.selection-outline');
+  if (outline) {
+    outline.setAttribute('x', -size.w / 2 - 10);
+    outline.setAttribute('y', -size.h / 2 - 10);
+    outline.setAttribute('width', size.w + 20);
+    outline.setAttribute('height', size.h + 20);
+  }
+
+  const image = group.querySelector('.patch-image');
+  if (image) {
+    image.setAttribute('x', -size.w / 2);
+    image.setAttribute('y', -size.h / 2);
+    image.setAttribute('width', size.w);
+    image.setAttribute('height', size.h);
+  }
+
+  const hit = group.querySelector('.hit-rect');
+  if (hit) {
+    hit.setAttribute('x', -size.w / 2 - 22);
+    hit.setAttribute('y', -size.h / 2 - 22);
+    hit.setAttribute('width', size.w + 44);
+    hit.setAttribute('height', size.h + 44);
+  }
 }
 
 function applyMoveGesture(patch, pointerId) {
@@ -575,6 +625,7 @@ function up(event) {
     return;
   }
 
+  renderItems();
   renderSummary();
 }
 
@@ -619,6 +670,17 @@ function isPointInTrash(clientPoint) {
     clientPoint.clientX <= rect.right + margin &&
     clientPoint.clientY >= rect.top - margin &&
     clientPoint.clientY <= rect.bottom + margin;
+}
+
+
+function cancelActiveGesture() {
+  if (!S.gesture) return;
+  S.gesture = null;
+  S.pointers.clear();
+  lockPageWhileDragging(false);
+  showTrash(false, false);
+  renderItems();
+  renderSummary();
 }
 
 function bgClick(event) {
@@ -828,6 +890,8 @@ function bind() {
   document.addEventListener('pointercancel', up, { passive: false });
   D.svg.addEventListener('click', bgClick);
   document.addEventListener('touchmove', preventTouchScrollWhileDragging, { passive: false });
+  window.addEventListener('blur', cancelActiveGesture);
+  document.addEventListener('visibilitychange', () => { if (document.hidden) cancelActiveGesture(); });
 
   $('#smaller').onclick = () => resize(selected()?.kind === 'letter' ? -8 : -16);
   $('#bigger').onclick = () => resize(selected()?.kind === 'letter' ? 8 : 16);

@@ -778,3 +778,35 @@ html.dragging-patch .node {
     transform: translateX(-50%) translateY(0) scale(1.05);
   }
 }
+
+
+/* === Ajuste 2026-05 final: arrastre estable sin dejar la página pegada === */
+html.dragging-patch,
+body.dragging-patch {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain !important;
+}
+
+.stage,
+#svg {
+  touch-action: pan-y !important;
+}
+
+.node,
+.node * {
+  touch-action: none !important;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html.dragging-patch .stage,
+html.dragging-patch #svg,
+html.dragging-patch .node,
+html.dragging-patch .node * {
+  touch-action: none !important;
+}
+
+.node .hit-rect {
+  pointer-events: all;
+}

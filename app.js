@@ -18,7 +18,9 @@ const S = {
   gesture: null,
   trashHot: false,
   controlsOpen: false,
-  draggedSinceDown: false
+  draggedSinceDown: false,
+  scrollLockY: 0,
+  pageLocked: false
 };
 
 const D = {
@@ -128,6 +130,18 @@ function imgPath(patch) { return patch.kind === 'letter' ? coll(patch.collection
 function nameOf(patch) { return patch.kind === 'letter' ? `Letra ${patch.letter}` : (item(patch.catalogId)?.nombre || 'Parche'); }
 function patchCategories() { return [...new Set(S.cat.patches.map(patch => patch.categoria))]; }
 
+function letterAnchor(view = S.view) {
+  return view === 'back'
+    ? { x: 405, y: 248 }
+    : { x: 405, y: 285 };
+}
+
+function detailAnchor(view = S.view) {
+  return view === 'back'
+    ? { x: 405, y: 555 }
+    : { x: 405, y: 565 };
+}
+
 function sizeOf(path, size) {
   const meta = S.meta.get(path) || { w: 1, h: 1 };
   const ratio = meta.w / Math.max(1, meta.h);
@@ -228,7 +242,8 @@ function renderLetterPreview() {
     const path = collection.letters[letter];
     if (!path) return;
     D.letterPreview.appendChild(card(path, `Letra ${letter}`, () => {
-      addLetter(letter, S.view, 405, S.view === 'front' ? 590 : 560, collection.defaultSize || 62, collection.id);
+      const anchor = letterAnchor(S.view);
+      addLetter(letter, S.view, anchor.x, anchor.y, collection.defaultSize || 62, collection.id);
       render();
       toast(`Letra ${letter} agregada en ${viewLabel(S.view)}.`);
     }, 'letter-card'));
@@ -282,15 +297,16 @@ function card(path, alt, onClick, extraClass = '') {
 function addCatalog(id) {
   const catalogItem = item(id);
   if (!catalogItem) return;
-  const numberInView = S.patches.filter(patch => patch.view === S.view).length;
+  const numberInView = S.patches.filter(patch => patch.view === S.view && patch.kind === 'patch').length;
+  const anchor = detailAnchor(S.view);
   const patch = {
     id: uid(),
     kind: 'patch',
     catalogId: id,
     view: S.view,
-    x: clamp(405 + (numberInView % 5) * 18 - 36, 70, 740),
-    y: clamp(590 + (numberInView % 7) * 16 - 48, 90, 930),
-    size: catalogItem.defaultSize || 190,
+    x: clamp(anchor.x + (numberInView % 3) * 20 - 20, 90, 720),
+    y: clamp(anchor.y + (numberInView % 4) * 18 - 18, 120, 900),
+    size: Math.max(catalogItem.defaultSize || 190, 190),
     rotation: 0
   };
   S.patches.push(patch);
@@ -339,13 +355,14 @@ function createName() {
 
   const collection = coll();
   const view = S.view;
+  const anchor = letterAnchor(view);
   const chars = [...clean];
   const maxWidth = 650;
   const gap = 10;
   const base = Math.min(68, Math.max(44, (maxWidth - gap * (chars.length - 1)) / Math.max(chars.length, 1)));
   const step = base * .82 + gap;
   let total = chars.reduce((sum, char) => sum + (char === ' ' ? step * .65 : step), 0) - gap;
-  let x = 405 - total / 2;
+  let x = anchor.x - total / 2;
   let created = 0;
 
   chars.forEach(char => {
@@ -354,7 +371,7 @@ function createName() {
       return;
     }
     if (collection.letters[char]) {
-      addLetter(char, view, x + step / 2, view === 'front' ? 590 : 560, base, collection.id);
+      addLetter(char, view, x + step / 2, anchor.y, base, collection.id);
       created++;
     }
     x += step;
@@ -429,7 +446,7 @@ function down(event) {
   lockPageWhileDragging(true);
   showTrash(true, false);
 
-  try { D.svg.setPointerCapture(event.pointerId); } catch {}
+  try { event.currentTarget.setPointerCapture(event.pointerId); } catch {}
   render();
 }
 
@@ -563,6 +580,30 @@ function preventTouchScrollWhileDragging(event) {
 function lockPageWhileDragging(lock) {
   document.documentElement.classList.toggle('dragging-patch', lock);
   document.body.classList.toggle('dragging-patch', lock);
+
+  if (lock) {
+    if (S.pageLocked) return;
+    S.pageLocked = true;
+    S.scrollLockY = window.scrollY || window.pageYOffset || 0;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${S.scrollLockY}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.width = '100%';
+    document.body.style.overflow = 'hidden';
+    return;
+  }
+
+  if (!S.pageLocked) return;
+  const y = S.scrollLockY || 0;
+  S.pageLocked = false;
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.left = '';
+  document.body.style.right = '';
+  document.body.style.width = '';
+  document.body.style.overflow = '';
+  requestAnimationFrame(() => window.scrollTo(0, y));
 }
 
 function showTrash(show, hot) {
@@ -790,9 +831,9 @@ function bind() {
     };
   }
 
-  D.svg.addEventListener('pointermove', move);
-  D.svg.addEventListener('pointerup', up);
-  D.svg.addEventListener('pointercancel', up);
+  document.addEventListener('pointermove', move, { passive: false });
+  document.addEventListener('pointerup', up, { passive: false });
+  document.addEventListener('pointercancel', up, { passive: false });
   D.svg.addEventListener('click', bgClick);
   document.addEventListener('touchmove', preventTouchScrollWhileDragging, { passive: false });
 

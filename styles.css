@@ -719,3 +719,22 @@ label {
     font-size: .82rem;
   }
 }
+
+
+/* === Ajuste fino: posiciones iniciales y estabilidad al arrastrar === */
+html.dragging-patch,
+html.dragging-patch body {
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
+html.dragging-patch .stage,
+html.dragging-patch #svg,
+html.dragging-patch .node {
+  touch-action: none !important;
+}
+
+html.dragging-patch .app,
+html.dragging-patch .card {
+  overscroll-behavior: contain;
+}

@@ -1128,3 +1128,45 @@ html.dragging-patch .node * {
     transform: translateX(-50%) translateY(0) scale(1.07);
   }
 }
+
+/* === Ajuste v22: descarga separada de frente y espalda con respaldo móvil === */
+.download-fallback {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .72);
+  border: 1px dashed rgba(237, 127, 118, .32);
+}
+
+.download-fallback p {
+  margin: 0 0 10px;
+  color: #5f5a66;
+  font-size: .82rem;
+  line-height: 1.35;
+  font-weight: 750;
+}
+
+.download-fallback-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.download-fallback a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 9px 10px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--mint), var(--peach));
+}
+
+@media (max-width: 520px) {
+  .download-fallback-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -870,15 +870,28 @@ async function download() {
 
   const originalView = S.view;
   S.selected = null;
-  toast('Preparando imágenes de frente y espalda...');
+  toast('Preparando imágenes de espalda y frente...');
 
   try {
-    await exportView('front');
-    await wait(450);
-    await exportView('back');
+    // Generamos primero ambas imágenes y después disparamos las descargas.
+    // En celulares algunos navegadores bloquean la segunda descarga automática;
+    // por eso dejamos también botones manuales de respaldo.
+    const backBlob = await exportViewBlob('back');
+    const frontBlob = await exportViewBlob('front');
+
     S.view = originalView;
     render();
-    toast('Imágenes guardadas. Adjunta frente y espalda en WhatsApp.');
+
+    const downloads = [
+      { blob: backBlob, filename: 'pazkids-chaqueta-espalda.png', label: 'Descargar espalda' },
+      { blob: frontBlob, filename: 'pazkids-chaqueta-frente.png', label: 'Descargar frente' }
+    ];
+
+    triggerDownload(downloads[0].blob, downloads[0].filename);
+    setTimeout(() => triggerDownload(downloads[1].blob, downloads[1].filename), 180);
+    showDownloadFallback(downloads);
+
+    toast('Se generaron frente y espalda. Si el celular bloqueó una, usa los botones de respaldo.');
   } catch (error) {
     console.error(error);
     S.view = originalView;
@@ -887,12 +900,12 @@ async function download() {
   }
 }
 
-async function exportView(view) {
+async function exportViewBlob(view) {
   S.view = view;
   const used = [S.cat.jackets[view], ...S.patches.filter(patch => patch.view === view).map(imgPath)];
   await ensureCached(used);
   render();
-  await new Promise(resolve => requestAnimationFrame(resolve));
+  await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
 
   const clone = D.svg.cloneNode(true);
   clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
@@ -918,18 +931,64 @@ async function exportView(view) {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
 
-    const png = await new Promise(resolve => canvas.toBlob(resolve, 'image/png', .95));
-    const downloadUrl = URL.createObjectURL(png);
-    const a = document.createElement('a');
-    a.href = downloadUrl;
-    a.download = `pazkids-chaqueta-${view === 'front' ? 'frente' : 'espalda'}.png`;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    setTimeout(() => URL.revokeObjectURL(downloadUrl), 1000);
+    return await new Promise((resolve, reject) => {
+      canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('No se pudo generar PNG')), 'image/png', .95);
+    });
   } finally {
     URL.revokeObjectURL(url);
   }
+}
+
+async function exportView(view) {
+  const blob = await exportViewBlob(view);
+  triggerDownload(blob, `pazkids-chaqueta-${view === 'front' ? 'frente' : 'espalda'}.png`);
+}
+
+function triggerDownload(blob, filename) {
+  const downloadUrl = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = downloadUrl;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(downloadUrl), 2000);
+}
+
+function showDownloadFallback(downloads) {
+  window.pazKidsDownloadUrls = window.pazKidsDownloadUrls || [];
+  window.pazKidsDownloadUrls.forEach(url => URL.revokeObjectURL(url));
+  window.pazKidsDownloadUrls = [];
+
+  let panel = document.querySelector('#downloadFallback');
+  if (!panel) {
+    panel = document.createElement('div');
+    panel.id = 'downloadFallback';
+    panel.className = 'download-fallback';
+    const actions = document.querySelector('.actions');
+    actions?.insertAdjacentElement('afterend', panel);
+  }
+
+  panel.innerHTML = '';
+  const title = document.createElement('p');
+  title.textContent = 'Si tu celular bloqueó una descarga, guarda cada imagen aquí:';
+  panel.appendChild(title);
+
+  const row = document.createElement('div');
+  row.className = 'download-fallback-row';
+
+  downloads.forEach(({ blob, filename, label }) => {
+    const url = URL.createObjectURL(blob);
+    window.pazKidsDownloadUrls.push(url);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    link.textContent = label;
+    row.appendChild(link);
+  });
+
+  panel.appendChild(row);
+  panel.hidden = false;
 }
 
 function wait(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }

@@ -188,7 +188,8 @@
       "categoria": "Dinosaurios",
       "tipo": "imagen",
       "imagen": "assets/parches/dinosaurios/dino-gris.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "dino-naranja",
@@ -196,7 +197,8 @@
       "categoria": "Dinosaurios",
       "tipo": "imagen",
       "imagen": "assets/parches/dinosaurios/dino-naranja.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "dino-rosa",
@@ -204,7 +206,8 @@
       "categoria": "Dinosaurios",
       "tipo": "imagen",
       "imagen": "assets/parches/dinosaurios/dino-rosa.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "dino-verde",
@@ -212,7 +215,8 @@
       "categoria": "Dinosaurios",
       "tipo": "imagen",
       "imagen": "assets/parches/dinosaurios/dino-verde.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "abeja",
@@ -220,7 +224,8 @@
       "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales/abeja.png",
-      "defaultSize": 190
+      "defaultSize": 190,
+      "grupo": "protagonistas"
     },
     {
       "id": "leon",
@@ -228,7 +233,8 @@
       "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales/leon.png",
-      "defaultSize": 190
+      "defaultSize": 190,
+      "grupo": "protagonistas"
     },
     {
       "id": "oso-fashion",
@@ -236,7 +242,8 @@
       "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales/oso-fashion.png",
-      "defaultSize": 190
+      "defaultSize": 190,
+      "grupo": "protagonistas"
     },
     {
       "id": "osop",
@@ -244,7 +251,8 @@
       "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales/osop.png",
-      "defaultSize": 190
+      "defaultSize": 190,
+      "grupo": "protagonistas"
     },
     {
       "id": "pepapi",
@@ -252,7 +260,8 @@
       "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales/pepapi.png",
-      "defaultSize": 190
+      "defaultSize": 190,
+      "grupo": "protagonistas"
     },
     {
       "id": "raton",
@@ -260,7 +269,8 @@
       "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales/raton.png",
-      "defaultSize": 190
+      "defaultSize": 190,
+      "grupo": "protagonistas"
     },
     {
       "id": "gato-dorado",
@@ -268,7 +278,8 @@
       "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/gatos/gato-dorado.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "gato-plateado",
@@ -276,7 +287,8 @@
       "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/gatos/gato-plateado.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "unicornio-colores",
@@ -284,7 +296,8 @@
       "categoria": "Unicornios",
       "tipo": "imagen",
       "imagen": "assets/parches/unicornios/unicornio-colores.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "unicornio-pastel",
@@ -292,7 +305,8 @@
       "categoria": "Unicornios",
       "tipo": "imagen",
       "imagen": "assets/parches/unicornios/unicornio-pastel.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "cupcake-gris",
@@ -300,7 +314,8 @@
       "categoria": "Dulces",
       "tipo": "imagen",
       "imagen": "assets/parches/dulces/cupcake-gris.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "cupcake-rosa",
@@ -308,7 +323,8 @@
       "categoria": "Dulces",
       "tipo": "imagen",
       "imagen": "assets/parches/dulces/cupcake-rosa.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "mano-turca",
@@ -316,7 +332,8 @@
       "categoria": "Místicos",
       "tipo": "imagen",
       "imagen": "assets/parches/misticos/mano-turca.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "ojo-turco",
@@ -324,7 +341,8 @@
       "categoria": "Místicos",
       "tipo": "imagen",
       "imagen": "assets/parches/misticos/ojo-turco.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "carro-capota",
@@ -332,7 +350,8 @@
       "categoria": "Vehículos",
       "tipo": "imagen",
       "imagen": "assets/parches/vehiculos/carro-capota.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "cohete-verde",
@@ -340,7 +359,8 @@
       "categoria": "Vehículos",
       "tipo": "imagen",
       "imagen": "assets/parches/vehiculos/cohete-verde.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "50",
@@ -348,7 +368,8 @@
       "categoria": "Vehículos",
       "tipo": "imagen",
       "imagen": "assets/parches/varios/50.png",
-      "defaultSize": 205
+      "defaultSize": 205,
+      "grupo": "protagonistas"
     },
     {
       "id": "estrella-arcoiris",
@@ -356,7 +377,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-arcoiris.png",
-      "defaultSize": 58
+      "defaultSize": 58,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-dorada",
@@ -364,7 +386,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-dorada.png",
-      "defaultSize": 58
+      "defaultSize": 58,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-naranja",
@@ -372,7 +395,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-naranja.png",
-      "defaultSize": 58
+      "defaultSize": 58,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-roja",
@@ -380,7 +404,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-roja.png",
-      "defaultSize": 58
+      "defaultSize": 58,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-rosa",
@@ -388,7 +413,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-rosa.png",
-      "defaultSize": 58
+      "defaultSize": 58,
+      "grupo": "detalles"
     },
     {
       "id": "flores",
@@ -396,7 +422,8 @@
       "categoria": "Flores",
       "tipo": "imagen",
       "imagen": "assets/parches/flores/flores.png",
-      "defaultSize": 160
+      "defaultSize": 160,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-amarilla",
@@ -404,7 +431,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-amarilla.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-verde",
@@ -412,7 +440,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-verde.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-gris",
@@ -420,7 +449,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-gris.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-azul",
@@ -428,7 +458,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-azul.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-lentejuela-arcoiris",
@@ -436,7 +467,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-lentejuela-arcoiris.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-lentejuela-roja",
@@ -444,7 +476,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-lentejuela-roja.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-lentejuela-morada",
@@ -452,7 +485,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-lentejuela-morada.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-lentejuela-rosa",
@@ -460,7 +494,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-lentejuela-rosa.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-lentejuela-turquesa",
@@ -468,7 +503,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-lentejuela-turquesa.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-lentejuela-negra",
@@ -476,7 +512,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-lentejuela-negra.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-lentejuela-plateada",
@@ -484,7 +521,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-lentejuela-plateada.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-lentejuela-dorada",
@@ -492,7 +530,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-lentejuela-dorada.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "estrella-lentejuela-cafe",
@@ -500,7 +539,8 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-lentejuela-cafe.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "flor-rosa-clara",
@@ -508,7 +548,8 @@
       "categoria": "Flores",
       "tipo": "imagen",
       "imagen": "assets/parches/flores/flor-rosa-clara.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "flor-verde",
@@ -516,7 +557,8 @@
       "categoria": "Flores",
       "tipo": "imagen",
       "imagen": "assets/parches/flores/flor-verde.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "flor-amarilla",
@@ -524,7 +566,8 @@
       "categoria": "Flores",
       "tipo": "imagen",
       "imagen": "assets/parches/flores/flor-amarilla.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "flor-roja",
@@ -532,7 +575,8 @@
       "categoria": "Flores",
       "tipo": "imagen",
       "imagen": "assets/parches/flores/flor-roja.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "flor-lila",
@@ -540,7 +584,8 @@
       "categoria": "Flores",
       "tipo": "imagen",
       "imagen": "assets/parches/flores/flor-lila.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "flor-rosa",
@@ -548,7 +593,8 @@
       "categoria": "Flores",
       "tipo": "imagen",
       "imagen": "assets/parches/flores/flor-rosa.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "flor-mini-lila",
@@ -556,7 +602,8 @@
       "categoria": "Flores",
       "tipo": "imagen",
       "imagen": "assets/parches/flores/flor-mini-lila.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "cerezas-lentejuela",
@@ -564,7 +611,8 @@
       "categoria": "Frutas",
       "tipo": "imagen",
       "imagen": "assets/parches/frutas/cerezas-lentejuela.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "banana",
@@ -572,7 +620,8 @@
       "categoria": "Frutas",
       "tipo": "imagen",
       "imagen": "assets/parches/frutas/banana.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "pina-gafas",
@@ -580,7 +629,8 @@
       "categoria": "Frutas",
       "tipo": "imagen",
       "imagen": "assets/parches/frutas/pina-gafas.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "aguacate",
@@ -588,7 +638,8 @@
       "categoria": "Frutas",
       "tipo": "imagen",
       "imagen": "assets/parches/frutas/aguacate.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "fresas",
@@ -596,7 +647,8 @@
       "categoria": "Frutas",
       "tipo": "imagen",
       "imagen": "assets/parches/frutas/fresas.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "sandia-lentejuela",
@@ -604,7 +656,8 @@
       "categoria": "Frutas",
       "tipo": "imagen",
       "imagen": "assets/parches/frutas/sandia-lentejuela.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "gato-taza",
@@ -612,7 +665,8 @@
       "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/gatos/gato-taza.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "gato-libros",
@@ -620,7 +674,8 @@
       "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/gatos/gato-libros.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "gato-cupcake",
@@ -628,7 +683,8 @@
       "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/gatos/gato-cupcake.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "huellita-gato",
@@ -636,7 +692,8 @@
       "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/gatos/huellita-gato.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "gato-abrazo",
@@ -644,7 +701,8 @@
       "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/gatos/gato-abrazo.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "gato-donut",
@@ -652,7 +710,8 @@
       "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/gatos/gato-donut.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     },
     {
       "id": "gato-saludo",
@@ -660,7 +719,8 @@
       "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/gatos/gato-saludo.png",
-      "defaultSize": 60
+      "defaultSize": 60,
+      "grupo": "detalles"
     }
   ]
 }

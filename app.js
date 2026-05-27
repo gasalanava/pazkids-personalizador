@@ -9,6 +9,7 @@ const S = {
   selected: null,
   counter: 1,
   drag: null,
+  activeGroup: 'protagonistas',
   activeCat: null,
   activeColl: null,
   designName: '',
@@ -41,6 +42,7 @@ const D = {
   collection: $('#collection'),
   letterPreview: $('#letterPreview'),
   name: $('#name'),
+  groupTabs: $('#groupTabs'),
   tabs: $('#tabs'),
   grid: $('#patchGrid'),
   summary: $('#summary'),
@@ -72,12 +74,14 @@ async function init() {
   try {
     S.cat = await (await fetch('catalogo.json', { cache: 'no-store' })).json();
     S.activeColl = (S.cat.letterCollections.find(collection => collection.principal) || S.cat.letterCollections[0]).id;
-    S.activeCat = patchCategories()[0] || null;
+    S.activeGroup = 'protagonistas';
+    S.activeCat = patchCategories(S.activeGroup)[0] || patchCategories('detalles')[0] || null;
     D.logo.src = S.cat.brand.logo;
 
     bind();
     renderSelectors();
     renderLetterPreview();
+    renderGroups();
     renderCats();
     renderGrid();
     render();
@@ -132,7 +136,13 @@ function coll(id = S.activeColl) { return S.cat.letterCollections.find(collectio
 function item(id) { return S.cat.patches.find(patch => patch.id === id); }
 function imgPath(patch) { return patch.kind === 'letter' ? coll(patch.collectionId)?.letters[patch.letter] : item(patch.catalogId)?.imagen; }
 function nameOf(patch) { return patch.kind === 'letter' ? `Letra ${patch.letter}` : (item(patch.catalogId)?.nombre || 'Parche'); }
-function patchCategories() { return [...new Set(S.cat.patches.map(patch => patch.categoria))]; }
+function patchGroup(patch) {
+  return patch.grupo || (((patch.defaultSize || 0) <= 70) ? 'detalles' : 'protagonistas');
+}
+
+function patchCategories(group = S.activeGroup) {
+  return [...new Set(S.cat.patches.filter(patch => patchGroup(patch) === group).map(patch => patch.categoria))];
+}
 
 function letterAnchor(view = S.view) {
   // Zona segura del nombre. En espalda debe nacer en la franja visual
@@ -260,9 +270,34 @@ function renderLetterPreview() {
   });
 }
 
+function renderGroups() {
+  D.groupTabs.innerHTML = '';
+  const groups = [
+    { id: 'protagonistas', label: 'Parches protagonistas' },
+    { id: 'detalles', label: 'Detalles pequeños' }
+  ];
+
+  groups.forEach(group => {
+    const button = document.createElement('button');
+    button.textContent = group.label;
+    button.type = 'button';
+    button.className = group.id === S.activeGroup ? 'active' : '';
+    button.onclick = () => {
+      S.activeGroup = group.id;
+      const categories = patchCategories(group.id);
+      S.activeCat = categories.includes(S.activeCat) ? S.activeCat : (categories[0] || null);
+      renderGroups();
+      renderCats();
+      renderGrid();
+    };
+    D.groupTabs.appendChild(button);
+  });
+}
+
 function renderCats() {
   D.tabs.innerHTML = '';
-  patchCategories().forEach(category => {
+  const categories = patchCategories(S.activeGroup);
+  categories.forEach(category => {
     const button = document.createElement('button');
     button.textContent = category;
     button.type = 'button';
@@ -280,7 +315,7 @@ function renderGrid() {
   D.grid.innerHTML = '';
   if (!S.activeCat) return;
   S.cat.patches
-    .filter(patch => patch.categoria === S.activeCat)
+    .filter(patch => patchGroup(patch) === S.activeGroup && patch.categoria === S.activeCat)
     .forEach(patch => D.grid.appendChild(card(patch.imagen, patch.nombre, () => addCatalog(patch.id), 'detail-card')));
 }
 

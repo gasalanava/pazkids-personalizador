@@ -193,6 +193,7 @@ img {
 }
 
 .switch button,
+.group-tabs button,
 .tabs button {
   border-radius: 999px;
   padding: 10px 14px;
@@ -205,6 +206,7 @@ img {
 }
 
 .switch button.active,
+.group-tabs button.active,
 .tabs button.active {
   color: #fff;
   background: linear-gradient(135deg, var(--mint), var(--peach));
@@ -328,6 +330,22 @@ label {
   font-size: .86rem;
   line-height: 1.4;
   margin: 10px 0 0;
+}
+
+.group-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 4px;
+  margin: 10px 0 8px;
+  background: #f6f2f3;
+  border-radius: 999px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.group-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .tabs,

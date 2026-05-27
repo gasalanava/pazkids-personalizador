@@ -397,6 +397,270 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores/flores.png",
       "defaultSize": 160
+    },
+    {
+      "id": "estrella-amarilla",
+      "nombre": "Estrella Amarilla",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-amarilla.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-verde",
+      "nombre": "Estrella Verde",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-verde.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-gris",
+      "nombre": "Estrella Gris",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-gris.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-azul",
+      "nombre": "Estrella Azul",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-azul.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-lentejuela-arcoiris",
+      "nombre": "Estrella Lentejuela Arcoíris",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-arcoiris.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-lentejuela-roja",
+      "nombre": "Estrella Lentejuela Roja",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-roja.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-lentejuela-morada",
+      "nombre": "Estrella Lentejuela Morada",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-morada.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-lentejuela-rosa",
+      "nombre": "Estrella Lentejuela Rosa",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-rosa.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-lentejuela-turquesa",
+      "nombre": "Estrella Lentejuela Turquesa",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-turquesa.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-lentejuela-negra",
+      "nombre": "Estrella Lentejuela Negra",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-negra.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-lentejuela-plateada",
+      "nombre": "Estrella Lentejuela Plateada",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-plateada.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-lentejuela-dorada",
+      "nombre": "Estrella Lentejuela Dorada",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-dorada.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "estrella-lentejuela-cafe",
+      "nombre": "Estrella Lentejuela Café",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-cafe.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "flor-rosa-clara",
+      "nombre": "Flor Rosa Clara",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-rosa-clara.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "flor-verde",
+      "nombre": "Flor Verde",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-verde.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "flor-amarilla",
+      "nombre": "Flor Amarilla",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-amarilla.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "flor-roja",
+      "nombre": "Flor Roja",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-roja.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "flor-lila",
+      "nombre": "Flor Lila",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-lila.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "flor-rosa",
+      "nombre": "Flor Rosa",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-rosa.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "flor-mini-lila",
+      "nombre": "Flor Mini Lila",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-mini-lila.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "cerezas-lentejuela",
+      "nombre": "Cerezas Lentejuela",
+      "categoria": "Frutas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/frutas/cerezas-lentejuela.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "banana",
+      "nombre": "Banana",
+      "categoria": "Frutas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/frutas/banana.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "pina-gafas",
+      "nombre": "Piña con Gafas",
+      "categoria": "Frutas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/frutas/pina-gafas.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "aguacate",
+      "nombre": "Aguacate",
+      "categoria": "Frutas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/frutas/aguacate.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "fresas",
+      "nombre": "Fresas",
+      "categoria": "Frutas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/frutas/fresas.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "sandia-lentejuela",
+      "nombre": "Sandía Lentejuela",
+      "categoria": "Frutas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/frutas/sandia-lentejuela.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "gato-taza",
+      "nombre": "Gato en Taza",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-taza.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "gato-libros",
+      "nombre": "Gato sobre Libros",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-libros.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "gato-cupcake",
+      "nombre": "Gato con Cupcake",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-cupcake.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "huellita-gato",
+      "nombre": "Huellita de Gato",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/huellita-gato.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "gato-abrazo",
+      "nombre": "Gato Abrazo",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-abrazo.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "gato-donut",
+      "nombre": "Gato Donut",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-donut.png",
+      "defaultSize": 60
+    },
+    {
+      "id": "gato-saludo",
+      "nombre": "Gato Saludo",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-saludo.png",
+      "defaultSize": 60
     }
   ]
 }

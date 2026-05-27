@@ -20,7 +20,10 @@ const S = {
   controlsOpen: false,
   draggedSinceDown: false,
   scrollLockY: 0,
-  pageLocked: false
+  pageLocked: false,
+  dragStarted: false,
+  dragStartClient: null,
+  dragThreshold: 10
 };
 
 const D = {
@@ -136,7 +139,7 @@ function letterAnchor(view = S.view) {
   // costura horizontal de la espalda. Se bajó respecto de la versión
   // anterior porque las letras estaban quedando sobre el cuello.
   return view === 'back'
-    ? { x: 405, y: 395 }
+    ? { x: 405, y: 448 }
     : { x: 405, y: 330 };
 }
 
@@ -399,7 +402,11 @@ function createName() {
   }
 
   S.designName = clean;
+  D.name.blur();
   render();
+  setTimeout(() => {
+    D.stage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, 80);
   toast(`${created} letras agregadas en ${viewLabel(view)}.`);
 }
 
@@ -441,36 +448,33 @@ function getPatch(id) {
 }
 
 function down(event) {
-  event.preventDefault();
-  event.stopPropagation();
-
   const id = event.currentTarget.dataset.id;
   const patch = getPatch(id);
   if (!patch) return;
 
+  // Primer toque: selecciona. No bloquea la página ni muestra la caneca todavía.
+  // El arrastre empieza solo si el dedo se mueve lo suficiente.
+  event.stopPropagation();
+
   const position = point(event);
-  const wasSelected = S.selected === id;
   S.selected = id;
   S.draggedSinceDown = false;
+  S.dragStarted = false;
+  S.dragStartClient = { clientX: event.clientX, clientY: event.clientY };
+  S.trashHot = false;
 
-  // Si empieza un nuevo parche, limpiamos punteros anteriores. Si llega un
-  // segundo dedo sobre el mismo parche, conservamos el primero para permitir
-  // pellizcar/girar.
   if (!S.gesture || S.gesture.id !== id) {
     S.pointers.clear();
   }
   S.pointers.set(event.pointerId, position);
 
   startGestureForSelected(id, event.pointerId);
-  showTrash(true, false);
+  showTrash(false, false);
 
-  // Capturamos desde el SVG, no desde el nodo que se vuelve a pintar, para
-  // que el dedo no se quede "pegado" si el DOM cambia durante el movimiento.
   try { D.svg.setPointerCapture(event.pointerId); } catch {}
 
-  // No repintamos el parche al iniciar el toque. En móvil, reconstruir
-  // el nodo justo al tocarlo puede hacer que el dedo se sienta pegado o
-  // que el navegador confunda el gesto. El borde/menú se actualiza al soltar.
+  // Mostramos selección/controles sin mover todavía.
+  renderItems();
   renderSummary();
 }
 
@@ -510,24 +514,50 @@ function startGestureForSelected(id, primaryPointerId) {
 
 function move(event) {
   if (!S.gesture || !S.pointers.has(event.pointerId)) return;
-  if (!S.pageLocked) lockPageWhileDragging(true);
+
+  const patch = getPatch(S.gesture.id);
+  if (!patch) return;
+
+  const nextPoint = point(event);
+
+  // Si aún no hay arrastre real, no bloqueamos la página. Un toque corto solo selecciona.
+  if (!S.dragStarted && S.pointers.size < 2) {
+    const origin = S.dragStartClient || { clientX: event.clientX, clientY: event.clientY };
+    const moved = Math.hypot(event.clientX - origin.clientX, event.clientY - origin.clientY);
+    if (moved < S.dragThreshold) {
+      S.pointers.set(event.pointerId, nextPoint);
+      return;
+    }
+    S.dragStarted = true;
+    S.draggedSinceDown = true;
+    showTrash(true, false);
+    if (!S.pageLocked) lockPageWhileDragging(true);
+  }
+
+  // Con dos dedos se entra inmediatamente en transformación.
+  if (S.pointers.size >= 2 && !S.dragStarted) {
+    S.dragStarted = true;
+    S.draggedSinceDown = true;
+    showTrash(false, false);
+    if (!S.pageLocked) lockPageWhileDragging(true);
+  }
+
   event.preventDefault();
   event.stopPropagation();
 
-  S.pointers.set(event.pointerId, point(event));
-  const patch = getPatch(S.gesture.id);
-  if (!patch) return;
+  S.pointers.set(event.pointerId, nextPoint);
 
   if (S.pointers.size >= 2) {
     if (S.gesture.mode !== 'transform') startGestureForSelected(patch.id, event.pointerId);
     applyTransformGesture(patch);
+    showTrash(false, false);
   } else {
     if (S.gesture.mode !== 'move') startGestureForSelected(patch.id, event.pointerId);
     applyMoveGesture(patch, event.pointerId);
+    updateTrashHot(currentClientPoint());
   }
 
   S.draggedSinceDown = true;
-  updateTrashHot(currentClientPoint());
   updateRenderedPatch(patch);
   renderSummary();
 }
@@ -605,11 +635,15 @@ function currentClientPoint() {
 
 function up(event) {
   if (!S.gesture) return;
-  event.preventDefault();
-  event.stopPropagation();
 
   const endedPoint = S.pointers.get(event.pointerId) || point(event);
   const activeId = S.gesture.id;
+  const wasDragging = S.dragStarted || S.pointers.size >= 2;
+
+  if (wasDragging) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
 
   try { D.svg.releasePointerCapture(event.pointerId); } catch {}
   S.pointers.delete(event.pointerId);
@@ -620,9 +654,11 @@ function up(event) {
     return;
   }
 
-  const shouldDelete = isPointInTrash(endedPoint) || S.trashHot;
+  const shouldDelete = wasDragging && (isPointInTrash(endedPoint) || S.trashHot);
   S.gesture = null;
   S.pointers.clear();
+  S.dragStarted = false;
+  S.dragStartClient = null;
   lockPageWhileDragging(false);
   showTrash(false, false);
 
@@ -634,12 +670,14 @@ function up(event) {
     return;
   }
 
+  // Si fue toque corto, solo queda seleccionado.
   renderItems();
   renderSummary();
 }
 
+
 function preventTouchScrollWhileDragging(event) {
-  if (S.gesture) event.preventDefault();
+  if (S.gesture && S.dragStarted) event.preventDefault();
 }
 
 function lockPageWhileDragging(lock) {
@@ -690,7 +728,7 @@ function updateTrashHot(clientPoint) {
 function isPointInTrash(clientPoint) {
   if (!D.trash || !clientPoint) return false;
   const rect = D.trash.getBoundingClientRect();
-  const margin = 14;
+  const margin = window.matchMedia('(max-width: 720px)').matches ? 70 : 28;
   return clientPoint.clientX >= rect.left - margin &&
     clientPoint.clientX <= rect.right + margin &&
     clientPoint.clientY >= rect.top - margin &&
@@ -702,6 +740,8 @@ function cancelActiveGesture() {
   if (!S.gesture) return;
   S.gesture = null;
   S.pointers.clear();
+  S.dragStarted = false;
+  S.dragStartClient = null;
   lockPageWhileDragging(false);
   showTrash(false, false);
   renderItems();
@@ -767,7 +807,10 @@ function otherView() {
 
 function renderSummary() {
   if (!S.patches.length) {
-    D.summary.textContent = 'Aún no has agregado parches.';
+    if (D.summary) {
+      D.summary.hidden = true;
+      D.summary.textContent = '';
+    }
     return;
   }
 
@@ -776,7 +819,10 @@ function renderSummary() {
   const current = selected();
   const editing = current ? nameOf(current) : `la vista ${S.view === 'front' ? 'frontal' : 'trasera'}`;
 
-  D.summary.innerHTML = `Tu chaqueta tiene <strong>${S.patches.length}</strong> detalles: <strong>${frontCount}</strong> al frente y <strong>${backCount}</strong> en la espalda. Ahora estás editando: <strong>${esc(editing)}</strong>.`;
+  if (D.summary) {
+    D.summary.hidden = true;
+    D.summary.innerHTML = `Tu chaqueta tiene <strong>${S.patches.length}</strong> detalles: <strong>${frontCount}</strong> al frente y <strong>${backCount}</strong> en la espalda. Ahora estás editando: <strong>${esc(editing)}</strong>.`;
+  }
 }
 
 function clearAll() {

@@ -1041,3 +1041,90 @@ html.dragging-patch .node * {
     width: 100%;
   }
 }
+
+
+/* === Ajuste: botón de reinicio en la vista previa y resumen visual oculto === */
+.design-summary,
+#summary[hidden] {
+  display: none !important;
+}
+
+.stage-card {
+  position: relative;
+}
+
+.reset-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .reset-top {
+    justify-self: end;
+    align-self: center;
+  }
+
+  .summary .custom-note {
+    margin-bottom: 14px !important;
+  }
+}
+
+
+/* === Consolidado 2026-05: tacto natural, caneca solo al arrastrar y zona segura === */
+.stage,
+#svg {
+  touch-action: pan-y !important;
+}
+
+.node,
+.node *,
+.node .hit-rect {
+  touch-action: none !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+
+html.dragging-patch,
+body.dragging-patch {
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+  touch-action: none !important;
+}
+
+body.dragging-patch {
+  max-width: 100vw !important;
+}
+
+html.dragging-patch .stage,
+html.dragging-patch #svg,
+html.dragging-patch .node,
+html.dragging-patch .node * {
+  touch-action: none !important;
+}
+
+@media (max-width: 720px) {
+  .trash-zone {
+    position: fixed !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: calc(18px + env(safe-area-inset-bottom)) !important;
+    z-index: 9998 !important;
+    display: flex !important;
+    width: min(390px, calc(100vw - 24px)) !important;
+    min-height: 64px !important;
+    margin: 0 !important;
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+    pointer-events: none;
+  }
+
+  .trash-zone.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .trash-zone.hot {
+    transform: translateX(-50%) translateY(0) scale(1.07);
+  }
+}

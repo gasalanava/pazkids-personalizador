@@ -306,7 +306,7 @@ function card(path, alt, onClick, extraClass = '') {
 
 function categoryDefaultSize(catalogItem) {
   const cat = (catalogItem.categoria || '').toLowerCase();
-  if (cat.includes('estrella')) return 74;
+  if (cat.includes('estrella')) return 58;
   if (cat.includes('flores')) return 160;
   return 205;
 }

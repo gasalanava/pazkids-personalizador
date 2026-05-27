@@ -14,7 +14,7 @@
       "id": "letras-de-colores",
       "nombre": "Letras de colores",
       "principal": true,
-      "defaultSize": 62,
+      "defaultSize": 58,
       "letters": {
         "A": "assets/parches/letras/letras-de-colores/A.png",
         "B": "assets/parches/letras/letras-de-colores/B.png",
@@ -48,7 +48,7 @@
       "id": "azul",
       "nombre": "Azules",
       "principal": false,
-      "defaultSize": 62,
+      "defaultSize": 58,
       "letters": {
         "A": "assets/parches/letras/azul/A.png",
         "B": "assets/parches/letras/azul/B.png",
@@ -82,7 +82,7 @@
       "id": "negras",
       "nombre": "Negras",
       "principal": false,
-      "defaultSize": 62,
+      "defaultSize": 58,
       "letters": {
         "A": "assets/parches/letras/negras/A.png",
         "B": "assets/parches/letras/negras/B.png",
@@ -116,7 +116,7 @@
       "id": "rojas-v2",
       "nombre": "Rojas",
       "principal": false,
-      "defaultSize": 62,
+      "defaultSize": 58,
       "letters": {
         "A": "assets/parches/letras/rojas-v2/A.png",
         "B": "assets/parches/letras/rojas-v2/B.png",
@@ -150,7 +150,7 @@
       "id": "rosadas-v1",
       "nombre": "Rosadas",
       "principal": false,
-      "defaultSize": 62,
+      "defaultSize": 58,
       "letters": {
         "A": "assets/parches/letras/rosadas-v1/A.png",
         "B": "assets/parches/letras/rosadas-v1/B.png",
@@ -356,7 +356,7 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-arcoiris.png",
-      "defaultSize": 74
+      "defaultSize": 58
     },
     {
       "id": "estrella-dorada",
@@ -364,7 +364,7 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-dorada.png",
-      "defaultSize": 74
+      "defaultSize": 58
     },
     {
       "id": "estrella-naranja",
@@ -372,7 +372,7 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-naranja.png",
-      "defaultSize": 74
+      "defaultSize": 58
     },
     {
       "id": "estrella-roja",
@@ -380,7 +380,7 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-roja.png",
-      "defaultSize": 74
+      "defaultSize": 58
     },
     {
       "id": "estrella-rosa",
@@ -388,7 +388,7 @@
       "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-rosa.png",
-      "defaultSize": 74
+      "defaultSize": 58
     },
     {
       "id": "flores",

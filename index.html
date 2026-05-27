@@ -14,20 +14,21 @@
   </header>
 
   <main class="app">
-    <section class="card intro">
-      <strong>Cómo funciona:</strong> elige frente o espalda y juega con tu hijo a crear una chaqueta única. Agreguen letras y parches de colores, muévanlos con el dedo y ubíquenlos donde más les gusten. Pueden probar con su nombre, su nickname o parches especiales para hacerla única.
-    </section>
+    <details class="card intro how-it-works">
+      <summary><span class="how-icon">✨</span> Cómo funciona</summary>
+      <p>Elige frente o espalda y juega con tu hijo a crear una chaqueta única. Agreguen letras y parches de colores, mézclenlos como quieran, muévanlos con el dedo y ubíquenlos donde más les gusten. Si quieren cambiar algo, arrástrenlo a la caneca para eliminarlo y vuelvan a empezar las veces que quieran. Prueben con su nombre, su nickname o parches especiales para hacerla única.</p>
+    </details>
 
     <section class="grid">
       <section class="card stage-card">
         <div class="head stage-head">
           <div>
-            <span>Vista previa de tu chaqueta</span>
-            <h2>Aquí verás cómo va tomando forma la chaqueta de sus sueños.</h2>
+            <span>ASÍ VA QUEDANDO TU CHAQUETA</span>
           </div>
+          <button id="clearTop" class="reset-top" type="button" title="Empezar de nuevo" aria-label="Empezar de nuevo">↻</button>
           <div class="switch" aria-label="Seleccionar vista de la chaqueta">
-            <button id="frontBtn" class="active" type="button">Frente</button>
-            <button id="backBtn" type="button">Espalda</button>
+            <button id="backBtn" class="active" type="button">Espalda</button>
+            <button id="frontBtn" type="button">Frente</button>
           </div>
         </div>
 
@@ -77,11 +78,13 @@
             <div>
               <span>PARCHES DE LETRAS</span>
               <h2>Crea su nombre o nickname</h2>
-              <p class="section-instruction">Elige letras de colores y ubícalas sobre la chaqueta.</p>
             </div>
           </div>
 
-          <label for="collection">Colección de letras</label>
+          <label for="collection" class="stacked-label">
+            <span>Colección de letras</span>
+            <small>Combínalas como quieras</small>
+          </label>
           <select id="collection" class="input"></select>
 
           <div id="letterPreview" class="letter-preview" aria-label="Letras disponibles"></div>
@@ -91,7 +94,6 @@
             <input id="name" class="input" maxlength="16" placeholder="Ej: ANTONIA" autocomplete="off" />
             <button id="createName" class="primary" type="button">Crear nombre</button>
           </div>
-          <p class="note">El nombre se crea con letras-parche independientes en la vista que tengas seleccionada arriba.</p>
         </section>
 
         <section class="card patches-card">
@@ -110,14 +112,13 @@
     <section class="card summary">
       <div class="head compact text-head">
         <div>
-          <span>TU DISEÑO</span>
-          <h2>Resumen de tu proyecto</h2>
+          <span>TU DISEÑO ESTÁ LISTO</span>
         </div>
       </div>
+      <p class="custom-note">¿No encontraste el parche que soñabas? Cuéntanos tu idea y en PazKids miramos cómo hacerlo parte de tu chaqueta.</p>
       <p id="summary">Aún no has agregado parches.</p>
       <div class="actions">
-        <button id="download" type="button">Guardar imagen del diseño</button>
-        <button id="clear" type="button">Empezar de nuevo</button>
+        <button id="download" type="button">Guardar imágenes del diseño</button>
         <button id="whatsapp" class="wa" type="button">Cotiza tu diseño por WhatsApp</button>
       </div>
     </section>

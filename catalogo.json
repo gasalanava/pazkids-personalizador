@@ -183,6 +183,38 @@
   ],
   "patches": [
     {
+      "id": "dino-gris",
+      "nombre": "Dino Gris",
+      "categoria": "Dinosaurios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dinosaurios/dino-gris.png",
+      "defaultSize": 205
+    },
+    {
+      "id": "dino-naranja",
+      "nombre": "Dino Naranja",
+      "categoria": "Dinosaurios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dinosaurios/dino-naranja.png",
+      "defaultSize": 205
+    },
+    {
+      "id": "dino-rosa",
+      "nombre": "Dino Rosa",
+      "categoria": "Dinosaurios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dinosaurios/dino-rosa.png",
+      "defaultSize": 205
+    },
+    {
+      "id": "dino-verde",
+      "nombre": "Dino Verde",
+      "categoria": "Dinosaurios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dinosaurios/dino-verde.png",
+      "defaultSize": 205
+    },
+    {
       "id": "abeja",
       "nombre": "Abeja",
       "categoria": "Animales",
@@ -231,108 +263,12 @@
       "defaultSize": 190
     },
     {
-      "id": "dino-gris",
-      "nombre": "Dino Gris",
-      "categoria": "Dinosaurios",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dinosaurios/dino-gris.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "dino-naranja",
-      "nombre": "Dino Naranja",
-      "categoria": "Dinosaurios",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dinosaurios/dino-naranja.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "dino-rosa",
-      "nombre": "Dino Rosa",
-      "categoria": "Dinosaurios",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dinosaurios/dino-rosa.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "dino-verde",
-      "nombre": "Dino Verde",
-      "categoria": "Dinosaurios",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dinosaurios/dino-verde.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "cupcake-gris",
-      "nombre": "Cupcake Gris",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces/cupcake-gris.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "cupcake-rosa",
-      "nombre": "Cupcake Rosa",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces/cupcake-rosa.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "estrella-arcoiris",
-      "nombre": "Estrella Arcoiris",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-arcoiris.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "estrella-dorada",
-      "nombre": "Estrella Dorada",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-dorada.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "estrella-naranja",
-      "nombre": "Estrella Naranja",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-naranja.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "estrella-roja",
-      "nombre": "Estrella Roja",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-roja.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "estrella-rosa",
-      "nombre": "Estrella Rosa",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-rosa.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "flores",
-      "nombre": "Flores",
-      "categoria": "Flores",
-      "tipo": "imagen",
-      "imagen": "assets/parches/flores/flores.png",
-      "defaultSize": 190
-    },
-    {
       "id": "gato-dorado",
       "nombre": "Gato Dorado",
       "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/gatos/gato-dorado.png",
-      "defaultSize": 190
+      "defaultSize": 205
     },
     {
       "id": "gato-plateado",
@@ -340,23 +276,7 @@
       "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/gatos/gato-plateado.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "mano-turca",
-      "nombre": "Mano Turca",
-      "categoria": "Místicos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/misticos/mano-turca.png",
-      "defaultSize": 190
-    },
-    {
-      "id": "ojo-turco",
-      "nombre": "Ojo Turco",
-      "categoria": "Místicos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/misticos/ojo-turco.png",
-      "defaultSize": 190
+      "defaultSize": 205
     },
     {
       "id": "unicornio-colores",
@@ -364,7 +284,7 @@
       "categoria": "Unicornios",
       "tipo": "imagen",
       "imagen": "assets/parches/unicornios/unicornio-colores.png",
-      "defaultSize": 190
+      "defaultSize": 205
     },
     {
       "id": "unicornio-pastel",
@@ -372,15 +292,39 @@
       "categoria": "Unicornios",
       "tipo": "imagen",
       "imagen": "assets/parches/unicornios/unicornio-pastel.png",
-      "defaultSize": 190
+      "defaultSize": 205
     },
     {
-      "id": "50",
-      "nombre": "50",
-      "categoria": "Varios",
+      "id": "cupcake-gris",
+      "nombre": "Cupcake Gris",
+      "categoria": "Dulces",
       "tipo": "imagen",
-      "imagen": "assets/parches/varios/50.png",
-      "defaultSize": 190
+      "imagen": "assets/parches/dulces/cupcake-gris.png",
+      "defaultSize": 205
+    },
+    {
+      "id": "cupcake-rosa",
+      "nombre": "Cupcake Rosa",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces/cupcake-rosa.png",
+      "defaultSize": 205
+    },
+    {
+      "id": "mano-turca",
+      "nombre": "Mano Turca",
+      "categoria": "Místicos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/misticos/mano-turca.png",
+      "defaultSize": 205
+    },
+    {
+      "id": "ojo-turco",
+      "nombre": "Ojo Turco",
+      "categoria": "Místicos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/misticos/ojo-turco.png",
+      "defaultSize": 205
     },
     {
       "id": "carro-capota",
@@ -388,7 +332,7 @@
       "categoria": "Vehículos",
       "tipo": "imagen",
       "imagen": "assets/parches/vehiculos/carro-capota.png",
-      "defaultSize": 190
+      "defaultSize": 205
     },
     {
       "id": "cohete-verde",
@@ -396,7 +340,63 @@
       "categoria": "Vehículos",
       "tipo": "imagen",
       "imagen": "assets/parches/vehiculos/cohete-verde.png",
-      "defaultSize": 190
+      "defaultSize": 205
+    },
+    {
+      "id": "50",
+      "nombre": "Vehículo",
+      "categoria": "Vehículos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/varios/50.png",
+      "defaultSize": 205
+    },
+    {
+      "id": "estrella-arcoiris",
+      "nombre": "Estrella Arcoiris",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-arcoiris.png",
+      "defaultSize": 74
+    },
+    {
+      "id": "estrella-dorada",
+      "nombre": "Estrella Dorada",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-dorada.png",
+      "defaultSize": 74
+    },
+    {
+      "id": "estrella-naranja",
+      "nombre": "Estrella Naranja",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-naranja.png",
+      "defaultSize": 74
+    },
+    {
+      "id": "estrella-roja",
+      "nombre": "Estrella Roja",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-roja.png",
+      "defaultSize": 74
+    },
+    {
+      "id": "estrella-rosa",
+      "nombre": "Estrella Rosa",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-rosa.png",
+      "defaultSize": 74
+    },
+    {
+      "id": "flores",
+      "nombre": "Flores",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flores.png",
+      "defaultSize": 160
     }
   ]
 }

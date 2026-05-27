@@ -4,7 +4,7 @@ const VB = { w: 810, h: 1012 };
 
 const S = {
   cat: null,
-  view: 'front',
+  view: 'back',
   patches: [],
   selected: null,
   counter: 1,
@@ -41,6 +41,7 @@ const D = {
   tabs: $('#tabs'),
   grid: $('#patchGrid'),
   summary: $('#summary'),
+  clearTop: $('#clearTop'),
   toast: $('#toast')
 };
 
@@ -135,7 +136,7 @@ function letterAnchor(view = S.view) {
   // costura horizontal de la espalda. Se bajó respecto de la versión
   // anterior porque las letras estaban quedando sobre el cuello.
   return view === 'back'
-    ? { x: 405, y: 354 }
+    ? { x: 405, y: 395 }
     : { x: 405, y: 330 };
 }
 
@@ -300,6 +301,13 @@ function card(path, alt, onClick, extraClass = '') {
   return button;
 }
 
+function categoryDefaultSize(catalogItem) {
+  const cat = (catalogItem.categoria || '').toLowerCase();
+  if (cat.includes('estrella')) return 74;
+  if (cat.includes('flores')) return 160;
+  return 205;
+}
+
 function addCatalog(id) {
   const catalogItem = item(id);
   if (!catalogItem) return;
@@ -312,7 +320,7 @@ function addCatalog(id) {
     view: S.view,
     x: clamp(anchor.x + (numberInView % 3) * 20 - 20, 90, 720),
     y: clamp(anchor.y + (numberInView % 4) * 18 - 18, 120, 900),
-    size: Math.max(catalogItem.defaultSize || 190, 190),
+    size: catalogItem.defaultSize || categoryDefaultSize(catalogItem),
     rotation: 0
   };
   S.patches.push(patch);
@@ -454,7 +462,6 @@ function down(event) {
   S.pointers.set(event.pointerId, position);
 
   startGestureForSelected(id, event.pointerId);
-  lockPageWhileDragging(true);
   showTrash(true, false);
 
   // Capturamos desde el SVG, no desde el nodo que se vuelve a pintar, para
@@ -503,6 +510,7 @@ function startGestureForSelected(id, primaryPointerId) {
 
 function move(event) {
   if (!S.gesture || !S.pointers.has(event.pointerId)) return;
+  if (!S.pageLocked) lockPageWhileDragging(true);
   event.preventDefault();
   event.stopPropagation();
 
@@ -809,9 +817,33 @@ function whatsapp() {
 }
 
 async function download() {
+  if (!S.patches.length) {
+    toast('Primero crea un diseño para guardar las imágenes.');
+    return;
+  }
+
+  const originalView = S.view;
   S.selected = null;
-  const used = [S.cat.jackets[S.view], ...S.patches.filter(patch => patch.view === S.view).map(imgPath)];
-  toast('Preparando imagen para guardar...');
+  toast('Preparando imágenes de frente y espalda...');
+
+  try {
+    await exportView('front');
+    await wait(450);
+    await exportView('back');
+    S.view = originalView;
+    render();
+    toast('Imágenes guardadas. Adjunta frente y espalda en WhatsApp.');
+  } catch (error) {
+    console.error(error);
+    S.view = originalView;
+    render();
+    toast('No pude guardar las imágenes. Intenta de nuevo.');
+  }
+}
+
+async function exportView(view) {
+  S.view = view;
+  const used = [S.cat.jackets[view], ...S.patches.filter(patch => patch.view === view).map(imgPath)];
   await ensureCached(used);
   render();
   await new Promise(resolve => requestAnimationFrame(resolve));
@@ -844,19 +876,17 @@ async function download() {
     const downloadUrl = URL.createObjectURL(png);
     const a = document.createElement('a');
     a.href = downloadUrl;
-    a.download = `pazkids-chaqueta-${S.view}.png`;
+    a.download = `pazkids-chaqueta-${view === 'front' ? 'frente' : 'espalda'}.png`;
     document.body.appendChild(a);
     a.click();
     a.remove();
     setTimeout(() => URL.revokeObjectURL(downloadUrl), 1000);
-    toast('Imagen guardada. Adjunta ese archivo en WhatsApp.');
-  } catch (error) {
-    console.error(error);
-    toast('No pude guardar la imagen.');
   } finally {
     URL.revokeObjectURL(url);
   }
 }
+
+function wait(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
 function loadImg(url) {
   return new Promise((resolve, reject) => {
@@ -919,7 +949,7 @@ function bind() {
   $('#backLayer').onclick = () => layer('back');
   $('#otherView').onclick = otherView;
   $('#del').onclick = del;
-  $('#clear').onclick = clearAll;
+  if (D.clearTop) D.clearTop.onclick = clearAll;
   $('#whatsapp').onclick = whatsapp;
   $('#download').onclick = download;
 }

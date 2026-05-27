@@ -137,9 +137,9 @@ function patchCategories() { return [...new Set(S.cat.patches.map(patch => patch
 function letterAnchor(view = S.view) {
   // Zona segura del nombre. En espalda debe nacer en la franja visual
   // entre el cuello y la costura horizontal superior: no sobre el cuello,
-  // no en el panel central. Línea segura para que nazca antes de la costura.
+  // no en el panel central. Línea segura ligeramente arriba de la costura.
   return view === 'back'
-    ? { x: 405, y: 420 }
+    ? { x: 405, y: 375 }
     : { x: 405, y: 340 };
 }
 

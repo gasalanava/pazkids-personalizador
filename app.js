@@ -135,12 +135,12 @@ function nameOf(patch) { return patch.kind === 'letter' ? `Letra ${patch.letter}
 function patchCategories() { return [...new Set(S.cat.patches.map(patch => patch.categoria))]; }
 
 function letterAnchor(view = S.view) {
-  // Zona correcta para el nombre: debajo del cuello y antes de la
-  // costura horizontal de la espalda. Se bajó respecto de la versión
-  // anterior porque las letras estaban quedando sobre el cuello.
+  // Zona segura del nombre. En espalda debe nacer en la franja visual
+  // entre el cuello y la costura horizontal superior: no sobre el cuello,
+  // sino apoyado justo encima de esa costura.
   return view === 'back'
-    ? { x: 405, y: 448 }
-    : { x: 405, y: 330 };
+    ? { x: 405, y: 492 }
+    : { x: 405, y: 340 };
 }
 
 function detailAnchor(view = S.view) {

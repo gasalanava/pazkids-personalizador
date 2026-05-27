@@ -171,9 +171,9 @@ img {
 
 .text-head h2 {
   color: #2e2d34;
-  font-size: clamp(1.18rem, 3vw, 1.5rem);
+  font-size: clamp(.84rem, 2.2vw, .96rem);
   font-weight: 850;
-  line-height: 1.15;
+  line-height: 1.18;
 }
 
 .section-instruction {

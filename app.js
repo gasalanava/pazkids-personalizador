@@ -139,7 +139,7 @@ function letterAnchor(view = S.view) {
   // entre el cuello y la costura horizontal superior: no sobre el cuello,
   // no en el panel central. Línea segura ligeramente arriba de la costura.
   return view === 'back'
-    ? { x: 405, y: 330 }
+    ? { x: 405, y: 322 }
     : { x: 405, y: 340 };
 }
 

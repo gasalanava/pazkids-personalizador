@@ -725,7 +725,7 @@
     {
       "id": "det-animales-unicornios-01-perro-corgi-asomado",
       "nombre": "Perro Corgi Asomado",
-      "categoria": "Animales y unicornios",
+      "categoria": "Mascotas y huellas",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/01_perro_corgi_asomado.png",
       "defaultSize": 60,
@@ -734,7 +734,7 @@
     {
       "id": "det-animales-unicornios-02-unicornio-cabeza-arcoiris",
       "nombre": "Unicornio Cabeza Arcoiris",
-      "categoria": "Animales y unicornios",
+      "categoria": "Unicornios",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/02_unicornio_cabeza_arcoiris.png",
       "defaultSize": 60,
@@ -743,7 +743,7 @@
     {
       "id": "det-animales-unicornios-03-unicornio-cabeza-pequena",
       "nombre": "Unicornio Cabeza Pequena",
-      "categoria": "Animales y unicornios",
+      "categoria": "Unicornios",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/03_unicornio_cabeza_pequena.png",
       "defaultSize": 60,
@@ -752,7 +752,7 @@
     {
       "id": "det-animales-unicornios-04-perro-blanco-asomado",
       "nombre": "Perro Blanco Asomado",
-      "categoria": "Animales y unicornios",
+      "categoria": "Mascotas y huellas",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/04_perro_blanco_asomado.png",
       "defaultSize": 60,
@@ -761,7 +761,7 @@
     {
       "id": "det-animales-unicornios-05-pegaso-blanco",
       "nombre": "Pegaso Blanco",
-      "categoria": "Animales y unicornios",
+      "categoria": "Unicornios",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/05_pegaso_blanco.png",
       "defaultSize": 60,
@@ -770,7 +770,7 @@
     {
       "id": "det-animales-unicornios-06-unicornio-sentado",
       "nombre": "Unicornio Sentado",
-      "categoria": "Animales y unicornios",
+      "categoria": "Unicornios",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/06_unicornio_sentado.png",
       "defaultSize": 60,
@@ -779,7 +779,7 @@
     {
       "id": "det-animales-unicornios-07-perro-husky-asomado",
       "nombre": "Perro Husky Asomado",
-      "categoria": "Animales y unicornios",
+      "categoria": "Mascotas y huellas",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/07_perro_husky_asomado.png",
       "defaultSize": 60,
@@ -788,7 +788,7 @@
     {
       "id": "det-animales-unicornios-08-perro-pug-asomado",
       "nombre": "Perro Pug Asomado",
-      "categoria": "Animales y unicornios",
+      "categoria": "Mascotas y huellas",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/08_perro_pug_asomado.png",
       "defaultSize": 60,
@@ -797,7 +797,7 @@
     {
       "id": "det-animales-unicornios-09-perro-bulldog-asomado",
       "nombre": "Perro Bulldog Asomado",
-      "categoria": "Animales y unicornios",
+      "categoria": "Mascotas y huellas",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/09_perro_bulldog_asomado.png",
       "defaultSize": 60,
@@ -806,7 +806,7 @@
     {
       "id": "det-animales-unicornios-10-perro-border-collie-asomado",
       "nombre": "Perro Border Collie Asomado",
-      "categoria": "Animales y unicornios",
+      "categoria": "Mascotas y huellas",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/10_perro_border_collie_asomado.png",
       "defaultSize": 60,
@@ -815,7 +815,7 @@
     {
       "id": "det-animales-unicornios-11-perro-bulldog-frances-asomado",
       "nombre": "Perro Bulldog Frances Asomado",
-      "categoria": "Animales y unicornios",
+      "categoria": "Mascotas y huellas",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/11_perro_bulldog_frances_asomado.png",
       "defaultSize": 60,
@@ -824,7 +824,7 @@
     {
       "id": "det-animales-unicornios-12-buho-durmiente",
       "nombre": "Buho Durmiente",
-      "categoria": "Animales y unicornios",
+      "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/12_buho_durmiente.png",
       "defaultSize": 60,
@@ -833,7 +833,7 @@
     {
       "id": "det-animales-unicornios-13-gato-negro-cara",
       "nombre": "Gato Negro Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/13_gato_negro_cara.png",
       "defaultSize": 60,
@@ -842,7 +842,7 @@
     {
       "id": "det-animales-unicornios-14-venadito-cara",
       "nombre": "Venadito Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/14_venadito_cara.png",
       "defaultSize": 60,
@@ -851,7 +851,7 @@
     {
       "id": "det-animales-unicornios-15-perro-marron-cara",
       "nombre": "Perro Marron Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Mascotas y huellas",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/15_perro_marron_cara.png",
       "defaultSize": 60,
@@ -860,7 +860,7 @@
     {
       "id": "det-animales-unicornios-16-zorro-cuerpo",
       "nombre": "Zorro Cuerpo",
-      "categoria": "Animales y unicornios",
+      "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/16_zorro_cuerpo.png",
       "defaultSize": 60,
@@ -869,7 +869,7 @@
     {
       "id": "det-animales-unicornios-17-gato-siames-cara",
       "nombre": "Gato Siames Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/17_gato_siames_cara.png",
       "defaultSize": 60,
@@ -878,7 +878,7 @@
     {
       "id": "det-animales-unicornios-18-gato-gris-cara",
       "nombre": "Gato Gris Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/18_gato_gris_cara.png",
       "defaultSize": 60,
@@ -887,7 +887,7 @@
     {
       "id": "det-animales-unicornios-19-gato-menta-cara",
       "nombre": "Gato Menta Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/19_gato_menta_cara.png",
       "defaultSize": 60,
@@ -896,7 +896,7 @@
     {
       "id": "det-animales-unicornios-20-cerdo-rosa-cara",
       "nombre": "Cerdo Rosa Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/20_cerdo_rosa_cara.png",
       "defaultSize": 60,
@@ -905,7 +905,7 @@
     {
       "id": "det-animales-unicornios-21-erizo-cara",
       "nombre": "Erizo Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/21_erizo_cara.png",
       "defaultSize": 60,
@@ -914,7 +914,7 @@
     {
       "id": "det-animales-unicornios-22-jirafa-cara",
       "nombre": "Jirafa Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/22_jirafa_cara.png",
       "defaultSize": 60,
@@ -923,7 +923,7 @@
     {
       "id": "det-animales-unicornios-23-gato-calico-cara",
       "nombre": "Gato Calico Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/23_gato_calico_cara.png",
       "defaultSize": 60,
@@ -932,7 +932,7 @@
     {
       "id": "det-animales-unicornios-24-panda-cara",
       "nombre": "Panda Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/24_panda_cara.png",
       "defaultSize": 60,
@@ -941,7 +941,7 @@
     {
       "id": "det-animales-unicornios-25-gato-negro-manchas-cara",
       "nombre": "Gato Negro Manchas Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/25_gato_negro_manchas_cara.png",
       "defaultSize": 60,
@@ -950,7 +950,7 @@
     {
       "id": "det-animales-unicornios-26-vaca-cara",
       "nombre": "Vaca Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/26_vaca_cara.png",
       "defaultSize": 60,
@@ -959,7 +959,7 @@
     {
       "id": "det-animales-unicornios-27-gato-blanco-cara",
       "nombre": "Gato Blanco Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Gatos",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/27_gato_blanco_cara.png",
       "defaultSize": 60,
@@ -968,7 +968,7 @@
     {
       "id": "det-animales-unicornios-28-vaca-verde-cara",
       "nombre": "Vaca Verde Cara",
-      "categoria": "Animales y unicornios",
+      "categoria": "Animales",
       "tipo": "imagen",
       "imagen": "assets/parches/animales-unicornios-detalle/28_vaca_verde_cara.png",
       "defaultSize": 60,
@@ -1265,7 +1265,7 @@
     {
       "id": "det-dulces-08-sandia",
       "nombre": "Sandia",
-      "categoria": "Dulces",
+      "categoria": "Frutas",
       "tipo": "imagen",
       "imagen": "assets/parches/dulces-detalle/08_sandia.png",
       "defaultSize": 60,
@@ -1643,7 +1643,7 @@
     {
       "id": "det-espacio-02-estrella-dorada-pequena",
       "nombre": "Estrella Dorada Pequena",
-      "categoria": "Espacio",
+      "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/espacio-detalle/02_estrella_dorada_pequena.png",
       "defaultSize": 60,
@@ -1652,7 +1652,7 @@
     {
       "id": "det-espacio-03-frase-the-world-is-yours",
       "nombre": "Frase The World Is Yours",
-      "categoria": "Espacio",
+      "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/espacio-detalle/03_frase_the_world_is_yours.png",
       "defaultSize": 60,
@@ -1814,7 +1814,7 @@
     {
       "id": "det-espacio-21-estrella-dorada",
       "nombre": "Estrella Dorada",
-      "categoria": "Espacio",
+      "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/espacio-detalle/21_estrella_dorada.png",
       "defaultSize": 60,
@@ -1823,7 +1823,7 @@
     {
       "id": "det-espacio-22-estrella-dorada-cruz",
       "nombre": "Estrella Dorada Cruz",
-      "categoria": "Espacio",
+      "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/espacio-detalle/22_estrella_dorada_cruz.png",
       "defaultSize": 60,
@@ -1868,7 +1868,7 @@
     {
       "id": "det-espacio-27-estrella-fugaz-morada",
       "nombre": "Estrella Fugaz Morada",
-      "categoria": "Espacio",
+      "categoria": "Estrellas",
       "tipo": "imagen",
       "imagen": "assets/parches/espacio-detalle/27_estrella_fugaz_morada.png",
       "defaultSize": 60,
@@ -1886,7 +1886,7 @@
     {
       "id": "det-espacio-29-scooter-turquesa",
       "nombre": "Scooter Turquesa",
-      "categoria": "Espacio",
+      "categoria": "Vehículos",
       "tipo": "imagen",
       "imagen": "assets/parches/espacio-detalle/29_scooter_turquesa.png",
       "defaultSize": 60,
@@ -2075,7 +2075,7 @@
     {
       "id": "det-frutas-06-chupeta-redonda-naranja",
       "nombre": "Chupeta Redonda Naranja",
-      "categoria": "Frutas",
+      "categoria": "Dulces",
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/06_chupeta_redonda_naranja.png",
       "defaultSize": 60,
@@ -2372,7 +2372,7 @@
     {
       "id": "det-simbolos-pride-01-emblema-corona-alas-lentejuelas",
       "nombre": "Emblema Corona Alas Lentejuelas",
-      "categoria": "Símbolos y pride",
+      "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/01_emblema_corona_alas_lentejuelas.png",
       "defaultSize": 60,
@@ -2381,7 +2381,7 @@
     {
       "id": "det-simbolos-pride-02-calavera-mexicana-floral",
       "nombre": "Calavera Mexicana Floral",
-      "categoria": "Símbolos y pride",
+      "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/02_calavera_mexicana_floral.png",
       "defaultSize": 60,
@@ -2390,7 +2390,7 @@
     {
       "id": "det-simbolos-pride-03-arcoiris-nubes",
       "nombre": "Arcoiris Nubes",
-      "categoria": "Símbolos y pride",
+      "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/03_arcoiris_nubes.png",
       "defaultSize": 60,
@@ -2399,7 +2399,7 @@
     {
       "id": "det-simbolos-pride-04-corazon-pride-love-is-love",
       "nombre": "Corazon Pride Love Is Love",
-      "categoria": "Símbolos y pride",
+      "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/04_corazon_pride_love_is_love.png",
       "defaultSize": 60,
@@ -2408,7 +2408,7 @@
     {
       "id": "det-simbolos-pride-05-corazon-sagrado-laude",
       "nombre": "Corazon Sagrado Laude",
-      "categoria": "Símbolos y pride",
+      "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/05_corazon_sagrado_laude.png",
       "defaultSize": 60,
@@ -2417,7 +2417,7 @@
     {
       "id": "det-simbolos-pride-06-corona-lentejuelas-negra",
       "nombre": "Corona Lentejuelas Negra",
-      "categoria": "Símbolos y pride",
+      "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/06_corona_lentejuelas_negra.png",
       "defaultSize": 60,
@@ -2426,7 +2426,7 @@
     {
       "id": "det-simbolos-pride-07-trebol-verde",
       "nombre": "Trebol Verde",
-      "categoria": "Símbolos y pride",
+      "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/07_trebol_verde.png",
       "defaultSize": 60,

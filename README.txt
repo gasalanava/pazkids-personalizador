@@ -1,22 +1,22 @@
-Este paquete NO borra los parches anteriores.
-Agrega nuevos parches de tipo detalle y actualiza catalogo.json.
+Corrección de categorías para los parches detalle agregados en v28.
+No borra parches anteriores. Solo corrige la organización del catálogo.
 
-Archivos incluidos:
-- catalogo.json
-- carpeta assets/parches con los nuevos folders de detalle
+Reemplaza únicamente el archivo catalogo.json en tu proyecto.
 
-Categorías nuevas agregadas:
-- Animales y unicornios: 28 parches
-- Corazones: 19 parches
-- Deportes: 6 parches
-- Dulces: 29 parches
-- Emojis y smilies: 19 parches
-- Espacio: 32 parches
-- Flores: 12 parches
-- Frutas: 16 parches
-- Mariposas: 7 parches
-- Mascotas y huellas: 5 parches
-- Náutico y viajes: 10 parches
-- Símbolos y pride: 7 parches
-
-Total de parches nuevos agregados: 190
+Categorías finales de los nuevos parches:
+- Animales: 9
+- Corazones: 19
+- Deportes: 6
+- Dulces: 29
+- Emojis y smilies: 19
+- Espacio: 26
+- Estrellas: 4
+- Flores: 12
+- Frutas: 16
+- Gatos: 7
+- Mariposas: 7
+- Mascotas y huellas: 13
+- Náutico y viajes: 10
+- Otros: 8
+- Unicornios: 4
+- Vehículos: 1

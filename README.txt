@@ -1,22 +1,22 @@
-Corrección de categorías para los parches detalle agregados en v28.
-No borra parches anteriores. Solo corrige la organización del catálogo.
+PazKids v30 - Catálogo ordenado y menú de parches más amigable
 
-Reemplaza únicamente el archivo catalogo.json en tu proyecto.
+Qué corrige:
+- Reorganiza las categorías de detalles con reglas más precisas.
+- Elimina la categoría "Símbolos y pride"; esos elementos quedan como "Otros".
+- La vespa/scooter queda en Vehículos, no en Espacio.
+- Las estrellas de espacio quedan en Estrellas.
+- Los gatos, perros/huellas, unicornios, animales, frutas y dulces quedan separados.
+- La categoría de emojis queda como "Caritas".
+- El catálogo inicia en el primer grupo disponible.
+- Las categorías tienen un orden fijo.
+- Los parches dentro de cada categoría se muestran desde el inicio.
+- En móvil el catálogo ya no se presenta como carrusel horizontal: ahora se ve como una cuadrícula con scroll vertical.
 
-Categorías finales de los nuevos parches:
-- Animales: 9
-- Corazones: 19
-- Deportes: 6
-- Dulces: 29
-- Emojis y smilies: 19
-- Espacio: 26
-- Estrellas: 4
-- Flores: 12
-- Frutas: 16
-- Gatos: 7
-- Mariposas: 7
-- Mascotas y huellas: 13
-- Náutico y viajes: 10
-- Otros: 8
-- Unicornios: 4
-- Vehículos: 1
+Archivos a reemplazar:
+- index.html
+- styles.css
+- app.js
+- catalogo.json
+
+No borra imágenes ni parches anteriores.
+No incluye assets porque ya están cargados desde los paquetes anteriores.

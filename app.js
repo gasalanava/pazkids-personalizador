@@ -50,6 +50,22 @@ const D = {
   toast: $('#toast')
 };
 
+const GROUPS = [
+  { id: 'protagonistas', label: 'Parches protagonistas' },
+  { id: 'detalles', label: 'Detalles pequeños' }
+];
+
+const CATEGORY_ORDER = {
+  protagonistas: ['Dinosaurios', 'Unicornios', 'Animales', 'Gatos', 'Dulces', 'Vehículos', 'Místicos'],
+  detalles: ['Estrellas', 'Flores', 'Corazones', 'Frutas', 'Dulces', 'Gatos', 'Mascotas y huellas', 'Animales', 'Unicornios', 'Deportes', 'Espacio', 'Mariposas', 'Náutico y viajes', 'Vehículos', 'Caritas', 'Otros']
+};
+
+function orderIndex(list, value) {
+  const index = list.indexOf(value);
+  return index === -1 ? 999 : index;
+}
+
+
 function $(selector) { return document.querySelector(selector); }
 function E(name) { return document.createElementNS('http://www.w3.org/2000/svg', name); }
 function uid() { return `p-${Date.now()}-${S.counter++}`; }
@@ -74,8 +90,8 @@ async function init() {
   try {
     S.cat = await (await fetch('catalogo.json', { cache: 'no-store' })).json();
     S.activeColl = (S.cat.letterCollections.find(collection => collection.principal) || S.cat.letterCollections[0]).id;
-    S.activeGroup = 'protagonistas';
-    S.activeCat = patchCategories(S.activeGroup)[0] || patchCategories('detalles')[0] || null;
+    S.activeGroup = firstAvailableGroup();
+    S.activeCat = patchCategories(S.activeGroup)[0] || null;
     D.logo.src = S.cat.brand.logo;
 
     bind();
@@ -140,8 +156,23 @@ function patchGroup(patch) {
   return patch.grupo || (((patch.defaultSize || 0) <= 70) ? 'detalles' : 'protagonistas');
 }
 
+function firstAvailableGroup() {
+  const available = GROUPS.find(group => patchCategories(group.id).length);
+  return available?.id || 'protagonistas';
+}
+
 function patchCategories(group = S.activeGroup) {
-  return [...new Set(S.cat.patches.filter(patch => patchGroup(patch) === group).map(patch => patch.categoria))];
+  const order = CATEGORY_ORDER[group] || [];
+  const categories = [...new Set(
+    S.cat.patches
+      .filter(patch => patchGroup(patch) === group)
+      .map(patch => patch.categoria)
+  )];
+
+  return categories.sort((a, b) => {
+    const byOrder = orderIndex(order, a) - orderIndex(order, b);
+    return byOrder || a.localeCompare(b, 'es');
+  });
 }
 
 function letterAnchor(view = S.view) {
@@ -287,12 +318,8 @@ function renderLetterPreview() {
 
 function renderGroups() {
   D.groupTabs.innerHTML = '';
-  const groups = [
-    { id: 'protagonistas', label: 'Parches protagonistas' },
-    { id: 'detalles', label: 'Detalles pequeños' }
-  ];
 
-  groups.forEach(group => {
+  GROUPS.filter(group => patchCategories(group.id).length).forEach(group => {
     const button = document.createElement('button');
     button.textContent = group.label;
     button.type = 'button';
@@ -300,10 +327,11 @@ function renderGroups() {
     button.onclick = () => {
       S.activeGroup = group.id;
       const categories = patchCategories(group.id);
-      S.activeCat = categories.includes(S.activeCat) ? S.activeCat : (categories[0] || null);
+      S.activeCat = categories[0] || null;
       renderGroups();
       renderCats();
       renderGrid();
+      resetCatalogScroll();
     };
     D.groupTabs.appendChild(button);
   });
@@ -321,17 +349,36 @@ function renderCats() {
       S.activeCat = category;
       renderCats();
       renderGrid();
+      resetCatalogScroll();
     };
     D.tabs.appendChild(button);
   });
 }
 
+function patchOrder(patch) {
+  return Number.isFinite(patch.orden) ? patch.orden : 999;
+}
+
 function renderGrid() {
   D.grid.innerHTML = '';
   if (!S.activeCat) return;
+
   S.cat.patches
     .filter(patch => patchGroup(patch) === S.activeGroup && patch.categoria === S.activeCat)
+    .sort((a, b) => patchOrder(a) - patchOrder(b) || a.nombre.localeCompare(b.nombre, 'es'))
     .forEach(patch => D.grid.appendChild(card(patch.imagen, patch.nombre, () => addCatalog(patch.id), 'detail-card')));
+
+  resetCatalogScroll();
+}
+
+function resetCatalogScroll() {
+  if (D.grid) {
+    D.grid.scrollLeft = 0;
+    D.grid.scrollTop = 0;
+  }
+  if (D.tabs) {
+    D.tabs.scrollLeft = 0;
+  }
 }
 
 function card(path, alt, onClick, extraClass = '') {
@@ -356,6 +403,7 @@ function card(path, alt, onClick, extraClass = '') {
 
 function categoryDefaultSize(catalogItem) {
   const cat = (catalogItem.categoria || '').toLowerCase();
+  if (patchGroup(catalogItem) === 'detalles') return 60;
   if (cat.includes('estrella')) return 58;
   if (cat.includes('flores')) return 160;
   return 205;

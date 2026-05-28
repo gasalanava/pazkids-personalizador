@@ -189,7 +189,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/dinosaurios/dino-gris.png",
       "defaultSize": 205,
-      "grupo": "protagonistas"
+      "grupo": "protagonistas",
+      "orden": 1
     },
     {
       "id": "dino-naranja",
@@ -198,7 +199,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/dinosaurios/dino-naranja.png",
       "defaultSize": 205,
-      "grupo": "protagonistas"
+      "grupo": "protagonistas",
+      "orden": 2
     },
     {
       "id": "dino-rosa",
@@ -207,7 +209,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/dinosaurios/dino-rosa.png",
       "defaultSize": 205,
-      "grupo": "protagonistas"
+      "grupo": "protagonistas",
+      "orden": 3
     },
     {
       "id": "dino-verde",
@@ -216,79 +219,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/dinosaurios/dino-verde.png",
       "defaultSize": 205,
-      "grupo": "protagonistas"
-    },
-    {
-      "id": "abeja",
-      "nombre": "Abeja",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales/abeja.png",
-      "defaultSize": 190,
-      "grupo": "protagonistas"
-    },
-    {
-      "id": "leon",
-      "nombre": "Leon",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales/leon.png",
-      "defaultSize": 190,
-      "grupo": "protagonistas"
-    },
-    {
-      "id": "oso-fashion",
-      "nombre": "Oso Fashion",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales/oso-fashion.png",
-      "defaultSize": 190,
-      "grupo": "protagonistas"
-    },
-    {
-      "id": "osop",
-      "nombre": "Osop",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales/osop.png",
-      "defaultSize": 190,
-      "grupo": "protagonistas"
-    },
-    {
-      "id": "pepapi",
-      "nombre": "Pepapi",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales/pepapi.png",
-      "defaultSize": 190,
-      "grupo": "protagonistas"
-    },
-    {
-      "id": "raton",
-      "nombre": "Raton",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales/raton.png",
-      "defaultSize": 190,
-      "grupo": "protagonistas"
-    },
-    {
-      "id": "gato-dorado",
-      "nombre": "Gato Dorado",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/gatos/gato-dorado.png",
-      "defaultSize": 205,
-      "grupo": "protagonistas"
-    },
-    {
-      "id": "gato-plateado",
-      "nombre": "Gato Plateado",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/gatos/gato-plateado.png",
-      "defaultSize": 205,
-      "grupo": "protagonistas"
+      "grupo": "protagonistas",
+      "orden": 4
     },
     {
       "id": "unicornio-colores",
@@ -297,7 +229,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/unicornios/unicornio-colores.png",
       "defaultSize": 205,
-      "grupo": "protagonistas"
+      "grupo": "protagonistas",
+      "orden": 1
     },
     {
       "id": "unicornio-pastel",
@@ -306,7 +239,88 @@
       "tipo": "imagen",
       "imagen": "assets/parches/unicornios/unicornio-pastel.png",
       "defaultSize": 205,
-      "grupo": "protagonistas"
+      "grupo": "protagonistas",
+      "orden": 2
+    },
+    {
+      "id": "abeja",
+      "nombre": "Abeja",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/abeja.png",
+      "defaultSize": 190,
+      "grupo": "protagonistas",
+      "orden": 1
+    },
+    {
+      "id": "leon",
+      "nombre": "Leon",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/leon.png",
+      "defaultSize": 190,
+      "grupo": "protagonistas",
+      "orden": 2
+    },
+    {
+      "id": "oso-fashion",
+      "nombre": "Oso Fashion",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/oso-fashion.png",
+      "defaultSize": 190,
+      "grupo": "protagonistas",
+      "orden": 3
+    },
+    {
+      "id": "osop",
+      "nombre": "Osop",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/osop.png",
+      "defaultSize": 190,
+      "grupo": "protagonistas",
+      "orden": 4
+    },
+    {
+      "id": "pepapi",
+      "nombre": "Pepapi",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/pepapi.png",
+      "defaultSize": 190,
+      "grupo": "protagonistas",
+      "orden": 5
+    },
+    {
+      "id": "raton",
+      "nombre": "Raton",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales/raton.png",
+      "defaultSize": 190,
+      "grupo": "protagonistas",
+      "orden": 6
+    },
+    {
+      "id": "gato-dorado",
+      "nombre": "Gato Dorado",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-dorado.png",
+      "defaultSize": 205,
+      "grupo": "protagonistas",
+      "orden": 1
+    },
+    {
+      "id": "gato-plateado",
+      "nombre": "Gato Plateado",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-plateado.png",
+      "defaultSize": 205,
+      "grupo": "protagonistas",
+      "orden": 2
     },
     {
       "id": "cupcake-gris",
@@ -315,7 +329,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/dulces/cupcake-gris.png",
       "defaultSize": 205,
-      "grupo": "protagonistas"
+      "grupo": "protagonistas",
+      "orden": 1
     },
     {
       "id": "cupcake-rosa",
@@ -324,25 +339,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/dulces/cupcake-rosa.png",
       "defaultSize": 205,
-      "grupo": "protagonistas"
-    },
-    {
-      "id": "mano-turca",
-      "nombre": "Mano Turca",
-      "categoria": "Místicos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/misticos/mano-turca.png",
-      "defaultSize": 205,
-      "grupo": "protagonistas"
-    },
-    {
-      "id": "ojo-turco",
-      "nombre": "Ojo Turco",
-      "categoria": "Místicos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/misticos/ojo-turco.png",
-      "defaultSize": 205,
-      "grupo": "protagonistas"
+      "grupo": "protagonistas",
+      "orden": 2
     },
     {
       "id": "carro-capota",
@@ -351,7 +349,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/vehiculos/carro-capota.png",
       "defaultSize": 205,
-      "grupo": "protagonistas"
+      "grupo": "protagonistas",
+      "orden": 1
     },
     {
       "id": "cohete-verde",
@@ -360,7 +359,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/vehiculos/cohete-verde.png",
       "defaultSize": 205,
-      "grupo": "protagonistas"
+      "grupo": "protagonistas",
+      "orden": 2
     },
     {
       "id": "50",
@@ -369,7 +369,38 @@
       "tipo": "imagen",
       "imagen": "assets/parches/varios/50.png",
       "defaultSize": 205,
-      "grupo": "protagonistas"
+      "grupo": "protagonistas",
+      "orden": 3
+    },
+    {
+      "id": "mano-turca",
+      "nombre": "Mano Turca",
+      "categoria": "Místicos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/misticos/mano-turca.png",
+      "defaultSize": 205,
+      "grupo": "protagonistas",
+      "orden": 1
+    },
+    {
+      "id": "ojo-turco",
+      "nombre": "Ojo Turco",
+      "categoria": "Místicos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/misticos/ojo-turco.png",
+      "defaultSize": 205,
+      "grupo": "protagonistas",
+      "orden": 2
+    },
+    {
+      "id": "det-espacio-02-estrella-dorada-pequena",
+      "nombre": "Estrella Dorada Pequeña",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/02_estrella_dorada_pequena.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 1
     },
     {
       "id": "estrella-arcoiris",
@@ -378,1438 +409,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/estrellas/estrella-arcoiris.png",
       "defaultSize": 58,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-dorada",
-      "nombre": "Estrella Dorada",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-dorada.png",
-      "defaultSize": 58,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-naranja",
-      "nombre": "Estrella Naranja",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-naranja.png",
-      "defaultSize": 58,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-roja",
-      "nombre": "Estrella Roja",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-roja.png",
-      "defaultSize": 58,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-rosa",
-      "nombre": "Estrella Rosa",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-rosa.png",
-      "defaultSize": 58,
-      "grupo": "detalles"
-    },
-    {
-      "id": "flores",
-      "nombre": "Flores",
-      "categoria": "Flores",
-      "tipo": "imagen",
-      "imagen": "assets/parches/flores/flores.png",
-      "defaultSize": 160,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-amarilla",
-      "nombre": "Estrella Amarilla",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-amarilla.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-verde",
-      "nombre": "Estrella Verde",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-verde.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-gris",
-      "nombre": "Estrella Gris",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-gris.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-azul",
-      "nombre": "Estrella Azul",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-azul.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-lentejuela-arcoiris",
-      "nombre": "Estrella Lentejuela Arcoíris",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-lentejuela-arcoiris.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-lentejuela-roja",
-      "nombre": "Estrella Lentejuela Roja",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-lentejuela-roja.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-lentejuela-morada",
-      "nombre": "Estrella Lentejuela Morada",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-lentejuela-morada.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-lentejuela-rosa",
-      "nombre": "Estrella Lentejuela Rosa",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-lentejuela-rosa.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-lentejuela-turquesa",
-      "nombre": "Estrella Lentejuela Turquesa",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-lentejuela-turquesa.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-lentejuela-negra",
-      "nombre": "Estrella Lentejuela Negra",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-lentejuela-negra.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-lentejuela-plateada",
-      "nombre": "Estrella Lentejuela Plateada",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-lentejuela-plateada.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-lentejuela-dorada",
-      "nombre": "Estrella Lentejuela Dorada",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-lentejuela-dorada.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "estrella-lentejuela-cafe",
-      "nombre": "Estrella Lentejuela Café",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/estrellas/estrella-lentejuela-cafe.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "flor-rosa-clara",
-      "nombre": "Flor Rosa Clara",
-      "categoria": "Flores",
-      "tipo": "imagen",
-      "imagen": "assets/parches/flores/flor-rosa-clara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "flor-verde",
-      "nombre": "Flor Verde",
-      "categoria": "Flores",
-      "tipo": "imagen",
-      "imagen": "assets/parches/flores/flor-verde.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "flor-amarilla",
-      "nombre": "Flor Amarilla",
-      "categoria": "Flores",
-      "tipo": "imagen",
-      "imagen": "assets/parches/flores/flor-amarilla.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "flor-roja",
-      "nombre": "Flor Roja",
-      "categoria": "Flores",
-      "tipo": "imagen",
-      "imagen": "assets/parches/flores/flor-roja.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "flor-lila",
-      "nombre": "Flor Lila",
-      "categoria": "Flores",
-      "tipo": "imagen",
-      "imagen": "assets/parches/flores/flor-lila.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "flor-rosa",
-      "nombre": "Flor Rosa",
-      "categoria": "Flores",
-      "tipo": "imagen",
-      "imagen": "assets/parches/flores/flor-rosa.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "flor-mini-lila",
-      "nombre": "Flor Mini Lila",
-      "categoria": "Flores",
-      "tipo": "imagen",
-      "imagen": "assets/parches/flores/flor-mini-lila.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "cerezas-lentejuela",
-      "nombre": "Cerezas Lentejuela",
-      "categoria": "Frutas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/frutas/cerezas-lentejuela.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "banana",
-      "nombre": "Banana",
-      "categoria": "Frutas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/frutas/banana.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "pina-gafas",
-      "nombre": "Piña con Gafas",
-      "categoria": "Frutas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/frutas/pina-gafas.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "aguacate",
-      "nombre": "Aguacate",
-      "categoria": "Frutas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/frutas/aguacate.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "fresas",
-      "nombre": "Fresas",
-      "categoria": "Frutas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/frutas/fresas.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "sandia-lentejuela",
-      "nombre": "Sandía Lentejuela",
-      "categoria": "Frutas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/frutas/sandia-lentejuela.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "gato-taza",
-      "nombre": "Gato en Taza",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/gatos/gato-taza.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "gato-libros",
-      "nombre": "Gato sobre Libros",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/gatos/gato-libros.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "gato-cupcake",
-      "nombre": "Gato con Cupcake",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/gatos/gato-cupcake.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "huellita-gato",
-      "nombre": "Huellita de Gato",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/gatos/huellita-gato.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "gato-abrazo",
-      "nombre": "Gato Abrazo",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/gatos/gato-abrazo.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "gato-donut",
-      "nombre": "Gato Donut",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/gatos/gato-donut.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "gato-saludo",
-      "nombre": "Gato Saludo",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/gatos/gato-saludo.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-01-perro-corgi-asomado",
-      "nombre": "Perro Corgi Asomado",
-      "categoria": "Mascotas y huellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/01_perro_corgi_asomado.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-02-unicornio-cabeza-arcoiris",
-      "nombre": "Unicornio Cabeza Arcoiris",
-      "categoria": "Unicornios",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/02_unicornio_cabeza_arcoiris.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-03-unicornio-cabeza-pequena",
-      "nombre": "Unicornio Cabeza Pequena",
-      "categoria": "Unicornios",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/03_unicornio_cabeza_pequena.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-04-perro-blanco-asomado",
-      "nombre": "Perro Blanco Asomado",
-      "categoria": "Mascotas y huellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/04_perro_blanco_asomado.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-05-pegaso-blanco",
-      "nombre": "Pegaso Blanco",
-      "categoria": "Unicornios",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/05_pegaso_blanco.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-06-unicornio-sentado",
-      "nombre": "Unicornio Sentado",
-      "categoria": "Unicornios",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/06_unicornio_sentado.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-07-perro-husky-asomado",
-      "nombre": "Perro Husky Asomado",
-      "categoria": "Mascotas y huellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/07_perro_husky_asomado.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-08-perro-pug-asomado",
-      "nombre": "Perro Pug Asomado",
-      "categoria": "Mascotas y huellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/08_perro_pug_asomado.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-09-perro-bulldog-asomado",
-      "nombre": "Perro Bulldog Asomado",
-      "categoria": "Mascotas y huellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/09_perro_bulldog_asomado.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-10-perro-border-collie-asomado",
-      "nombre": "Perro Border Collie Asomado",
-      "categoria": "Mascotas y huellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/10_perro_border_collie_asomado.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-11-perro-bulldog-frances-asomado",
-      "nombre": "Perro Bulldog Frances Asomado",
-      "categoria": "Mascotas y huellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/11_perro_bulldog_frances_asomado.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-12-buho-durmiente",
-      "nombre": "Buho Durmiente",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/12_buho_durmiente.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-13-gato-negro-cara",
-      "nombre": "Gato Negro Cara",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/13_gato_negro_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-14-venadito-cara",
-      "nombre": "Venadito Cara",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/14_venadito_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-15-perro-marron-cara",
-      "nombre": "Perro Marron Cara",
-      "categoria": "Mascotas y huellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/15_perro_marron_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-16-zorro-cuerpo",
-      "nombre": "Zorro Cuerpo",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/16_zorro_cuerpo.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-17-gato-siames-cara",
-      "nombre": "Gato Siames Cara",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/17_gato_siames_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-18-gato-gris-cara",
-      "nombre": "Gato Gris Cara",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/18_gato_gris_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-19-gato-menta-cara",
-      "nombre": "Gato Menta Cara",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/19_gato_menta_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-20-cerdo-rosa-cara",
-      "nombre": "Cerdo Rosa Cara",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/20_cerdo_rosa_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-21-erizo-cara",
-      "nombre": "Erizo Cara",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/21_erizo_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-22-jirafa-cara",
-      "nombre": "Jirafa Cara",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/22_jirafa_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-23-gato-calico-cara",
-      "nombre": "Gato Calico Cara",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/23_gato_calico_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-24-panda-cara",
-      "nombre": "Panda Cara",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/24_panda_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-25-gato-negro-manchas-cara",
-      "nombre": "Gato Negro Manchas Cara",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/25_gato_negro_manchas_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-26-vaca-cara",
-      "nombre": "Vaca Cara",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/26_vaca_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-27-gato-blanco-cara",
-      "nombre": "Gato Blanco Cara",
-      "categoria": "Gatos",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/27_gato_blanco_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-animales-unicornios-28-vaca-verde-cara",
-      "nombre": "Vaca Verde Cara",
-      "categoria": "Animales",
-      "tipo": "imagen",
-      "imagen": "assets/parches/animales-unicornios-detalle/28_vaca_verde_cara.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-01-corazon-negro-grande-1",
-      "nombre": "Corazon Negro Grande 1",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/01_corazon_negro_grande_1.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-02-corazon-verde-grande",
-      "nombre": "Corazon Verde Grande",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/02_corazon_verde_grande.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-03-corazon-amarillo-pequeno-1",
-      "nombre": "Corazon Amarillo Pequeno 1",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/03_corazon_amarillo_pequeno_1.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-04-corazon-naranja-pequeno",
-      "nombre": "Corazon Naranja Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/04_corazon_naranja_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-05-corazon-turquesa-pequeno",
-      "nombre": "Corazon Turquesa Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/05_corazon_turquesa_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-06-corazon-azul-claro-pequeno",
-      "nombre": "Corazon Azul Claro Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/06_corazon_azul_claro_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-07-corazon-blanco-pequeno",
-      "nombre": "Corazon Blanco Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/07_corazon_blanco_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-08-corazon-azul-grande",
-      "nombre": "Corazon Azul Grande",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/08_corazon_azul_grande.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-09-corazon-beige-pequeno",
-      "nombre": "Corazon Beige Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/09_corazon_beige_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-10-corazon-dorado-pequeno",
-      "nombre": "Corazon Dorado Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/10_corazon_dorado_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-11-corazon-morado-pequeno",
-      "nombre": "Corazon Morado Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/11_corazon_morado_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-12-corazon-negro-pequeno",
-      "nombre": "Corazon Negro Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/12_corazon_negro_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-13-corazon-negro-grande-2",
-      "nombre": "Corazon Negro Grande 2",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/13_corazon_negro_grande_2.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-14-corazon-rosado-pequeno",
-      "nombre": "Corazon Rosado Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/14_corazon_rosado_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-15-corazon-verde-pequeno",
-      "nombre": "Corazon Verde Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/15_corazon_verde_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-16-corazon-rojo-pequeno",
-      "nombre": "Corazon Rojo Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/16_corazon_rojo_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-17-corazon-amarillo-pequeno-2",
-      "nombre": "Corazon Amarillo Pequeno 2",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/17_corazon_amarillo_pequeno_2.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-18-corazon-rosado-oscuro-pequeno",
-      "nombre": "Corazon Rosado Oscuro Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/18_corazon_rosado_oscuro_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-corazones-19-corazon-azul-oscuro-pequeno",
-      "nombre": "Corazon Azul Oscuro Pequeno",
-      "categoria": "Corazones",
-      "tipo": "imagen",
-      "imagen": "assets/parches/corazones-detalle/19_corazon_azul_oscuro_pequeno.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-deportes-01-pelota-tenis-amarilla",
-      "nombre": "Pelota Tenis Amarilla",
-      "categoria": "Deportes",
-      "tipo": "imagen",
-      "imagen": "assets/parches/deportes-detalle/01_pelota_tenis_amarilla.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-deportes-02-balon-futbol-pequeno-superior",
-      "nombre": "Balon Futbol Pequeno Superior",
-      "categoria": "Deportes",
-      "tipo": "imagen",
-      "imagen": "assets/parches/deportes-detalle/02_balon_futbol_pequeno_superior.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-deportes-03-balon-futbol-grande",
-      "nombre": "Balon Futbol Grande",
-      "categoria": "Deportes",
-      "tipo": "imagen",
-      "imagen": "assets/parches/deportes-detalle/03_balon_futbol_grande.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-deportes-04-balon-futbol-pequeno-izquierdo",
-      "nombre": "Balon Futbol Pequeno Izquierdo",
-      "categoria": "Deportes",
-      "tipo": "imagen",
-      "imagen": "assets/parches/deportes-detalle/04_balon_futbol_pequeno_izquierdo.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-deportes-05-balon-voleibol-verde-azul",
-      "nombre": "Balon Voleibol Verde Azul",
-      "categoria": "Deportes",
-      "tipo": "imagen",
-      "imagen": "assets/parches/deportes-detalle/05_balon_voleibol_verde_azul.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-deportes-06-balon-voleibol-blanco-azul-rojo",
-      "nombre": "Balon Voleibol Blanco Azul Rojo",
-      "categoria": "Deportes",
-      "tipo": "imagen",
-      "imagen": "assets/parches/deportes-detalle/06_balon_voleibol_blanco_azul_rojo.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-01-helado-cono-rosa",
-      "nombre": "Helado Cono Rosa",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/01_helado_cono_rosa.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-02-cupcake-flor-verde",
-      "nombre": "Cupcake Flor Verde",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/02_cupcake_flor_verde.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-03-cupcake-nube-corazon",
-      "nombre": "Cupcake Nube Corazon",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/03_cupcake_nube_corazon.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-04-galleta-chocolate",
-      "nombre": "Galleta Chocolate",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/04_galleta_chocolate.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-05-cupcake-corazon-azul",
-      "nombre": "Cupcake Corazon Azul",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/05_cupcake_corazon_azul.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-06-palomitas-caja-ojos",
-      "nombre": "Palomitas Caja Ojos",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/06_palomitas_caja_ojos.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-07-cupcake-cereza-verde",
-      "nombre": "Cupcake Cereza Verde",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/07_cupcake_cereza_verde.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-08-sandia",
-      "nombre": "Sandia",
-      "categoria": "Frutas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/08_sandia.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-09-papas-fritas",
-      "nombre": "Papas Fritas",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/09_papas_fritas.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-10-palomitas-rojas",
-      "nombre": "Palomitas Rojas",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/10_palomitas_rojas.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-11-paleta-tricolor",
-      "nombre": "Paleta Tricolor",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/11_paleta_tricolor.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-12-paleta-sonriente",
-      "nombre": "Paleta Sonriente",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/12_paleta_sonriente.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-13-cupcake-azul-estrellas",
-      "nombre": "Cupcake Azul Estrellas",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/13_cupcake_azul_estrellas.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-14-paleta-pastel-torta",
-      "nombre": "Paleta Pastel Torta",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/14_paleta_pastel_torta.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-15-paleta-fresa",
-      "nombre": "Paleta Fresa",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/15_paleta_fresa.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-16-paleta-chocolate",
-      "nombre": "Paleta Chocolate",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/16_paleta_chocolate.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-17-paleta-naranja",
-      "nombre": "Paleta Naranja",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/17_paleta_naranja.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-18-paleta-mordida-roja",
-      "nombre": "Paleta Mordida Roja",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/18_paleta_mordida_roja.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-19-caramelo-envuelto",
-      "nombre": "Caramelo Envuelto",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/19_caramelo_envuelto.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-20-mini-paleta-pina",
-      "nombre": "Mini Paleta Pina",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/20_mini_paleta_pina.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-21-pecera-caramelos",
-      "nombre": "Pecera Caramelos",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/21_pecera_caramelos.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-22-paleta-rosa",
-      "nombre": "Paleta Rosa",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/22_paleta_rosa.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-23-palomitas-blancas-rojas",
-      "nombre": "Palomitas Blancas Rojas",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/23_palomitas_blancas_rojas.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-24-helado-cono-rosa",
-      "nombre": "Helado Cono Rosa",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/24_helado_cono_rosa.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-25-cupcake-verde-wafer",
-      "nombre": "Cupcake Verde Wafer",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/25_cupcake_verde_wafer.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-26-cupcake-rosa-azul",
-      "nombre": "Cupcake Rosa Azul",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/26_cupcake_rosa_azul.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-27-cupcake-amarillo-frutas",
-      "nombre": "Cupcake Amarillo Frutas",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/27_cupcake_amarillo_frutas.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-28-cupcake-espiral-rosa",
-      "nombre": "Cupcake Espiral Rosa",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/28_cupcake_espiral_rosa.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-dulces-29-dona-rosa",
-      "nombre": "Dona Rosa",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/dulces-detalle/29_dona_rosa.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-01-emoji-pulgar-arriba",
-      "nombre": "Emoji Pulgar Arriba",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/01_emoji_pulgar_arriba.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-02-carita-feliz-blanca",
-      "nombre": "Carita Feliz Blanca",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/02_carita_feliz_blanca.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-03-carita-feliz-dorada-glitter",
-      "nombre": "Carita Feliz Dorada Glitter",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/03_carita_feliz_dorada_glitter.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-04-carita-feliz-azul-glitter",
-      "nombre": "Carita Feliz Azul Glitter",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/04_carita_feliz_azul_glitter.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-05-carita-feliz-rosa-glitter",
-      "nombre": "Carita Feliz Rosa Glitter",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/05_carita_feliz_rosa_glitter.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-06-carita-feliz-negra-glitter",
-      "nombre": "Carita Feliz Negra Glitter",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/06_carita_feliz_negra_glitter.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-07-carita-feliz-fucsia-glitter",
-      "nombre": "Carita Feliz Fucsia Glitter",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/07_carita_feliz_fucsia_glitter.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-08-carita-feliz-beige",
-      "nombre": "Carita Feliz Beige",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/08_carita_feliz_beige.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-09-carita-feliz-agua-glitter",
-      "nombre": "Carita Feliz Agua Glitter",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/09_carita_feliz_agua_glitter.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-10-emoji-risa-lagrimas",
-      "nombre": "Emoji Risa Lagrimas",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/10_emoji_risa_lagrimas.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-11-carita-feliz-arcoiris",
-      "nombre": "Carita Feliz Arcoiris",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/11_carita_feliz_arcoiris.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-12-carita-feliz-cobre-glitter",
-      "nombre": "Carita Feliz Cobre Glitter",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/12_carita_feliz_cobre_glitter.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-13-carita-feliz-verde-glitter",
-      "nombre": "Carita Feliz Verde Glitter",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/13_carita_feliz_verde_glitter.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-14-carita-feliz-plateada-glitter",
-      "nombre": "Carita Feliz Plateada Glitter",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/14_carita_feliz_plateada_glitter.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-15-carita-feliz-azul-simple",
-      "nombre": "Carita Feliz Azul Simple",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/15_carita_feliz_azul_simple.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-16-carita-feliz-dorada-glitter-2",
-      "nombre": "Carita Feliz Dorada Glitter 2",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/16_carita_feliz_dorada_glitter_2.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-17-carita-feliz-roja-glitter",
-      "nombre": "Carita Feliz Roja Glitter",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/17_carita_feliz_roja_glitter.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-18-carita-feliz-verde-glitter-2",
-      "nombre": "Carita Feliz Verde Glitter 2",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/18_carita_feliz_verde_glitter_2.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-emojis-smilies-19-carita-feliz-azul-glitter-2",
-      "nombre": "Carita Feliz Azul Glitter 2",
-      "categoria": "Emojis y smilies",
-      "tipo": "imagen",
-      "imagen": "assets/parches/emojis-smilies-detalle/19_carita_feliz_azul_glitter_2.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-01-planeta-rosa-anillos-grande",
-      "nombre": "Planeta Rosa Anillos Grande",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/01_planeta_rosa_anillos_grande.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-02-estrella-dorada-pequena",
-      "nombre": "Estrella Dorada Pequena",
-      "categoria": "Estrellas",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/02_estrella_dorada_pequena.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-03-frase-the-world-is-yours",
-      "nombre": "Frase The World Is Yours",
-      "categoria": "Otros",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/03_frase_the_world_is_yours.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-04-planeta-turquesa-anillos",
-      "nombre": "Planeta Turquesa Anillos",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/04_planeta_turquesa_anillos.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-05-planeta-azul-anillos-luna",
-      "nombre": "Planeta Azul Anillos Luna",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/05_planeta_azul_anillos_luna.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-06-satelite-azul",
-      "nombre": "Satelite Azul",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/06_satelite_azul.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-07-tierra",
-      "nombre": "Tierra",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/07_tierra.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-08-astronauta",
-      "nombre": "Astronauta",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/08_astronauta.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-09-nave-espacial-azul-roja",
-      "nombre": "Nave Espacial Azul Roja",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/09_nave_espacial_azul_roja.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-10-rayo-amarillo",
-      "nombre": "Rayo Amarillo",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/10_rayo_amarillo.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-11-planeta-saturno-naranja-negro",
-      "nombre": "Planeta Saturno Naranja Negro",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/11_planeta_saturno_naranja_negro.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-12-planeta-turquesa",
-      "nombre": "Planeta Turquesa",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/12_planeta_turquesa.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-13-planeta-blanco-lineas",
-      "nombre": "Planeta Blanco Lineas",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/13_planeta_blanco_lineas.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-14-planeta-saturno-dorado",
-      "nombre": "Planeta Saturno Dorado",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/14_planeta_saturno_dorado.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-15-satelite-turquesa",
-      "nombre": "Satelite Turquesa",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/15_satelite_turquesa.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-16-luna-gris-crateres",
-      "nombre": "Luna Gris Crateres",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/16_luna_gris_crateres.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-17-cohete-morado",
-      "nombre": "Cohete Morado",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/17_cohete_morado.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-18-planeta-rojo",
-      "nombre": "Planeta Rojo",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/18_planeta_rojo.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-19-meteoro-calavera",
-      "nombre": "Meteoro Calavera",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/19_meteoro_calavera.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-espacio-20-planeta-azul-anillos",
-      "nombre": "Planeta Azul Anillos",
-      "categoria": "Espacio",
-      "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/20_planeta_azul_anillos.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 2
     },
     {
       "id": "det-espacio-21-estrella-dorada",
@@ -1818,7 +419,18 @@
       "tipo": "imagen",
       "imagen": "assets/parches/espacio-detalle/21_estrella_dorada.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 3
+    },
+    {
+      "id": "estrella-dorada",
+      "nombre": "Estrella Dorada",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-dorada.png",
+      "defaultSize": 58,
+      "grupo": "detalles",
+      "orden": 4
     },
     {
       "id": "det-espacio-22-estrella-dorada-cruz",
@@ -1827,43 +439,48 @@
       "tipo": "imagen",
       "imagen": "assets/parches/espacio-detalle/22_estrella_dorada_cruz.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 5
     },
     {
-      "id": "det-espacio-23-ovni-azul",
-      "nombre": "Ovni Azul",
-      "categoria": "Espacio",
+      "id": "estrella-naranja",
+      "nombre": "Estrella Naranja",
+      "categoria": "Estrellas",
       "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/23_ovni_azul.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
+      "imagen": "assets/parches/estrellas/estrella-naranja.png",
+      "defaultSize": 58,
+      "grupo": "detalles",
+      "orden": 6
     },
     {
-      "id": "det-espacio-24-planeta-naranja",
-      "nombre": "Planeta Naranja",
-      "categoria": "Espacio",
+      "id": "estrella-roja",
+      "nombre": "Estrella Roja",
+      "categoria": "Estrellas",
       "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/24_planeta_naranja.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
+      "imagen": "assets/parches/estrellas/estrella-roja.png",
+      "defaultSize": 58,
+      "grupo": "detalles",
+      "orden": 7
     },
     {
-      "id": "det-espacio-25-nave-roja",
-      "nombre": "Nave Roja",
-      "categoria": "Espacio",
+      "id": "estrella-rosa",
+      "nombre": "Estrella Rosa",
+      "categoria": "Estrellas",
       "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/25_nave_roja.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
+      "imagen": "assets/parches/estrellas/estrella-rosa.png",
+      "defaultSize": 58,
+      "grupo": "detalles",
+      "orden": 8
     },
     {
-      "id": "det-espacio-26-luna-gris",
-      "nombre": "Luna Gris",
-      "categoria": "Espacio",
+      "id": "estrella-amarilla",
+      "nombre": "Estrella Amarilla",
+      "categoria": "Estrellas",
       "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/26_luna_gris.png",
+      "imagen": "assets/parches/estrellas/estrella-amarilla.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 9
     },
     {
       "id": "det-espacio-27-estrella-fugaz-morada",
@@ -1872,52 +489,128 @@
       "tipo": "imagen",
       "imagen": "assets/parches/espacio-detalle/27_estrella_fugaz_morada.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 10
     },
     {
-      "id": "det-espacio-28-planeta-verde-anillos",
-      "nombre": "Planeta Verde Anillos",
-      "categoria": "Espacio",
+      "id": "estrella-verde",
+      "nombre": "Estrella Verde",
+      "categoria": "Estrellas",
       "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/28_planeta_verde_anillos.png",
+      "imagen": "assets/parches/estrellas/estrella-verde.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 11
     },
     {
-      "id": "det-espacio-29-scooter-turquesa",
-      "nombre": "Scooter Turquesa",
-      "categoria": "Vehículos",
+      "id": "estrella-gris",
+      "nombre": "Estrella Gris",
+      "categoria": "Estrellas",
       "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/29_scooter_turquesa.png",
+      "imagen": "assets/parches/estrellas/estrella-gris.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 12
     },
     {
-      "id": "det-espacio-30-cohete-blanco-azul",
-      "nombre": "Cohete Blanco Azul",
-      "categoria": "Espacio",
+      "id": "estrella-azul",
+      "nombre": "Estrella Azul",
+      "categoria": "Estrellas",
       "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/30_cohete_blanco_azul.png",
+      "imagen": "assets/parches/estrellas/estrella-azul.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 13
     },
     {
-      "id": "det-espacio-31-galaxia-rosa-azul",
-      "nombre": "Galaxia Rosa Azul",
-      "categoria": "Espacio",
+      "id": "estrella-lentejuela-arcoiris",
+      "nombre": "Estrella Lentejuela Arcoíris",
+      "categoria": "Estrellas",
       "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/31_galaxia_rosa_azul.png",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-arcoiris.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 14
     },
     {
-      "id": "det-espacio-32-planeta-rosa-anillos",
-      "nombre": "Planeta Rosa Anillos",
-      "categoria": "Espacio",
+      "id": "estrella-lentejuela-roja",
+      "nombre": "Estrella Lentejuela Roja",
+      "categoria": "Estrellas",
       "tipo": "imagen",
-      "imagen": "assets/parches/espacio-detalle/32_planeta_rosa_anillos.png",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-roja.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 15
+    },
+    {
+      "id": "estrella-lentejuela-morada",
+      "nombre": "Estrella Lentejuela Morada",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-morada.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 16
+    },
+    {
+      "id": "estrella-lentejuela-rosa",
+      "nombre": "Estrella Lentejuela Rosa",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-rosa.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 17
+    },
+    {
+      "id": "estrella-lentejuela-turquesa",
+      "nombre": "Estrella Lentejuela Turquesa",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-turquesa.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 18
+    },
+    {
+      "id": "estrella-lentejuela-negra",
+      "nombre": "Estrella Lentejuela Negra",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-negra.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 19
+    },
+    {
+      "id": "estrella-lentejuela-plateada",
+      "nombre": "Estrella Lentejuela Plateada",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-plateada.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 20
+    },
+    {
+      "id": "estrella-lentejuela-dorada",
+      "nombre": "Estrella Lentejuela Dorada",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-dorada.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 21
+    },
+    {
+      "id": "estrella-lentejuela-cafe",
+      "nombre": "Estrella Lentejuela Café",
+      "categoria": "Estrellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/estrellas/estrella-lentejuela-cafe.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 22
     },
     {
       "id": "det-flores-01-rosa-roja-horizontal-hojas",
@@ -1926,7 +619,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/01_rosa_roja_horizontal_hojas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 1
     },
     {
       "id": "det-flores-02-capullo-rosa-rojo",
@@ -1935,7 +629,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/02_capullo_rosa_rojo.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 2
     },
     {
       "id": "det-flores-03-rosa-roja-lateral",
@@ -1944,7 +639,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/03_rosa_roja_lateral.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 3
     },
     {
       "id": "det-flores-04-rosa-roja-tallo-capullo",
@@ -1953,7 +649,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/04_rosa_roja_tallo_capullo.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 4
     },
     {
       "id": "det-flores-05-rosa-roja-horizontal-larga",
@@ -1962,7 +659,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/05_rosa_roja_horizontal_larga.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 5
     },
     {
       "id": "det-flores-06-ramo-flores-colores",
@@ -1971,7 +669,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/06_ramo_flores_colores.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 6
     },
     {
       "id": "det-flores-07-rosa-roja-hojas-verdes",
@@ -1980,7 +679,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/07_rosa_roja_hojas_verdes.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 7
     },
     {
       "id": "det-flores-08-rosa-roja-grande",
@@ -1989,7 +689,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/08_rosa_roja_grande.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 8
     },
     {
       "id": "det-flores-09-rosa-roja-con-hojas",
@@ -1998,7 +699,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/09_rosa_roja_con_hojas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 9
     },
     {
       "id": "det-flores-10-rosa-rosada-tallo",
@@ -2007,7 +709,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/10_rosa_rosada_tallo.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 10
     },
     {
       "id": "det-flores-11-rosa-roja-horizontal",
@@ -2016,7 +719,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/11_rosa_roja_horizontal.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 11
     },
     {
       "id": "det-flores-12-rosa-roja-tallo-hojas",
@@ -2025,16 +729,288 @@
       "tipo": "imagen",
       "imagen": "assets/parches/flores-detalle/12_rosa_roja_tallo_hojas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 12
+    },
+    {
+      "id": "flores",
+      "nombre": "Flores",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flores.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 13
+    },
+    {
+      "id": "flor-rosa-clara",
+      "nombre": "Flor Rosa Clara",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-rosa-clara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 14
+    },
+    {
+      "id": "flor-verde",
+      "nombre": "Flor Verde",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-verde.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 15
+    },
+    {
+      "id": "flor-amarilla",
+      "nombre": "Flor Amarilla",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-amarilla.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 16
+    },
+    {
+      "id": "flor-roja",
+      "nombre": "Flor Roja",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-roja.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 17
+    },
+    {
+      "id": "flor-lila",
+      "nombre": "Flor Lila",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-lila.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 18
+    },
+    {
+      "id": "flor-rosa",
+      "nombre": "Flor Rosa",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-rosa.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 19
+    },
+    {
+      "id": "flor-mini-lila",
+      "nombre": "Flor Mini Lila",
+      "categoria": "Flores",
+      "tipo": "imagen",
+      "imagen": "assets/parches/flores/flor-mini-lila.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 20
+    },
+    {
+      "id": "det-corazones-01-corazon-negro-grande-1",
+      "nombre": "Corazón Negro Grande 1",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/01_corazon_negro_grande_1.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 1
+    },
+    {
+      "id": "det-corazones-02-corazon-verde-grande",
+      "nombre": "Corazón Verde Grande",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/02_corazon_verde_grande.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 2
+    },
+    {
+      "id": "det-corazones-03-corazon-amarillo-pequeno-1",
+      "nombre": "Corazón Amarillo Pequeno 1",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/03_corazon_amarillo_pequeno_1.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 3
+    },
+    {
+      "id": "det-corazones-04-corazon-naranja-pequeno",
+      "nombre": "Corazón Naranja Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/04_corazon_naranja_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 4
+    },
+    {
+      "id": "det-corazones-05-corazon-turquesa-pequeno",
+      "nombre": "Corazón Turquesa Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/05_corazon_turquesa_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 5
+    },
+    {
+      "id": "det-corazones-06-corazon-azul-claro-pequeno",
+      "nombre": "Corazón Azul Claro Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/06_corazon_azul_claro_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 6
+    },
+    {
+      "id": "det-corazones-07-corazon-blanco-pequeno",
+      "nombre": "Corazón Blanco Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/07_corazon_blanco_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 7
+    },
+    {
+      "id": "det-corazones-08-corazon-azul-grande",
+      "nombre": "Corazón Azul Grande",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/08_corazon_azul_grande.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 8
+    },
+    {
+      "id": "det-corazones-09-corazon-beige-pequeno",
+      "nombre": "Corazón Beige Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/09_corazon_beige_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 9
+    },
+    {
+      "id": "det-corazones-10-corazon-dorado-pequeno",
+      "nombre": "Corazón Dorado Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/10_corazon_dorado_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 10
+    },
+    {
+      "id": "det-corazones-11-corazon-morado-pequeno",
+      "nombre": "Corazón Morado Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/11_corazon_morado_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 11
+    },
+    {
+      "id": "det-corazones-12-corazon-negro-pequeno",
+      "nombre": "Corazón Negro Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/12_corazon_negro_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 12
+    },
+    {
+      "id": "det-corazones-13-corazon-negro-grande-2",
+      "nombre": "Corazón Negro Grande 2",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/13_corazon_negro_grande_2.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 13
+    },
+    {
+      "id": "det-corazones-14-corazon-rosado-pequeno",
+      "nombre": "Corazón Rosado Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/14_corazon_rosado_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 14
+    },
+    {
+      "id": "det-corazones-15-corazon-verde-pequeno",
+      "nombre": "Corazón Verde Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/15_corazon_verde_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 15
+    },
+    {
+      "id": "det-corazones-16-corazon-rojo-pequeno",
+      "nombre": "Corazón Rojo Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/16_corazon_rojo_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 16
+    },
+    {
+      "id": "det-corazones-17-corazon-amarillo-pequeno-2",
+      "nombre": "Corazón Amarillo Pequeno 2",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/17_corazon_amarillo_pequeno_2.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 17
+    },
+    {
+      "id": "det-corazones-18-corazon-rosado-oscuro-pequeno",
+      "nombre": "Corazón Rosado Oscuro Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/18_corazon_rosado_oscuro_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 18
+    },
+    {
+      "id": "det-corazones-19-corazon-azul-oscuro-pequeno",
+      "nombre": "Corazón Azul Oscuro Pequeno",
+      "categoria": "Corazones",
+      "tipo": "imagen",
+      "imagen": "assets/parches/corazones-detalle/19_corazon_azul_oscuro_pequeno.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 19
     },
     {
       "id": "det-frutas-01-fresa-pequena",
-      "nombre": "Fresa Pequena",
+      "nombre": "Fresa Pequeña",
       "categoria": "Frutas",
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/01_fresa_pequena.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 1
     },
     {
       "id": "det-frutas-02-media-manzana",
@@ -2043,7 +1019,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/02_media_manzana.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 2
     },
     {
       "id": "det-frutas-03-manzana-mordida",
@@ -2052,7 +1029,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/03_manzana_mordida.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 3
     },
     {
       "id": "det-frutas-04-rodaja-naranja",
@@ -2061,7 +1039,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/04_rodaja_naranja.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 4
     },
     {
       "id": "det-frutas-05-cerezas",
@@ -2070,16 +1049,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/05_cerezas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
-    },
-    {
-      "id": "det-frutas-06-chupeta-redonda-naranja",
-      "nombre": "Chupeta Redonda Naranja",
-      "categoria": "Dulces",
-      "tipo": "imagen",
-      "imagen": "assets/parches/frutas-detalle/06_chupeta_redonda_naranja.png",
-      "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 5
     },
     {
       "id": "det-frutas-07-sandia-rebanada",
@@ -2088,16 +1059,28 @@
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/07_sandia_rebanada.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 6
     },
     {
       "id": "det-frutas-08-pina-pequena",
-      "nombre": "Pina Pequena",
+      "nombre": "Piña Pequeña",
       "categoria": "Frutas",
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/08_pina_pequena.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 7
+    },
+    {
+      "id": "det-dulces-08-sandia",
+      "nombre": "Sandia",
+      "categoria": "Frutas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/08_sandia.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 8
     },
     {
       "id": "det-frutas-09-fresa-bordada",
@@ -2106,16 +1089,18 @@
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/09_fresa_bordada.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 9
     },
     {
       "id": "det-frutas-10-fresa-pequena-2",
-      "nombre": "Fresa Pequena 2",
+      "nombre": "Fresa Pequeña 2",
       "categoria": "Frutas",
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/10_fresa_pequena_2.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 10
     },
     {
       "id": "det-frutas-11-durazno",
@@ -2124,7 +1109,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/11_durazno.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 11
     },
     {
       "id": "det-frutas-12-fresa-grande",
@@ -2133,7 +1119,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/12_fresa_grande.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 12
     },
     {
       "id": "det-frutas-13-fresa-sweet",
@@ -2142,7 +1129,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/13_fresa_sweet.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 13
     },
     {
       "id": "det-frutas-14-fresa-roja",
@@ -2151,7 +1139,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/14_fresa_roja.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 14
     },
     {
       "id": "det-frutas-15-fresa-rosa",
@@ -2160,79 +1149,508 @@
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/15_fresa_rosa.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 15
     },
     {
       "id": "det-frutas-16-fresa-pequena-3",
-      "nombre": "Fresa Pequena 3",
+      "nombre": "Fresa Pequeña 3",
       "categoria": "Frutas",
       "tipo": "imagen",
       "imagen": "assets/parches/frutas-detalle/16_fresa_pequena_3.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 16
     },
     {
-      "id": "det-mariposas-01-mariposa-naranja",
-      "nombre": "Mariposa Naranja",
-      "categoria": "Mariposas",
+      "id": "cerezas-lentejuela",
+      "nombre": "Cerezas Lentejuela",
+      "categoria": "Frutas",
       "tipo": "imagen",
-      "imagen": "assets/parches/mariposas-detalle/01_mariposa_naranja.png",
+      "imagen": "assets/parches/frutas/cerezas-lentejuela.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 17
     },
     {
-      "id": "det-mariposas-02-mariposa-verde",
-      "nombre": "Mariposa Verde",
-      "categoria": "Mariposas",
+      "id": "banana",
+      "nombre": "Banana",
+      "categoria": "Frutas",
       "tipo": "imagen",
-      "imagen": "assets/parches/mariposas-detalle/02_mariposa_verde.png",
+      "imagen": "assets/parches/frutas/banana.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 18
     },
     {
-      "id": "det-mariposas-03-mariposa-marron",
-      "nombre": "Mariposa Marron",
-      "categoria": "Mariposas",
+      "id": "pina-gafas",
+      "nombre": "Piña con Gafas",
+      "categoria": "Frutas",
       "tipo": "imagen",
-      "imagen": "assets/parches/mariposas-detalle/03_mariposa_marron.png",
+      "imagen": "assets/parches/frutas/pina-gafas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 19
     },
     {
-      "id": "det-mariposas-04-mariposa-azul-clara",
-      "nombre": "Mariposa Azul Clara",
-      "categoria": "Mariposas",
+      "id": "aguacate",
+      "nombre": "Aguacate",
+      "categoria": "Frutas",
       "tipo": "imagen",
-      "imagen": "assets/parches/mariposas-detalle/04_mariposa_azul_clara.png",
+      "imagen": "assets/parches/frutas/aguacate.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 20
     },
     {
-      "id": "det-mariposas-05-mariposa-azul-oscura",
-      "nombre": "Mariposa Azul Oscura",
-      "categoria": "Mariposas",
+      "id": "fresas",
+      "nombre": "Fresas",
+      "categoria": "Frutas",
       "tipo": "imagen",
-      "imagen": "assets/parches/mariposas-detalle/05_mariposa_azul_oscura.png",
+      "imagen": "assets/parches/frutas/fresas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 21
     },
     {
-      "id": "det-mariposas-06-mariposa-morada",
-      "nombre": "Mariposa Morada",
-      "categoria": "Mariposas",
+      "id": "sandia-lentejuela",
+      "nombre": "Sandía Lentejuela",
+      "categoria": "Frutas",
       "tipo": "imagen",
-      "imagen": "assets/parches/mariposas-detalle/06_mariposa_morada.png",
+      "imagen": "assets/parches/frutas/sandia-lentejuela.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 22
     },
     {
-      "id": "det-mariposas-07-mariposa-marron-oscura",
-      "nombre": "Mariposa Marron Oscura",
-      "categoria": "Mariposas",
+      "id": "det-dulces-01-helado-cono-rosa",
+      "nombre": "Helado Cono Rosa",
+      "categoria": "Dulces",
       "tipo": "imagen",
-      "imagen": "assets/parches/mariposas-detalle/07_mariposa_marron_oscura.png",
+      "imagen": "assets/parches/dulces-detalle/01_helado_cono_rosa.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 1
+    },
+    {
+      "id": "det-dulces-02-cupcake-flor-verde",
+      "nombre": "Cupcake Flor Verde",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/02_cupcake_flor_verde.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 2
+    },
+    {
+      "id": "det-dulces-03-cupcake-nube-corazon",
+      "nombre": "Cupcake Nube Corazón",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/03_cupcake_nube_corazon.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 3
+    },
+    {
+      "id": "det-dulces-04-galleta-chocolate",
+      "nombre": "Galleta Chocolate",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/04_galleta_chocolate.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 4
+    },
+    {
+      "id": "det-dulces-05-cupcake-corazon-azul",
+      "nombre": "Cupcake Corazón Azul",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/05_cupcake_corazon_azul.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 5
+    },
+    {
+      "id": "det-frutas-06-chupeta-redonda-naranja",
+      "nombre": "Chupeta Redonda Naranja",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/frutas-detalle/06_chupeta_redonda_naranja.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 6
+    },
+    {
+      "id": "det-dulces-06-palomitas-caja-ojos",
+      "nombre": "Palomitas Caja Ojos",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/06_palomitas_caja_ojos.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 7
+    },
+    {
+      "id": "det-dulces-07-cupcake-cereza-verde",
+      "nombre": "Cupcake Cereza Verde",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/07_cupcake_cereza_verde.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 8
+    },
+    {
+      "id": "det-dulces-09-papas-fritas",
+      "nombre": "Papas Fritas",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/09_papas_fritas.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 9
+    },
+    {
+      "id": "det-dulces-10-palomitas-rojas",
+      "nombre": "Palomitas Rojas",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/10_palomitas_rojas.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 10
+    },
+    {
+      "id": "det-dulces-11-paleta-tricolor",
+      "nombre": "Paleta Tricolor",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/11_paleta_tricolor.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 11
+    },
+    {
+      "id": "det-dulces-12-paleta-sonriente",
+      "nombre": "Paleta Sonriente",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/12_paleta_sonriente.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 12
+    },
+    {
+      "id": "det-dulces-13-cupcake-azul-estrellas",
+      "nombre": "Cupcake Azul Estrellas",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/13_cupcake_azul_estrellas.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 13
+    },
+    {
+      "id": "det-dulces-14-paleta-pastel-torta",
+      "nombre": "Paleta Pastel Torta",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/14_paleta_pastel_torta.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 14
+    },
+    {
+      "id": "det-dulces-15-paleta-fresa",
+      "nombre": "Paleta Fresa",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/15_paleta_fresa.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 15
+    },
+    {
+      "id": "det-dulces-16-paleta-chocolate",
+      "nombre": "Paleta Chocolate",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/16_paleta_chocolate.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 16
+    },
+    {
+      "id": "det-dulces-17-paleta-naranja",
+      "nombre": "Paleta Naranja",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/17_paleta_naranja.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 17
+    },
+    {
+      "id": "det-dulces-18-paleta-mordida-roja",
+      "nombre": "Paleta Mordida Roja",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/18_paleta_mordida_roja.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 18
+    },
+    {
+      "id": "det-dulces-19-caramelo-envuelto",
+      "nombre": "Caramelo Envuelto",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/19_caramelo_envuelto.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 19
+    },
+    {
+      "id": "det-dulces-20-mini-paleta-pina",
+      "nombre": "Mini Paleta Piña",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/20_mini_paleta_pina.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 20
+    },
+    {
+      "id": "det-dulces-21-pecera-caramelos",
+      "nombre": "Pecera Caramelos",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/21_pecera_caramelos.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 21
+    },
+    {
+      "id": "det-dulces-22-paleta-rosa",
+      "nombre": "Paleta Rosa",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/22_paleta_rosa.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 22
+    },
+    {
+      "id": "det-dulces-23-palomitas-blancas-rojas",
+      "nombre": "Palomitas Blancas Rojas",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/23_palomitas_blancas_rojas.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 23
+    },
+    {
+      "id": "det-dulces-24-helado-cono-rosa",
+      "nombre": "Helado Cono Rosa",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/24_helado_cono_rosa.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 24
+    },
+    {
+      "id": "det-dulces-25-cupcake-verde-wafer",
+      "nombre": "Cupcake Verde Wafer",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/25_cupcake_verde_wafer.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 25
+    },
+    {
+      "id": "det-dulces-26-cupcake-rosa-azul",
+      "nombre": "Cupcake Rosa Azul",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/26_cupcake_rosa_azul.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 26
+    },
+    {
+      "id": "det-dulces-27-cupcake-amarillo-frutas",
+      "nombre": "Cupcake Amarillo Frutas",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/27_cupcake_amarillo_frutas.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 27
+    },
+    {
+      "id": "det-dulces-28-cupcake-espiral-rosa",
+      "nombre": "Cupcake Espiral Rosa",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/28_cupcake_espiral_rosa.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 28
+    },
+    {
+      "id": "det-dulces-29-dona-rosa",
+      "nombre": "Dona Rosa",
+      "categoria": "Dulces",
+      "tipo": "imagen",
+      "imagen": "assets/parches/dulces-detalle/29_dona_rosa.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 29
+    },
+    {
+      "id": "det-animales-unicornios-13-gato-negro-cara",
+      "nombre": "Gato Negro Cara",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/13_gato_negro_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 1
+    },
+    {
+      "id": "det-animales-unicornios-17-gato-siames-cara",
+      "nombre": "Gato Siames Cara",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/17_gato_siames_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 2
+    },
+    {
+      "id": "det-animales-unicornios-18-gato-gris-cara",
+      "nombre": "Gato Gris Cara",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/18_gato_gris_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 3
+    },
+    {
+      "id": "det-animales-unicornios-19-gato-menta-cara",
+      "nombre": "Gato Menta Cara",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/19_gato_menta_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 4
+    },
+    {
+      "id": "det-animales-unicornios-23-gato-calico-cara",
+      "nombre": "Gato Calico Cara",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/23_gato_calico_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 5
+    },
+    {
+      "id": "det-animales-unicornios-25-gato-negro-manchas-cara",
+      "nombre": "Gato Negro Manchas Cara",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/25_gato_negro_manchas_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 6
+    },
+    {
+      "id": "det-animales-unicornios-27-gato-blanco-cara",
+      "nombre": "Gato Blanco Cara",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/27_gato_blanco_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 7
+    },
+    {
+      "id": "gato-taza",
+      "nombre": "Gato en Taza",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-taza.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 8
+    },
+    {
+      "id": "gato-libros",
+      "nombre": "Gato sobre Libros",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-libros.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 9
+    },
+    {
+      "id": "gato-cupcake",
+      "nombre": "Gato con Cupcake",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-cupcake.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 10
+    },
+    {
+      "id": "huellita-gato",
+      "nombre": "Huellita de Gato",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/huellita-gato.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 11
+    },
+    {
+      "id": "gato-abrazo",
+      "nombre": "Gato Abrazo",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-abrazo.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 12
+    },
+    {
+      "id": "gato-donut",
+      "nombre": "Gato Donut",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-donut.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 13
+    },
+    {
+      "id": "gato-saludo",
+      "nombre": "Gato Saludo",
+      "categoria": "Gatos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/gatos/gato-saludo.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 14
     },
     {
       "id": "det-mascotas-huellas-01-huella-roja",
@@ -2241,7 +1659,18 @@
       "tipo": "imagen",
       "imagen": "assets/parches/mascotas-huellas-detalle/01_huella_roja.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 1
+    },
+    {
+      "id": "det-animales-unicornios-01-perro-corgi-asomado",
+      "nombre": "Perro Corgi Asomado",
+      "categoria": "Mascotas y huellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/01_perro_corgi_asomado.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 2
     },
     {
       "id": "det-mascotas-huellas-02-huella-azul",
@@ -2250,7 +1679,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/mascotas-huellas-detalle/02_huella_azul.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 3
     },
     {
       "id": "det-mascotas-huellas-03-huella-blanca-negra",
@@ -2259,7 +1689,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/mascotas-huellas-detalle/03_huella_blanca_negra.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 4
     },
     {
       "id": "det-mascotas-huellas-04-huella-cafe",
@@ -2268,7 +1699,18 @@
       "tipo": "imagen",
       "imagen": "assets/parches/mascotas-huellas-detalle/04_huella_cafe.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 5
+    },
+    {
+      "id": "det-animales-unicornios-04-perro-blanco-asomado",
+      "nombre": "Perro Blanco Asomado",
+      "categoria": "Mascotas y huellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/04_perro_blanco_asomado.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 6
     },
     {
       "id": "det-mascotas-huellas-05-huella-agua",
@@ -2277,7 +1719,588 @@
       "tipo": "imagen",
       "imagen": "assets/parches/mascotas-huellas-detalle/05_huella_agua.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 7
+    },
+    {
+      "id": "det-animales-unicornios-07-perro-husky-asomado",
+      "nombre": "Perro Husky Asomado",
+      "categoria": "Mascotas y huellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/07_perro_husky_asomado.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 8
+    },
+    {
+      "id": "det-animales-unicornios-08-perro-pug-asomado",
+      "nombre": "Perro Pug Asomado",
+      "categoria": "Mascotas y huellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/08_perro_pug_asomado.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 9
+    },
+    {
+      "id": "det-animales-unicornios-09-perro-bulldog-asomado",
+      "nombre": "Perro Bulldog Asomado",
+      "categoria": "Mascotas y huellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/09_perro_bulldog_asomado.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 10
+    },
+    {
+      "id": "det-animales-unicornios-10-perro-border-collie-asomado",
+      "nombre": "Perro Border Collie Asomado",
+      "categoria": "Mascotas y huellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/10_perro_border_collie_asomado.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 11
+    },
+    {
+      "id": "det-animales-unicornios-11-perro-bulldog-frances-asomado",
+      "nombre": "Perro Bulldog Frances Asomado",
+      "categoria": "Mascotas y huellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/11_perro_bulldog_frances_asomado.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 12
+    },
+    {
+      "id": "det-animales-unicornios-15-perro-marron-cara",
+      "nombre": "Perro Marrón Cara",
+      "categoria": "Mascotas y huellas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/15_perro_marron_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 13
+    },
+    {
+      "id": "det-animales-unicornios-12-buho-durmiente",
+      "nombre": "Búho Durmiente",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/12_buho_durmiente.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 1
+    },
+    {
+      "id": "det-animales-unicornios-14-venadito-cara",
+      "nombre": "Venadito Cara",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/14_venadito_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 2
+    },
+    {
+      "id": "det-animales-unicornios-16-zorro-cuerpo",
+      "nombre": "Zorro Cuerpo",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/16_zorro_cuerpo.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 3
+    },
+    {
+      "id": "det-animales-unicornios-20-cerdo-rosa-cara",
+      "nombre": "Cerdo Rosa Cara",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/20_cerdo_rosa_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 4
+    },
+    {
+      "id": "det-animales-unicornios-21-erizo-cara",
+      "nombre": "Erizo Cara",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/21_erizo_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 5
+    },
+    {
+      "id": "det-animales-unicornios-22-jirafa-cara",
+      "nombre": "Jirafa Cara",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/22_jirafa_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 6
+    },
+    {
+      "id": "det-animales-unicornios-24-panda-cara",
+      "nombre": "Panda Cara",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/24_panda_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 7
+    },
+    {
+      "id": "det-animales-unicornios-26-vaca-cara",
+      "nombre": "Vaca Cara",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/26_vaca_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 8
+    },
+    {
+      "id": "det-animales-unicornios-28-vaca-verde-cara",
+      "nombre": "Vaca Verde Cara",
+      "categoria": "Animales",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/28_vaca_verde_cara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 9
+    },
+    {
+      "id": "det-animales-unicornios-02-unicornio-cabeza-arcoiris",
+      "nombre": "Unicornio Cabeza Arcoíris",
+      "categoria": "Unicornios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/02_unicornio_cabeza_arcoiris.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 1
+    },
+    {
+      "id": "det-animales-unicornios-03-unicornio-cabeza-pequena",
+      "nombre": "Unicornio Cabeza Pequeña",
+      "categoria": "Unicornios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/03_unicornio_cabeza_pequena.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 2
+    },
+    {
+      "id": "det-animales-unicornios-05-pegaso-blanco",
+      "nombre": "Pegaso Blanco",
+      "categoria": "Unicornios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/05_pegaso_blanco.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 3
+    },
+    {
+      "id": "det-animales-unicornios-06-unicornio-sentado",
+      "nombre": "Unicornio Sentado",
+      "categoria": "Unicornios",
+      "tipo": "imagen",
+      "imagen": "assets/parches/animales-unicornios-detalle/06_unicornio_sentado.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 4
+    },
+    {
+      "id": "det-deportes-01-pelota-tenis-amarilla",
+      "nombre": "Pelota Tenis Amarilla",
+      "categoria": "Deportes",
+      "tipo": "imagen",
+      "imagen": "assets/parches/deportes-detalle/01_pelota_tenis_amarilla.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 1
+    },
+    {
+      "id": "det-deportes-02-balon-futbol-pequeno-superior",
+      "nombre": "Balón Fútbol Pequeno Superior",
+      "categoria": "Deportes",
+      "tipo": "imagen",
+      "imagen": "assets/parches/deportes-detalle/02_balon_futbol_pequeno_superior.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 2
+    },
+    {
+      "id": "det-deportes-03-balon-futbol-grande",
+      "nombre": "Balón Fútbol Grande",
+      "categoria": "Deportes",
+      "tipo": "imagen",
+      "imagen": "assets/parches/deportes-detalle/03_balon_futbol_grande.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 3
+    },
+    {
+      "id": "det-deportes-04-balon-futbol-pequeno-izquierdo",
+      "nombre": "Balón Fútbol Pequeno Izquierdo",
+      "categoria": "Deportes",
+      "tipo": "imagen",
+      "imagen": "assets/parches/deportes-detalle/04_balon_futbol_pequeno_izquierdo.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 4
+    },
+    {
+      "id": "det-deportes-05-balon-voleibol-verde-azul",
+      "nombre": "Balón Voleibol Verde Azul",
+      "categoria": "Deportes",
+      "tipo": "imagen",
+      "imagen": "assets/parches/deportes-detalle/05_balon_voleibol_verde_azul.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 5
+    },
+    {
+      "id": "det-deportes-06-balon-voleibol-blanco-azul-rojo",
+      "nombre": "Balón Voleibol Blanco Azul Rojo",
+      "categoria": "Deportes",
+      "tipo": "imagen",
+      "imagen": "assets/parches/deportes-detalle/06_balon_voleibol_blanco_azul_rojo.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 6
+    },
+    {
+      "id": "det-espacio-01-planeta-rosa-anillos-grande",
+      "nombre": "Planeta Rosa Anillos Grande",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/01_planeta_rosa_anillos_grande.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 1
+    },
+    {
+      "id": "det-espacio-04-planeta-turquesa-anillos",
+      "nombre": "Planeta Turquesa Anillos",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/04_planeta_turquesa_anillos.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 2
+    },
+    {
+      "id": "det-espacio-05-planeta-azul-anillos-luna",
+      "nombre": "Planeta Azul Anillos Luna",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/05_planeta_azul_anillos_luna.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 3
+    },
+    {
+      "id": "det-espacio-06-satelite-azul",
+      "nombre": "Satélite Azul",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/06_satelite_azul.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 4
+    },
+    {
+      "id": "det-espacio-07-tierra",
+      "nombre": "Tierra",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/07_tierra.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 5
+    },
+    {
+      "id": "det-espacio-08-astronauta",
+      "nombre": "Astronauta",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/08_astronauta.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 6
+    },
+    {
+      "id": "det-espacio-09-nave-espacial-azul-roja",
+      "nombre": "Nave Espacial Azul Roja",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/09_nave_espacial_azul_roja.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 7
+    },
+    {
+      "id": "det-espacio-10-rayo-amarillo",
+      "nombre": "Rayo Amarillo",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/10_rayo_amarillo.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 8
+    },
+    {
+      "id": "det-espacio-11-planeta-saturno-naranja-negro",
+      "nombre": "Planeta Saturno Naranja Negro",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/11_planeta_saturno_naranja_negro.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 9
+    },
+    {
+      "id": "det-espacio-12-planeta-turquesa",
+      "nombre": "Planeta Turquesa",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/12_planeta_turquesa.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 10
+    },
+    {
+      "id": "det-espacio-13-planeta-blanco-lineas",
+      "nombre": "Planeta Blanco Lineas",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/13_planeta_blanco_lineas.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 11
+    },
+    {
+      "id": "det-espacio-14-planeta-saturno-dorado",
+      "nombre": "Planeta Saturno Dorado",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/14_planeta_saturno_dorado.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 12
+    },
+    {
+      "id": "det-espacio-15-satelite-turquesa",
+      "nombre": "Satélite Turquesa",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/15_satelite_turquesa.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 13
+    },
+    {
+      "id": "det-espacio-16-luna-gris-crateres",
+      "nombre": "Luna Gris Crateres",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/16_luna_gris_crateres.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 14
+    },
+    {
+      "id": "det-espacio-17-cohete-morado",
+      "nombre": "Cohete Morado",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/17_cohete_morado.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 15
+    },
+    {
+      "id": "det-espacio-18-planeta-rojo",
+      "nombre": "Planeta Rojo",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/18_planeta_rojo.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 16
+    },
+    {
+      "id": "det-espacio-19-meteoro-calavera",
+      "nombre": "Meteoro Calavera",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/19_meteoro_calavera.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 17
+    },
+    {
+      "id": "det-espacio-20-planeta-azul-anillos",
+      "nombre": "Planeta Azul Anillos",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/20_planeta_azul_anillos.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 18
+    },
+    {
+      "id": "det-espacio-23-ovni-azul",
+      "nombre": "Ovni Azul",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/23_ovni_azul.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 19
+    },
+    {
+      "id": "det-espacio-24-planeta-naranja",
+      "nombre": "Planeta Naranja",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/24_planeta_naranja.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 20
+    },
+    {
+      "id": "det-espacio-25-nave-roja",
+      "nombre": "Nave Roja",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/25_nave_roja.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 21
+    },
+    {
+      "id": "det-espacio-26-luna-gris",
+      "nombre": "Luna Gris",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/26_luna_gris.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 22
+    },
+    {
+      "id": "det-espacio-28-planeta-verde-anillos",
+      "nombre": "Planeta Verde Anillos",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/28_planeta_verde_anillos.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 23
+    },
+    {
+      "id": "det-espacio-30-cohete-blanco-azul",
+      "nombre": "Cohete Blanco Azul",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/30_cohete_blanco_azul.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 24
+    },
+    {
+      "id": "det-espacio-31-galaxia-rosa-azul",
+      "nombre": "Galaxia Rosa Azul",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/31_galaxia_rosa_azul.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 25
+    },
+    {
+      "id": "det-espacio-32-planeta-rosa-anillos",
+      "nombre": "Planeta Rosa Anillos",
+      "categoria": "Espacio",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/32_planeta_rosa_anillos.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 26
+    },
+    {
+      "id": "det-mariposas-01-mariposa-naranja",
+      "nombre": "Mariposa Naranja",
+      "categoria": "Mariposas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/mariposas-detalle/01_mariposa_naranja.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 1
+    },
+    {
+      "id": "det-mariposas-02-mariposa-verde",
+      "nombre": "Mariposa Verde",
+      "categoria": "Mariposas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/mariposas-detalle/02_mariposa_verde.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 2
+    },
+    {
+      "id": "det-mariposas-03-mariposa-marron",
+      "nombre": "Mariposa Marrón",
+      "categoria": "Mariposas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/mariposas-detalle/03_mariposa_marron.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 3
+    },
+    {
+      "id": "det-mariposas-04-mariposa-azul-clara",
+      "nombre": "Mariposa Azul Clara",
+      "categoria": "Mariposas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/mariposas-detalle/04_mariposa_azul_clara.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 4
+    },
+    {
+      "id": "det-mariposas-05-mariposa-azul-oscura",
+      "nombre": "Mariposa Azul Oscura",
+      "categoria": "Mariposas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/mariposas-detalle/05_mariposa_azul_oscura.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 5
+    },
+    {
+      "id": "det-mariposas-06-mariposa-morada",
+      "nombre": "Mariposa Morada",
+      "categoria": "Mariposas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/mariposas-detalle/06_mariposa_morada.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 6
+    },
+    {
+      "id": "det-mariposas-07-mariposa-marron-oscura",
+      "nombre": "Mariposa Marrón Oscura",
+      "categoria": "Mariposas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/mariposas-detalle/07_mariposa_marron_oscura.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 7
     },
     {
       "id": "det-nautico-viajes-01-torre-eiffel",
@@ -2286,7 +2309,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/nautico-viajes-detalle/01_torre_eiffel.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 1
     },
     {
       "id": "det-nautico-viajes-02-faro-rojo-blanco",
@@ -2295,7 +2319,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/nautico-viajes-detalle/02_faro_rojo_blanco.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 2
     },
     {
       "id": "det-nautico-viajes-03-ancla-blanca",
@@ -2304,7 +2329,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/nautico-viajes-detalle/03_ancla_blanca.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 3
     },
     {
       "id": "det-nautico-viajes-04-ancla-roja-salvavidas",
@@ -2313,16 +2339,18 @@
       "tipo": "imagen",
       "imagen": "assets/parches/nautico-viajes-detalle/04_ancla_roja_salvavidas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 4
     },
     {
       "id": "det-nautico-viajes-05-ancla-marron-salvavidas",
-      "nombre": "Ancla Marron Salvavidas",
+      "nombre": "Ancla Marrón Salvavidas",
       "categoria": "Náutico y viajes",
       "tipo": "imagen",
       "imagen": "assets/parches/nautico-viajes-detalle/05_ancla_marron_salvavidas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 5
     },
     {
       "id": "det-nautico-viajes-06-vela-roja-blanca",
@@ -2331,7 +2359,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/nautico-viajes-detalle/06_vela_roja_blanca.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 6
     },
     {
       "id": "det-nautico-viajes-07-ancla-azul-salvavidas",
@@ -2340,7 +2369,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/nautico-viajes-detalle/07_ancla_azul_salvavidas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 7
     },
     {
       "id": "det-nautico-viajes-08-ancla-negra-salvavidas",
@@ -2349,7 +2379,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/nautico-viajes-detalle/08_ancla_negra_salvavidas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 8
     },
     {
       "id": "det-nautico-viajes-09-ancla-negra-roja-salvavidas",
@@ -2358,7 +2389,8 @@
       "tipo": "imagen",
       "imagen": "assets/parches/nautico-viajes-detalle/09_ancla_negra_roja_salvavidas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 9
     },
     {
       "id": "det-nautico-viajes-10-ancla-blanca-roja-salvavidas",
@@ -2367,70 +2399,288 @@
       "tipo": "imagen",
       "imagen": "assets/parches/nautico-viajes-detalle/10_ancla_blanca_roja_salvavidas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 10
+    },
+    {
+      "id": "det-espacio-29-scooter-turquesa",
+      "nombre": "Scooter Turquesa",
+      "categoria": "Vehículos",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/29_scooter_turquesa.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 1
+    },
+    {
+      "id": "det-emojis-smilies-01-emoji-pulgar-arriba",
+      "nombre": "Emoji Pulgar Arriba",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/01_emoji_pulgar_arriba.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 1
+    },
+    {
+      "id": "det-emojis-smilies-02-carita-feliz-blanca",
+      "nombre": "Carita Feliz Blanca",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/02_carita_feliz_blanca.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 2
+    },
+    {
+      "id": "det-emojis-smilies-03-carita-feliz-dorada-glitter",
+      "nombre": "Carita Feliz Dorada Glitter",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/03_carita_feliz_dorada_glitter.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 3
+    },
+    {
+      "id": "det-emojis-smilies-04-carita-feliz-azul-glitter",
+      "nombre": "Carita Feliz Azul Glitter",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/04_carita_feliz_azul_glitter.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 4
+    },
+    {
+      "id": "det-emojis-smilies-05-carita-feliz-rosa-glitter",
+      "nombre": "Carita Feliz Rosa Glitter",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/05_carita_feliz_rosa_glitter.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 5
+    },
+    {
+      "id": "det-emojis-smilies-06-carita-feliz-negra-glitter",
+      "nombre": "Carita Feliz Negra Glitter",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/06_carita_feliz_negra_glitter.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 6
+    },
+    {
+      "id": "det-emojis-smilies-07-carita-feliz-fucsia-glitter",
+      "nombre": "Carita Feliz Fucsia Glitter",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/07_carita_feliz_fucsia_glitter.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 7
+    },
+    {
+      "id": "det-emojis-smilies-08-carita-feliz-beige",
+      "nombre": "Carita Feliz Beige",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/08_carita_feliz_beige.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 8
+    },
+    {
+      "id": "det-emojis-smilies-09-carita-feliz-agua-glitter",
+      "nombre": "Carita Feliz Agua Glitter",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/09_carita_feliz_agua_glitter.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 9
+    },
+    {
+      "id": "det-emojis-smilies-10-emoji-risa-lagrimas",
+      "nombre": "Emoji Risa Lagrimas",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/10_emoji_risa_lagrimas.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 10
+    },
+    {
+      "id": "det-emojis-smilies-11-carita-feliz-arcoiris",
+      "nombre": "Carita Feliz Arcoíris",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/11_carita_feliz_arcoiris.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 11
+    },
+    {
+      "id": "det-emojis-smilies-12-carita-feliz-cobre-glitter",
+      "nombre": "Carita Feliz Cobre Glitter",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/12_carita_feliz_cobre_glitter.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 12
+    },
+    {
+      "id": "det-emojis-smilies-13-carita-feliz-verde-glitter",
+      "nombre": "Carita Feliz Verde Glitter",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/13_carita_feliz_verde_glitter.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 13
+    },
+    {
+      "id": "det-emojis-smilies-14-carita-feliz-plateada-glitter",
+      "nombre": "Carita Feliz Plateada Glitter",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/14_carita_feliz_plateada_glitter.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 14
+    },
+    {
+      "id": "det-emojis-smilies-15-carita-feliz-azul-simple",
+      "nombre": "Carita Feliz Azul Simple",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/15_carita_feliz_azul_simple.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 15
+    },
+    {
+      "id": "det-emojis-smilies-16-carita-feliz-dorada-glitter-2",
+      "nombre": "Carita Feliz Dorada Glitter 2",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/16_carita_feliz_dorada_glitter_2.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 16
+    },
+    {
+      "id": "det-emojis-smilies-17-carita-feliz-roja-glitter",
+      "nombre": "Carita Feliz Roja Glitter",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/17_carita_feliz_roja_glitter.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 17
+    },
+    {
+      "id": "det-emojis-smilies-18-carita-feliz-verde-glitter-2",
+      "nombre": "Carita Feliz Verde Glitter 2",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/18_carita_feliz_verde_glitter_2.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 18
+    },
+    {
+      "id": "det-emojis-smilies-19-carita-feliz-azul-glitter-2",
+      "nombre": "Carita Feliz Azul Glitter 2",
+      "categoria": "Caritas",
+      "tipo": "imagen",
+      "imagen": "assets/parches/emojis-smilies-detalle/19_carita_feliz_azul_glitter_2.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 19
     },
     {
       "id": "det-simbolos-pride-01-emblema-corona-alas-lentejuelas",
-      "nombre": "Emblema Corona Alas Lentejuelas",
+      "nombre": "Emblema con Corona",
       "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/01_emblema_corona_alas_lentejuelas.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 1
     },
     {
       "id": "det-simbolos-pride-02-calavera-mexicana-floral",
-      "nombre": "Calavera Mexicana Floral",
+      "nombre": "Calavera Floral",
       "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/02_calavera_mexicana_floral.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 2
     },
     {
       "id": "det-simbolos-pride-03-arcoiris-nubes",
-      "nombre": "Arcoiris Nubes",
+      "nombre": "Arcoíris con Nubes",
       "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/03_arcoiris_nubes.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 3
+    },
+    {
+      "id": "det-espacio-03-frase-the-world-is-yours",
+      "nombre": "Frase The World Is Yours",
+      "categoria": "Otros",
+      "tipo": "imagen",
+      "imagen": "assets/parches/espacio-detalle/03_frase_the_world_is_yours.png",
+      "defaultSize": 60,
+      "grupo": "detalles",
+      "orden": 4
     },
     {
       "id": "det-simbolos-pride-04-corazon-pride-love-is-love",
-      "nombre": "Corazon Pride Love Is Love",
+      "nombre": "Corazón Arcoíris",
       "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/04_corazon_pride_love_is_love.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 5
     },
     {
       "id": "det-simbolos-pride-05-corazon-sagrado-laude",
-      "nombre": "Corazon Sagrado Laude",
+      "nombre": "Corazón Sagrado",
       "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/05_corazon_sagrado_laude.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 6
     },
     {
       "id": "det-simbolos-pride-06-corona-lentejuelas-negra",
-      "nombre": "Corona Lentejuelas Negra",
+      "nombre": "Corona Negra",
       "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/06_corona_lentejuelas_negra.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 7
     },
     {
       "id": "det-simbolos-pride-07-trebol-verde",
-      "nombre": "Trebol Verde",
+      "nombre": "Trébol Verde",
       "categoria": "Otros",
       "tipo": "imagen",
       "imagen": "assets/parches/simbolos-pride-detalle/07_trebol_verde.png",
       "defaultSize": 60,
-      "grupo": "detalles"
+      "grupo": "detalles",
+      "orden": 8
     }
   ]
 }

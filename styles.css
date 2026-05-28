@@ -265,7 +265,7 @@ img {
 
 .control-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -282,7 +282,6 @@ img {
 .control-grid .danger {
   color: #fff;
   background: #ef6262;
-  grid-column: span 3;
 }
 
 label {
@@ -628,12 +627,9 @@ label {
   }
 
   .control-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .control-grid .danger {
-    grid-column: span 2;
-  }
 
   .actions {
     grid-template-columns: 1fr;

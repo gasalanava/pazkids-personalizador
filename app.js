@@ -766,12 +766,9 @@ function applyTransformGesture(patch) {
   const first = points[0];
   const second = points[1];
   const c = center(first, second);
-  const scale = distance(first, second) / Math.max(S.gesture.startDistance, 1);
   const rotationDelta = angle(first, second) - S.gesture.startAngle;
-  const min = patch.kind === 'letter' ? 28 : 70;
-  const max = patch.kind === 'letter' ? 120 : 360;
 
-  patch.size = clamp(S.gesture.startSize * scale, min, max);
+  // La escala queda fija por categoría. Con dos dedos solo se gira y se reposiciona.
   patch.rotation = (S.gesture.startRotation + rotationDelta + 360) % 360;
   patch.x = clamp(S.gesture.startX + (c.x - S.gesture.startCenter.x), 20, VB.w - 20);
   patch.y = clamp(S.gesture.startY + (c.y - S.gesture.startCenter.y), 20, VB.h - 20);
@@ -1198,14 +1195,8 @@ function bind() {
   window.addEventListener('blur', cancelActiveGesture);
   document.addEventListener('visibilitychange', () => { if (document.hidden) cancelActiveGesture(); });
 
-  $('#smaller').onclick = () => resize(selected()?.kind === 'letter' ? -8 : -16);
-  $('#bigger').onclick = () => resize(selected()?.kind === 'letter' ? 8 : 16);
-  $('#rotL').onclick = () => rotate(-15);
-  $('#rotR').onclick = () => rotate(15);
+  $('#rotate').onclick = () => rotate(15);
   $('#dup').onclick = duplicate;
-  $('#frontLayer').onclick = () => layer('front');
-  $('#backLayer').onclick = () => layer('back');
-  $('#otherView').onclick = otherView;
   $('#del').onclick = del;
   if (D.clearTop) D.clearTop.onclick = clearAll;
   $('#whatsapp').onclick = whatsapp;

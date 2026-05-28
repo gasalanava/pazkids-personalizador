@@ -1725,7 +1725,7 @@ label {
 }
 
 .values-note {
-  margin: 10px 0 14px;
+  margin: 12px 0 0;
   border-radius: 22px;
   background:
     linear-gradient(135deg, rgba(255,255,255,.95), rgba(255,246,249,.88)),
@@ -1785,8 +1785,48 @@ label {
   font-weight: 800;
 }
 
-.actions {
-  grid-template-columns: 1fr 1.15fr;
+.actions.final-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 12px 0 14px;
+}
+
+.actions.final-actions button {
+  min-height: 56px;
+}
+
+.actions.final-actions #download {
+  background: #f4f2f4;
+  color: #5f5b66;
+  box-shadow: none;
+}
+
+.actions.final-actions #whatsapp {
+  font-size: 1rem;
+}
+
+.price-guide {
+  margin-top: 12px;
+}
+
+.site-footer {
+  max-width: 1120px;
+  margin: 10px auto 28px;
+  padding: 0 18px 24px;
+  text-align: center;
+  color: #77727f;
+  font-size: .78rem;
+  line-height: 1.45;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer strong {
+  color: #4b4652;
+  font-weight: 900;
 }
 
 @media (max-width: 720px) {

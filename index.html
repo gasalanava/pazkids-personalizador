@@ -112,24 +112,28 @@
       <div class="head compact text-head">
         <div>
           <span>TU DISEÑO ESTÁ LISTO</span>
-          <h2>Consulta el valor de tu diseño</h2>
+          <h2>Guarda tu diseño y consulta el valor por WhatsApp.</h2>
         </div>
       </div>
-      <details class="values-note">
-        <summary>Valores PazKids</summary>
+      <p id="summary" class="design-summary" hidden></p>
+      <div class="actions final-actions">
+        <button id="download" type="button">Guardar diseño</button>
+        <button id="whatsapp" class="wa" type="button">Cotiza tu diseño por WhatsApp</button>
+      </div>
+      <details class="values-note price-guide">
+        <summary>Guía de Precios PazKids</summary>
         <div class="values-content">
           <p><strong>🇵🇦 PazKids PTY:</strong> chaqueta personalizada desde <strong>USD $40</strong>. Las letras tienen un valor de <strong>USD $2</strong> cada una. Los parches protagonistas tienen un valor aproximado de <strong>USD $7</strong> cada uno. Los parches de detalle van desde <strong>USD $1 hasta USD $5</strong>, según su tamaño.</p>
           <p><strong>🇨🇴 PazKids COL:</strong> chaqueta personalizada desde <strong>$140.000 COP</strong>. Las letras tienen un valor de <strong>$5.000 COP</strong> cada una. Los parches protagonistas tienen un valor aproximado de <strong>$25.000 COP</strong> cada uno. Los parches de detalle van desde <strong>$4.000 hasta $15.000 COP</strong>, según su tamaño.</p>
           <p class="values-final">El precio final se confirma por WhatsApp de acuerdo con el diseño elegido, la cantidad de letras, parches y disponibilidad.</p>
         </div>
       </details>
-      <p id="summary" class="design-summary" hidden></p>
-      <div class="actions">
-        <button id="download" type="button">Guardar imágenes del diseño</button>
-        <button id="whatsapp" class="wa" type="button">Consulta el valor de tu diseño</button>
-      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p>Página realizada por <strong>@gasalanava</strong> para <strong>@pazkids.pty</strong> y <strong>@pazkids.col</strong>.</p>
+  </footer>
 
   <div id="toast" class="toast"></div>
   <script src="app.js"></script>

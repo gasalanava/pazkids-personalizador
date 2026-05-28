@@ -9,8 +9,20 @@
 </head>
 <body>
   <header class="hero">
-    <img id="brandLogo" class="logo" alt="Paz Kids" />
-    <p class="hero-copy">Aquí puedes crear junto a tu hijo la chaqueta de sus sueños. Al finalizar, guarda el diseño y pídela por WhatsApp a Paz Kids.</p>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-main">
+      <img id="brandLogo" class="logo" alt="Paz Kids" />
+      <div class="hero-text">
+        <p class="hero-eyebrow">Chaquetas jean personalizadas</p>
+        <h1>Diseña una chaqueta única para tu hijo</h1>
+        <p class="hero-copy">Elige letras, parches protagonistas y detalles pequeños. Crea el diseño, guarda las imágenes y cotízalo por WhatsApp.</p>
+      </div>
+    </div>
+    <div class="hero-chips" aria-label="Beneficios PazKids">
+      <span>Hechas a mano</span>
+      <span>Diseño personalizado</span>
+      <span>Pedido por WhatsApp</span>
+    </div>
   </header>
 
   <main class="app">
@@ -24,6 +36,8 @@
         <div class="head stage-head">
           <div>
             <span>ASÍ VA QUEDANDO TU CHAQUETA</span>
+            <h2>Vista previa de tu diseño</h2>
+            <p class="section-instruction">Agrega parches, muévelos con el dedo y mira cómo va tomando forma.</p>
           </div>
           <button id="clearTop" class="reset-top" type="button" title="Empezar de nuevo" aria-label="Empezar de nuevo">↻</button>
           <div class="switch" aria-label="Seleccionar vista de la chaqueta">
@@ -101,6 +115,7 @@
             <div>
               <span>PARCHES Y DETALLES</span>
               <h2>Elige los favoritos de tu hijo</h2>
+              <p class="section-instruction">Primero escoge si quieres un parche protagonista o detalles pequeños para acompañar el diseño.</p>
             </div>
           </div>
           <div id="groupTabs" class="group-tabs" aria-label="Tipo de parches"></div>
@@ -114,9 +129,15 @@
       <div class="head compact text-head">
         <div>
           <span>TU DISEÑO ESTÁ LISTO</span>
+          <h2>Guarda tu idea y cotízala con PazKids</h2>
         </div>
       </div>
       <p class="custom-note">¿No encontraste el parche que soñabas? Cuéntanos tu idea y en PazKids miramos cómo hacerlo parte de tu chaqueta.</p>
+      <div class="trust-row" aria-label="Confianza PazKids">
+        <span>Diseño revisado por WhatsApp</span>
+        <span>Personalización a medida</span>
+        <span>Te confirmamos disponibilidad</span>
+      </div>
       <p id="summary" class="design-summary" hidden></p>
       <div class="actions">
         <button id="download" type="button">Guardar imágenes del diseño</button>

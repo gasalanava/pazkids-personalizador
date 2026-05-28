@@ -39,7 +39,7 @@ const D = {
   controls: $('#controls'),
   controlsToggle: $('#controlsToggle'),
   controlsBody: $('#controlsBody'),
-  collection: $('#collection'),
+  collectionTabs: $('#collectionTabs'),
   letterPreview: $('#letterPreview'),
   name: $('#name'),
   groupTabs: $('#groupTabs'),
@@ -67,7 +67,7 @@ function toast(message) {
   D.toast.textContent = message;
   D.toast.classList.add('show');
   clearTimeout(toast.timer);
-  toast.timer = setTimeout(() => D.toast.classList.remove('show'), 2600);
+  toast.timer = setTimeout(() => D.toast.classList.remove('show'), 1500);
 }
 
 async function init() {
@@ -244,14 +244,29 @@ function renderItems() {
   if (D.controlsToggle) D.controlsToggle.setAttribute('aria-expanded', D.controls.classList.contains('open') ? 'true' : 'false');
 }
 
+function collectionShortName(collection) {
+  const name = (collection.nombre || '').toLowerCase();
+  if (name.includes('colores')) return 'Colores';
+  if (name.includes('azul')) return 'Azules';
+  if (name.includes('negra')) return 'Negras';
+  if (name.includes('roja')) return 'Rojas';
+  if (name.includes('rosada')) return 'Rosadas';
+  return collection.nombre || 'Letras';
+}
+
 function renderSelectors() {
-  D.collection.innerHTML = '';
+  D.collectionTabs.innerHTML = '';
   S.cat.letterCollections.forEach(collection => {
-    const option = document.createElement('option');
-    option.value = collection.id;
-    option.textContent = collection.principal ? `${collection.nombre} (principal)` : collection.nombre;
-    option.selected = collection.id === S.activeColl;
-    D.collection.appendChild(option);
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = collectionShortName(collection);
+    button.className = collection.id === S.activeColl ? 'active' : '';
+    button.onclick = () => {
+      S.activeColl = collection.id;
+      renderSelectors();
+      renderLetterPreview();
+    };
+    D.collectionTabs.appendChild(button);
   });
 }
 
@@ -265,7 +280,7 @@ function renderLetterPreview() {
       const anchor = letterAnchor(S.view);
       addLetter(letter, S.view, anchor.x, anchor.y, collection.defaultSize || 62, collection.id);
       render();
-      toast(`Letra ${letter} agregada en ${viewLabel(S.view)}.`);
+      toast('Letra agregada.');
     }, 'letter-card'));
   });
 }
@@ -346,25 +361,66 @@ function categoryDefaultSize(catalogItem) {
   return 205;
 }
 
+function placementForCatalog(catalogItem, index) {
+  const base = detailAnchor(S.view);
+
+  if (patchGroup(catalogItem) === 'detalles') {
+    const detailOffsets = [
+      { x: 112, y: -82 },
+      { x: -112, y: -82 },
+      { x: 118, y: 74 },
+      { x: -118, y: 74 },
+      { x: 0, y: -118 },
+      { x: 0, y: 112 },
+      { x: 156, y: 0 },
+      { x: -156, y: 0 }
+    ];
+    const offset = detailOffsets[index % detailOffsets.length];
+    const round = Math.floor(index / detailOffsets.length);
+    return {
+      x: clamp(base.x + offset.x + round * 12, 70, 740),
+      y: clamp(base.y + offset.y + round * 10, 110, 910)
+    };
+  }
+
+  const mainOffsets = [
+    { x: 0, y: 0 },
+    { x: 118, y: 52 },
+    { x: -118, y: 52 },
+    { x: 84, y: -94 },
+    { x: -84, y: -94 }
+  ];
+  const offset = mainOffsets[index % mainOffsets.length];
+  const round = Math.floor(index / mainOffsets.length);
+  return {
+    x: clamp(base.x + offset.x + round * 14, 90, 720),
+    y: clamp(base.y + offset.y + round * 14, 120, 900)
+  };
+}
+
 function addCatalog(id) {
   const catalogItem = item(id);
   if (!catalogItem) return;
-  const numberInView = S.patches.filter(patch => patch.view === S.view && patch.kind === 'patch').length;
-  const anchor = detailAnchor(S.view);
+  const sameGroupInView = S.patches.filter(patch => {
+    if (patch.view !== S.view || patch.kind !== 'patch') return false;
+    const currentItem = item(patch.catalogId);
+    return currentItem && patchGroup(currentItem) === patchGroup(catalogItem);
+  }).length;
+  const anchor = placementForCatalog(catalogItem, sameGroupInView);
   const patch = {
     id: uid(),
     kind: 'patch',
     catalogId: id,
     view: S.view,
-    x: clamp(anchor.x + (numberInView % 3) * 20 - 20, 90, 720),
-    y: clamp(anchor.y + (numberInView % 4) * 18 - 18, 120, 900),
+    x: anchor.x,
+    y: anchor.y,
     size: catalogItem.defaultSize || categoryDefaultSize(catalogItem),
     rotation: 0
   };
   S.patches.push(patch);
   S.selected = patch.id;
   render();
-  toast(`${catalogItem.nombre} agregado en ${viewLabel(S.view)}.`);
+  toast(patchGroup(catalogItem) === 'detalles' ? 'Detalle agregado.' : 'Parche agregado.');
 }
 
 function addLetter(letter, view = S.view, x = 405, y = 570, size = 62, collectionId = S.activeColl) {
@@ -442,7 +498,7 @@ function createName() {
   setTimeout(() => {
     D.stage.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }, 80);
-  toast(`${created} letras agregadas en ${viewLabel(view)}.`);
+  toast('Nombre agregado.');
 }
 
 function viewLabel(view) { return view === 'front' ? 'el frente' : 'la espalda'; }
@@ -700,7 +756,7 @@ function up(event) {
   if (shouldDelete) {
     S.patches = S.patches.filter(item => item.id !== activeId);
     S.selected = null;
-    render();
+    renderPreservingScroll();
     toast('Detalle eliminado.');
     return;
   }
@@ -751,7 +807,7 @@ function showTrash(show, hot) {
   if (!D.trash) return;
   D.trash.classList.toggle('visible', show);
   D.trash.classList.toggle('hot', hot);
-  D.trash.querySelector('.trash-copy').textContent = hot ? 'Suelta para eliminar' : 'Arrastra aquí para eliminar';
+  D.trash.querySelector('.trash-copy').textContent = hot ? 'Suelta para eliminar' : 'Arrastra para eliminar';
   S.trashHot = hot;
 }
 
@@ -816,12 +872,19 @@ function duplicate() {
   render();
 }
 
+function renderPreservingScroll() {
+  const y = S.pageLocked ? (S.scrollLockY || 0) : (window.scrollY || window.pageYOffset || 0);
+  render();
+  requestAnimationFrame(() => window.scrollTo(0, y));
+}
+
 function del() {
   const patch = selected();
   if (!patch) return;
   S.patches = S.patches.filter(item => item.id !== patch.id);
   S.selected = null;
-  render();
+  renderPreservingScroll();
+  toast('Detalle eliminado.');
 }
 
 function layer(direction) {
@@ -1048,11 +1111,6 @@ function bind() {
     S.view = 'back';
     S.selected = null;
     render();
-  };
-
-  D.collection.onchange = () => {
-    S.activeColl = D.collection.value;
-    renderLetterPreview();
   };
 
   D.name.oninput = () => {

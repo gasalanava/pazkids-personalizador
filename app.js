@@ -109,7 +109,7 @@ async function init() {
 }
 
 async function preloadEssential() {
-  await ensureCached([S.cat.brand.logo, S.cat.jackets.front, S.cat.jackets.back]);
+  await ensureCached([S.cat.brand.logo, S.cat.brand.childrenLogo, S.cat.jackets.front, S.cat.jackets.back]);
   D.logo.src = src(S.cat.brand.logo);
   render();
 }
@@ -215,6 +215,18 @@ function renderJacket() {
   image.setAttribute('height', '960');
   image.setAttribute('preserveAspectRatio', 'xMidYMid meet');
   D.jacket.appendChild(image);
+
+  if (S.cat.brand.childrenLogo) {
+    const mark = E('image');
+    mark.setAttribute('href', src(S.cat.brand.childrenLogo));
+    mark.setAttribute('x', '610');
+    mark.setAttribute('y', '34');
+    mark.setAttribute('width', '118');
+    mark.setAttribute('height', '104');
+    mark.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    mark.setAttribute('opacity', '.92');
+    D.jacket.appendChild(mark);
+  }
 }
 
 function renderItems() {
@@ -992,7 +1004,7 @@ function orderText() {
   const name = S.designName || D.name.value.trim().toUpperCase() || '[NOMBRE]';
 
   return [
-    'Hola, Paz Kids. Acabo de crear un diseño único para una chaqueta personalizada y me gustaría conocer el precio de este diseño tan especial.',
+    'Hola, PazKids. Acabo de crear un diseño único para una chaqueta personalizada y me gustaría conocer el valor de este diseño.',
     '',
     `Voy a adjuntar la imagen descargada para que puedan revisarlo. Tiene ${frontCount} detalles en el frente y ${backCount} en la espalda. Es para ${name}.`,
     '',
@@ -1048,7 +1060,7 @@ async function download() {
 
 async function exportViewBlob(view) {
   S.view = view;
-  const used = [S.cat.jackets[view], ...S.patches.filter(patch => patch.view === view).map(imgPath)];
+  const used = [S.cat.jackets[view], S.cat.brand.childrenLogo, ...S.patches.filter(patch => patch.view === view).map(imgPath)];
   await ensureCached(used);
   render();
   await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));

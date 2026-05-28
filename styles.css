@@ -1683,3 +1683,158 @@ label {
     display: none;
   }
 }
+
+
+/* === v33 limpieza comercial y valores PazKids === */
+.hero-main {
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 18px;
+}
+
+.hero-copy {
+  max-width: 760px;
+  font-size: clamp(1.02rem, 2.6vw, 1.28rem);
+  line-height: 1.38;
+  font-weight: 800;
+  color: #403d49;
+}
+
+.stage-head span,
+.text-head span {
+  display: inline-block;
+  font-size: clamp(.95rem, 2.8vw, 1.12rem);
+  letter-spacing: .16em;
+  line-height: 1.14;
+}
+
+.stage-head {
+  align-items: center;
+}
+
+.letters-card .text-head,
+.patches-card .text-head {
+  margin-bottom: 12px;
+}
+
+.letters-card label[for="name"] {
+  margin-top: 12px;
+  color: #3d3945;
+  font-size: .95rem;
+  font-weight: 900;
+}
+
+.summary .text-head h2 {
+  margin-top: 6px;
+  font-size: clamp(1.03rem, 2.8vw, 1.2rem);
+}
+
+.values-note {
+  margin: 10px 0 14px;
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.95), rgba(255,246,249,.88)),
+    radial-gradient(circle at 0% 0%, rgba(105,203,183,.12), transparent 16rem);
+  border: 1px solid rgba(105,203,183,.18);
+  box-shadow: 0 12px 26px rgba(47,42,64,.06);
+  overflow: hidden;
+}
+
+.values-note summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  color: #3d3945;
+  font-weight: 950;
+  font-size: .98rem;
+}
+
+.values-note summary::-webkit-details-marker {
+  display: none;
+}
+
+.values-note summary::after {
+  content: "⌄";
+  color: var(--peach2);
+  font-size: 1.25rem;
+  line-height: 1;
+  transition: transform .18s ease;
+}
+
+.values-note[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.values-content {
+  padding: 0 16px 15px;
+}
+
+.values-content p {
+  margin: 0 0 12px;
+  color: #55515e;
+  font-size: .88rem;
+  line-height: 1.45;
+}
+
+.values-content p:last-child {
+  margin-bottom: 0;
+}
+
+.values-final {
+  padding-top: 10px;
+  border-top: 1px dashed rgba(237,127,118,.28);
+  font-weight: 800;
+}
+
+.actions {
+  grid-template-columns: 1fr 1.15fr;
+}
+
+@media (max-width: 720px) {
+  .hero-main {
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .hero-copy {
+    font-size: .92rem;
+    line-height: 1.36;
+  }
+
+  .stage-head span,
+  .text-head span {
+    font-size: .96rem;
+    letter-spacing: .14em;
+  }
+
+  .values-note summary {
+    padding: 13px 14px;
+  }
+
+  .values-content {
+    padding: 0 14px 14px;
+  }
+
+  .values-content p {
+    font-size: .82rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-main {
+    grid-template-columns: 74px minmax(0, 1fr);
+  }
+
+  .hero-copy {
+    font-size: .86rem;
+  }
+
+  .stage-head span,
+  .text-head span {
+    font-size: .90rem;
+    letter-spacing: .12em;
+  }
+}

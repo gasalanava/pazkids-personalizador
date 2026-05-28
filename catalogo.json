@@ -1,9 +1,10 @@
 {
   "brand": {
-    "name": "Paz Kids",
+    "name": "PazKids",
     "whatsappNumber": "573175168683",
     "instagram": "@pazkids.col",
-    "logo": "assets/logo/logo-pazkids.png"
+    "logo": "assets/logo/logo-pazkids.png",
+    "childrenLogo": "assets/logo/logo-nino-pazkids.png"
   },
   "jackets": {
     "front": "assets/chaquetas/chaqueta-frente.png",

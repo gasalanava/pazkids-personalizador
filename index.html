@@ -4,24 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="theme-color" content="#f8b9c7" />
-  <title>Paz Kids | Personaliza tu chaqueta jean</title>
+  <title>PazKids | Personaliza tu chaqueta jean</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="hero">
     <div class="hero-glow" aria-hidden="true"></div>
     <div class="hero-main">
-      <img id="brandLogo" class="logo" alt="Paz Kids" />
+      <img id="brandLogo" class="logo" alt="PazKids" />
       <div class="hero-text">
-        <p class="hero-eyebrow">Chaquetas jean personalizadas</p>
-        <h1>Diseña una chaqueta única para tu hijo</h1>
-        <p class="hero-copy">Elige letras, parches protagonistas y detalles pequeños. Crea el diseño, guarda las imágenes y cotízalo por WhatsApp.</p>
+        <p class="hero-copy">Aquí puedes crear junto a tu hijo la chaqueta de sus sueños. Al finalizar, guarda el diseño y pídela por WhatsApp a PazKids.</p>
       </div>
-    </div>
-    <div class="hero-chips" aria-label="Beneficios PazKids">
-      <span>Hechas a mano</span>
-      <span>Diseño personalizado</span>
-      <span>Pedido por WhatsApp</span>
     </div>
   </header>
 
@@ -36,8 +29,6 @@
         <div class="head stage-head">
           <div>
             <span>ASÍ VA QUEDANDO TU CHAQUETA</span>
-            <h2>Vista previa de tu diseño</h2>
-            <p class="section-instruction">Agrega parches, muévelos con el dedo y mira cómo va tomando forma.</p>
           </div>
           <button id="clearTop" class="reset-top" type="button" title="Empezar de nuevo" aria-label="Empezar de nuevo">↻</button>
           <div class="switch" aria-label="Seleccionar vista de la chaqueta">
@@ -91,7 +82,6 @@
           <div class="head compact text-head">
             <div>
               <span>PARCHES DE LETRAS</span>
-              <h2>Crea su nombre o nickname</h2>
             </div>
           </div>
 
@@ -103,7 +93,7 @@
 
           <div id="letterPreview" class="letter-preview" aria-label="Letras disponibles"></div>
 
-          <label for="name">Nombre o nickname</label>
+          <label for="name">Escribe su nombre o nickname</label>
           <div class="name-row">
             <input id="name" class="input" maxlength="16" placeholder="Ej: ANTONIA" autocomplete="off" />
             <button id="createName" class="primary" type="button">Crear nombre</button>
@@ -115,7 +105,6 @@
             <div>
               <span>PARCHES Y DETALLES</span>
               <h2>Elige los favoritos de tu hijo</h2>
-              <p class="section-instruction">Primero escoge si quieres un parche protagonista o detalles pequeños para acompañar el diseño.</p>
             </div>
           </div>
           <div id="groupTabs" class="group-tabs" aria-label="Tipo de parches"></div>
@@ -129,19 +118,21 @@
       <div class="head compact text-head">
         <div>
           <span>TU DISEÑO ESTÁ LISTO</span>
-          <h2>Guarda tu idea y cotízala con PazKids</h2>
+          <h2>Consulta el valor de tu diseño</h2>
         </div>
       </div>
-      <p class="custom-note">¿No encontraste el parche que soñabas? Cuéntanos tu idea y en PazKids miramos cómo hacerlo parte de tu chaqueta.</p>
-      <div class="trust-row" aria-label="Confianza PazKids">
-        <span>Diseño revisado por WhatsApp</span>
-        <span>Personalización a medida</span>
-        <span>Te confirmamos disponibilidad</span>
-      </div>
+      <details class="values-note">
+        <summary>Valores PazKids</summary>
+        <div class="values-content">
+          <p><strong>🇵🇦 PazKids PTY:</strong> chaqueta personalizada desde <strong>USD $40</strong>. Las letras tienen un valor de <strong>USD $2</strong> cada una. Los parches protagonistas tienen un valor aproximado de <strong>USD $7</strong> cada uno. Los parches de detalle van desde <strong>USD $1 hasta USD $5</strong>, según su tamaño.</p>
+          <p><strong>🇨🇴 PazKids COL:</strong> chaqueta personalizada desde <strong>$140.000 COP</strong>. Las letras tienen un valor de <strong>$5.000 COP</strong> cada una. Los parches protagonistas tienen un valor aproximado de <strong>$25.000 COP</strong> cada uno. Los parches de detalle van desde <strong>$4.000 hasta $15.000 COP</strong>, según su tamaño.</p>
+          <p class="values-final">El precio final se confirma por WhatsApp de acuerdo con el diseño elegido, la cantidad de letras, parches y disponibilidad.</p>
+        </div>
+      </details>
       <p id="summary" class="design-summary" hidden></p>
       <div class="actions">
         <button id="download" type="button">Guardar imágenes del diseño</button>
-        <button id="whatsapp" class="wa" type="button">Cotiza tu diseño por WhatsApp</button>
+        <button id="whatsapp" class="wa" type="button">Consulta el valor de tu diseño</button>
       </div>
     </section>
   </main>

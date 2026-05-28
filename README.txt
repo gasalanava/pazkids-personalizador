@@ -1,25 +1,22 @@
-Paz Kids - Personalizador de chaquetas
+Este paquete NO borra los parches anteriores.
+Agrega nuevos parches de tipo detalle y actualiza catalogo.json.
 
-Archivos principales:
-- index.html
-- styles.css
-- app.js
+Archivos incluidos:
 - catalogo.json
-- assets/
+- carpeta assets/parches con los nuevos folders de detalle
 
-Para usar en StackBlitz:
-1. Descomprime este ZIP.
-2. Abre tu proyecto en StackBlitz.
-3. Arrastra a la raíz del proyecto estos elementos: index.html, styles.css, app.js, catalogo.json y la carpeta assets.
-4. Acepta reemplazar archivos existentes.
-5. La vista previa debe cargar el personalizador.
+Categorías nuevas agregadas:
+- Animales y unicornios: 28 parches
+- Corazones: 19 parches
+- Deportes: 6 parches
+- Dulces: 29 parches
+- Emojis y smilies: 19 parches
+- Espacio: 32 parches
+- Flores: 12 parches
+- Frutas: 16 parches
+- Mariposas: 7 parches
+- Mascotas y huellas: 5 parches
+- Náutico y viajes: 10 parches
+- Símbolos y pride: 7 parches
 
-Teléfono configurado para WhatsApp:
-573175168683
-
-Cómo agregar parches nuevos:
-1. Sube la imagen a assets/parches/<categoria>/nombre-del-parche.png
-2. Agrega el registro correspondiente en catalogo.json dentro del arreglo "patches".
-
-Nota:
-El envío por WhatsApp abre el chat con el resumen del pedido. WhatsApp por enlace no adjunta automáticamente la imagen; el cliente debe descargar la imagen y adjuntarla en el chat.
+Total de parches nuevos agregados: 190

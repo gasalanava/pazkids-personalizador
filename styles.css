@@ -1834,3 +1834,88 @@ label {
     letter-spacing: .12em;
   }
 }
+
+/* === Ajuste v35: letras en cuadrícula vertical y caneca más visible en móvil === */
+.letter-preview {
+  display: grid !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  gap: 9px !important;
+  width: 100% !important;
+  max-height: 250px !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding: 8px !important;
+  border-radius: 20px !important;
+  background: linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,255,255,.34)) !important;
+  scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch !important;
+  scroll-snap-type: none !important;
+  touch-action: pan-y !important;
+}
+
+.letter-preview::-webkit-scrollbar {
+  display: none !important;
+}
+
+.letter-preview .patch-item,
+.letter-preview .patch-item.letter-card {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  aspect-ratio: 1 !important;
+  flex: initial !important;
+  padding: 7px !important;
+}
+
+@media (max-width: 720px) {
+  .letter-preview {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    max-height: 330px !important;
+    overflow-y: auto !important;
+    padding: 8px !important;
+    touch-action: pan-y !important;
+  }
+
+  .letter-preview .patch-item,
+  .letter-preview .patch-item.letter-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    aspect-ratio: 1 !important;
+    padding: 7px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .letter-preview {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    max-height: 300px !important;
+  }
+}
+
+.trash-zone {
+  bottom: calc(86px + env(safe-area-inset-bottom)) !important;
+  transform: translateX(-50%) translateY(8px) !important;
+}
+
+.trash-zone.visible {
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+.trash-zone.hot {
+  transform: translateX(-50%) translateY(0) scale(1.05) !important;
+}
+
+@media (max-width: 720px) {
+  .trash-zone {
+    bottom: calc(104px + env(safe-area-inset-bottom)) !important;
+    width: min(330px, calc(100vw - 32px)) !important;
+    min-height: 50px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .trash-zone {
+    bottom: calc(112px + env(safe-area-inset-bottom)) !important;
+  }
+}

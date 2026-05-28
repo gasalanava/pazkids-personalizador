@@ -1812,21 +1812,68 @@ label {
 
 .site-footer {
   max-width: 1120px;
-  margin: 10px auto 28px;
+  margin: 8px auto 26px;
   padding: 0 18px 24px;
   text-align: center;
   color: #77727f;
-  font-size: .78rem;
-  line-height: 1.45;
+  font-size: .68rem;
+  line-height: 1.35;
 }
 
 .site-footer p {
   margin: 0;
 }
 
+.site-footer .footer-dev {
+  margin-bottom: 3px;
+}
+
 .site-footer strong {
   color: #4b4652;
-  font-weight: 900;
+  font-weight: 800;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+}
+
+.footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: #5d5863;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.ig-mini {
+  width: 11px;
+  height: 11px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ig-mini svg {
+  width: 11px;
+  height: 11px;
+  display: block;
+}
+
+.ig-mini rect,
+.ig-mini circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.ig-mini circle:last-child {
+  fill: currentColor;
+  stroke: none;
 }
 
 @media (max-width: 720px) {

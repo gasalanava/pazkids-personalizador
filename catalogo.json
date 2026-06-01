@@ -4,7 +4,10 @@
     "whatsappNumber": "573175168683",
     "instagram": "@pazkids.col",
     "logo": "assets/logo/logo-pazkids.png",
-    "childrenLogo": "assets/logo/logo-nino-pazkids.png"
+    "childrenLogo": "assets/logo/logo-nino-pazkids.png",
+    "whatsappNumberColombia": "573175168683",
+    "whatsappNumberPanama": "50763923615",
+    "homeUrl": "https://gasalanava.github.io/PazKids-web/"
   },
   "jackets": {
     "front": "assets/chaquetas/chaqueta-frente.png",

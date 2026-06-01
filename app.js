@@ -1009,12 +1009,19 @@ function orderText() {
   ].join('\n');
 }
 
-function whatsapp() {
+function whatsappTo(number, marketLabel) {
   if (!S.patches.length) {
     toast('Primero agrega letras o parches.');
     return;
   }
-  window.open(`https://wa.me/${S.cat.brand.whatsappNumber}?text=${encodeURIComponent(orderText())}`, '_blank', 'noopener,noreferrer');
+  const phone = String(number || S.cat.brand.whatsappNumber || '').replace(/\D/g, '');
+  const extra = marketLabel ? `\n\nPaís de cotización: ${marketLabel}.` : '';
+  const message = `${orderText()}${extra}`;
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+}
+
+function whatsapp() {
+  whatsappTo(S.cat.brand.whatsappNumberColombia || S.cat.brand.whatsappNumber, 'Colombia');
 }
 
 async function download() {
@@ -1199,7 +1206,12 @@ function bind() {
   $('#dup').onclick = duplicate;
   $('#del').onclick = del;
   if (D.clearTop) D.clearTop.onclick = clearAll;
-  $('#whatsapp').onclick = whatsapp;
+  const whatsappLegacy = $('#whatsapp');
+  if (whatsappLegacy) whatsappLegacy.onclick = whatsapp;
+  const whatsappPanama = $('#whatsappPanama');
+  if (whatsappPanama) whatsappPanama.onclick = () => whatsappTo(S.cat.brand.whatsappNumberPanama, 'Panamá');
+  const whatsappColombia = $('#whatsappColombia');
+  if (whatsappColombia) whatsappColombia.onclick = () => whatsappTo(S.cat.brand.whatsappNumberColombia || S.cat.brand.whatsappNumber, 'Colombia');
   $('#download').onclick = download;
 }
 

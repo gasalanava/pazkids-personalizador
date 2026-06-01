@@ -2309,3 +2309,183 @@ label {
     max-height: 500px;
   }
 }
+
+
+/* === v40: estética integrada con PazKids web + cotización por país === */
+.home-link {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  min-height: 34px;
+  padding: 8px 13px;
+  margin: 0 0 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .78);
+  border: 1px solid rgba(255, 255, 255, .90);
+  color: #5d5863;
+  text-decoration: none;
+  font-size: .78rem;
+  font-weight: 900;
+  box-shadow: 0 8px 20px rgba(47, 42, 64, .055);
+}
+
+.home-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 11px 26px rgba(47, 42, 64, .09);
+}
+
+.quote-panel {
+  margin: 10px 0 14px;
+  padding: 14px;
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .92), rgba(255, 255, 255, .72)),
+    radial-gradient(circle at 16% 20%, rgba(105, 203, 183, .20), transparent 13rem),
+    radial-gradient(circle at 88% 18%, rgba(248, 185, 199, .24), transparent 13rem);
+  border: 1px solid rgba(255, 255, 255, .92);
+  box-shadow: 0 12px 34px rgba(47, 42, 64, .07);
+}
+
+.quote-title {
+  margin: 0 0 10px;
+  color: #5f5b66;
+  font-size: .86rem;
+  font-weight: 950;
+  text-align: center;
+}
+
+.quote-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.quote-country {
+  position: relative;
+  overflow: hidden;
+  min-height: 62px;
+  border-radius: 999px;
+  padding: 11px 16px;
+  color: #27303a;
+  text-align: center;
+  box-shadow: 0 14px 34px rgba(47, 42, 64, .10);
+  border: 1px solid rgba(255,255,255,.82);
+}
+
+.quote-country::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255,255,255,.36), rgba(255,255,255,0));
+}
+
+.quote-country span,
+.quote-country strong {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.quote-small {
+  font-size: .78rem;
+  font-weight: 850;
+  opacity: .83;
+  margin-bottom: 2px;
+}
+
+.quote-country strong {
+  font-size: 1.04rem;
+  line-height: 1;
+  font-weight: 950;
+  letter-spacing: .02em;
+}
+
+.quote-panama {
+  background:
+    linear-gradient(90deg,
+      rgba(255,255,255,.95) 0 25%,
+      rgba(246, 186, 202, .72) 25% 50%,
+      rgba(255,255,255,.95) 50% 75%,
+      rgba(198, 220, 235, .82) 75% 100%);
+}
+
+.quote-colombia {
+  background:
+    linear-gradient(180deg,
+      rgba(255, 235, 146, .92) 0 48%,
+      rgba(207, 225, 240, .82) 48% 72%,
+      rgba(248, 185, 199, .82) 72% 100%);
+}
+
+.quote-country:active {
+  transform: translateY(1px) scale(.992);
+}
+
+.actions.final-actions #download {
+  min-height: 52px;
+}
+
+@media (max-width: 720px) {
+  .home-link {
+    min-height: 32px;
+    padding: 7px 11px;
+    margin-bottom: 10px;
+    font-size: .72rem;
+  }
+
+  .quote-panel {
+    padding: 11px;
+    border-radius: 20px;
+  }
+
+  .quote-title {
+    font-size: .80rem;
+  }
+
+  .quote-country {
+    min-height: 56px;
+    padding: 10px 13px;
+  }
+
+  .quote-small {
+    font-size: .72rem;
+  }
+
+  .quote-country strong {
+    font-size: .96rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .quote-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-link {
+    margin-bottom: 14px;
+  }
+
+  .summary {
+    max-width: 880px;
+  }
+
+  .quote-panel {
+    padding: 16px 18px;
+  }
+
+  .quote-buttons {
+    gap: 14px;
+  }
+
+  .quote-country {
+    min-height: 70px;
+  }
+}
+
+@media (min-width: 1024px) { .actions.final-actions { grid-template-columns: 1fr; } .actions.final-actions #download { max-width: 520px; width: 100%; justify-self: center; } }

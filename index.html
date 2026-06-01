@@ -9,6 +9,7 @@
 </head>
 <body>
   <header class="hero">
+    <a class="home-link" href="https://gasalanava.github.io/PazKids-web/" aria-label="Volver a la página principal de PazKids">← Volver a PazKids</a>
     <div class="hero-glow" aria-hidden="true"></div>
     <div class="hero-main">
       <img id="brandLogo" class="logo" alt="PazKids" />
@@ -112,13 +113,25 @@
       <div class="head compact text-head">
         <div>
           <span>TU DISEÑO ESTÁ LISTO</span>
-          <h2>Guarda tu diseño y consulta el valor por WhatsApp.</h2>
+          <h2>Guarda tu diseño y elige dónde cotizar.</h2>
         </div>
       </div>
       <p id="summary" class="design-summary" hidden></p>
       <div class="actions final-actions">
         <button id="download" type="button">Guardar diseño</button>
-        <button id="whatsapp" class="wa" type="button">Cotiza tu diseño por WhatsApp</button>
+      </div>
+      <div class="quote-panel" aria-label="Cotizar diseño PazKids">
+        <p class="quote-title">Cotiza tu chaqueta personalizada</p>
+        <div class="quote-buttons">
+          <button id="whatsappPanama" class="quote-country quote-panama" type="button">
+            <span class="quote-small">Cotizar en Panamá</span>
+            <strong>PazKids PTY</strong>
+          </button>
+          <button id="whatsappColombia" class="quote-country quote-colombia" type="button">
+            <span class="quote-small">Cotizar en Colombia</span>
+            <strong>PazKids COL</strong>
+          </button>
+        </div>
       </div>
       <details class="values-note price-guide">
         <summary>Guía de Precios PazKids</summary>

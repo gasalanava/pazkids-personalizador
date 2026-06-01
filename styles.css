@@ -2489,3 +2489,351 @@ label {
 }
 
 @media (min-width: 1024px) { .actions.final-actions { grid-template-columns: 1fr; } .actions.final-actions #download { max-width: 520px; width: 100%; justify-self: center; } }
+
+/* === v41: capa estética de integración con la web principal PazKids === */
+:root {
+  --ink: #243043;
+  --muted: #697181;
+  --mint: #86c9bd;
+  --mint2: #4f7788;
+  --peach: #eba2a8;
+  --peach2: #d9828a;
+  --lav: #b7a8c6;
+  --butter: #f8edbd;
+  --sky: #dcecf3;
+  --rose: #f8dce2;
+  --shadow: 0 22px 54px rgba(38, 48, 67, .075);
+}
+
+body {
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 88% 2%, rgba(237, 221, 195, .48), transparent 21rem),
+    radial-gradient(circle at 10% 7%, rgba(134, 201, 189, .22), transparent 24rem),
+    radial-gradient(circle at 60% 100%, rgba(248, 220, 226, .30), transparent 26rem),
+    linear-gradient(180deg, #fffdfa 0%, #fbf7f1 48%, #fff7f8 100%);
+}
+
+body::before {
+  opacity: .22;
+  background-size: 34px 34px;
+  background-image:
+    radial-gradient(circle, rgba(79, 119, 136, .055) 1px, transparent 1.7px),
+    radial-gradient(circle, rgba(217, 130, 138, .052) 1px, transparent 1.7px);
+}
+
+.hero,
+.card,
+.values-note,
+.quote-panel {
+  box-shadow: 0 22px 54px rgba(38, 48, 67, .075);
+  border-color: rgba(255, 255, 255, .94);
+}
+
+.hero {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.97), rgba(255,255,255,.78)),
+    radial-gradient(circle at 10% 12%, rgba(134,201,189,.20), transparent 17rem),
+    radial-gradient(circle at 94% 18%, rgba(235,162,168,.26), transparent 18rem),
+    linear-gradient(135deg, #f9fcfb 0%, #fff7f6 58%, #fbf2df 100%);
+}
+
+.hero-glow {
+  background: radial-gradient(circle, rgba(235, 162, 168, .34), transparent 70%);
+}
+
+.home-link {
+  color: #526072;
+  font-weight: 780;
+  background: rgba(255,255,255,.80);
+  border-color: rgba(79,119,136,.10);
+  box-shadow: 0 10px 22px rgba(38,48,67,.055);
+}
+
+.logo {
+  filter: drop-shadow(0 8px 14px rgba(38,48,67,.10));
+}
+
+.hero-copy {
+  color: #2b3445;
+  font-weight: 680;
+  letter-spacing: -.01em;
+}
+
+.head span,
+.eyebrow,
+.stage-head span,
+.text-head span {
+  color: #d9828a;
+  font-weight: 900;
+  letter-spacing: .17em;
+}
+
+.stage-head h2,
+.text-head h2,
+.summary .text-head h2 {
+  color: #253043;
+  font-weight: 740;
+  letter-spacing: -.025em;
+}
+
+.section-instruction,
+.note,
+.gesture-hint,
+.values-content p {
+  color: #687083;
+  font-weight: 560;
+}
+
+.card {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.88)),
+    radial-gradient(circle at 100% 0%, rgba(248,220,226,.09), transparent 16rem);
+}
+
+.stage-card {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.97), rgba(255,255,255,.90)),
+    radial-gradient(circle at 50% 0%, rgba(134,201,189,.12), transparent 20rem);
+}
+
+.stage {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(255,255,255,.84), transparent 20rem),
+    linear-gradient(150deg, #edf8f6 0%, #faeee0 58%, #f8dce2 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.92),
+    0 20px 40px rgba(38,48,67,.07);
+}
+
+.switch,
+.group-tabs {
+  background: rgba(246, 242, 242, .74);
+  border: 1px solid rgba(255,255,255,.86);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.88);
+}
+
+.switch button,
+.collection-tabs button,
+.group-tabs button,
+.tabs button {
+  color: #5f6776;
+  font-weight: 820;
+}
+
+.switch button.active,
+.collection-tabs button.active,
+.group-tabs button.active,
+.tabs button.active {
+  color: #fff;
+  background: linear-gradient(135deg, #5a7d8b 0%, #86c9bd 60%, #e6a2a3 100%);
+  box-shadow: 0 12px 24px rgba(79, 119, 136, .16);
+}
+
+.primary,
+.wa,
+.reset-top {
+  background: linear-gradient(135deg, #4f7788, #86c9bd);
+  box-shadow: 0 13px 28px rgba(79,119,136,.18);
+}
+
+.controls,
+.controls-toggle,
+.input,
+.actions button {
+  border-color: rgba(217,130,138,.14);
+}
+
+.controls {
+  background: rgba(255, 249, 248, .82);
+}
+
+.controls-toggle,
+.input,
+.actions button {
+  background: rgba(255,255,255,.88);
+}
+
+.control-grid button,
+.actions button {
+  color: #5f6776;
+  font-weight: 820;
+}
+
+.control-grid .danger {
+  color: #fff;
+  background: linear-gradient(135deg, #e36f76, #d9828a);
+}
+
+.patch-grid,
+.letter-preview {
+  background: linear-gradient(180deg, rgba(255,255,255,.74), rgba(255,255,255,.44)) !important;
+  border: 1px solid rgba(79,119,136,.06);
+}
+
+.patch-item {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,255,255,.80)),
+    linear-gradient(135deg, rgba(220,236,243,.66), rgba(248,220,226,.58));
+  border-color: rgba(38,48,67,.075);
+  box-shadow: 0 12px 23px rgba(38,48,67,.055);
+}
+
+.stacked-label span,
+label,
+.letters-card label[for="name"] {
+  color: #566071;
+  font-weight: 820;
+}
+
+.stacked-label small {
+  color: #7d8492;
+  font-weight: 620;
+}
+
+.quote-panel {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.94), rgba(255,255,255,.78)),
+    radial-gradient(circle at 14% 15%, rgba(134,201,189,.18), transparent 13rem),
+    radial-gradient(circle at 90% 14%, rgba(235,162,168,.21), transparent 13rem);
+}
+
+.quote-title {
+  color: #566071;
+  font-weight: 820;
+}
+
+.quote-country {
+  box-shadow: 0 14px 34px rgba(38,48,67,.085);
+}
+
+.quote-country strong {
+  color: #263344;
+  font-weight: 860;
+}
+
+.quote-small {
+  color: #566071;
+  font-weight: 740;
+}
+
+.values-note {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.96), rgba(255,249,249,.88)),
+    radial-gradient(circle at 0% 0%, rgba(134,201,189,.10), transparent 16rem);
+  border-color: rgba(79,119,136,.11);
+}
+
+.values-note summary {
+  color: #253043;
+  font-weight: 820;
+}
+
+.values-note summary::after,
+.how-it-works summary::after {
+  color: #d9828a;
+}
+
+.actions.final-actions #download {
+  color: #5e6573;
+  background: linear-gradient(135deg, #f7f4f3, #ece8ea);
+}
+
+.site-footer {
+  color: #7a8190;
+}
+
+.site-footer strong,
+.footer-socials a {
+  color: #4e5968;
+}
+
+/* Ajuste fino para escritorio: que se sienta como extensión de la web principal, no como otra app */
+@media (min-width: 1024px) {
+  .hero,
+  .app,
+  .site-footer {
+    width: min(1180px, calc(100% - 88px));
+  }
+
+  .hero {
+    margin-top: 26px;
+    padding: 24px 32px;
+  }
+
+  .hero-main {
+    grid-template-columns: 142px minmax(0, 1fr);
+  }
+
+  .hero-copy {
+    max-width: 780px;
+    font-size: 1.08rem;
+    line-height: 1.48;
+  }
+
+  .grid {
+    grid-template-columns: minmax(560px, 1.12fr) minmax(390px, .88fr);
+    gap: 24px;
+  }
+
+  .stage-card,
+  .letters-card,
+  .patches-card,
+  .summary {
+    border-radius: 28px;
+  }
+
+  .stage-head span,
+  .text-head span {
+    font-size: .88rem;
+    letter-spacing: .18em;
+  }
+
+  .stage {
+    max-width: 700px;
+  }
+
+  .text-head h2,
+  .summary .text-head h2 {
+    font-size: 1rem;
+  }
+
+  .patch-grid {
+    max-height: 440px;
+  }
+
+  .summary {
+    max-width: 860px;
+  }
+
+  .quote-country {
+    min-height: 66px;
+  }
+}
+
+/* En móvil se conserva la estructura ya aprobada; solo se suavizan pesos y colores */
+@media (max-width: 720px) {
+  .hero-copy {
+    font-weight: 680;
+  }
+
+  .stage-head span,
+  .text-head span {
+    letter-spacing: .14em;
+    color: #d9828a;
+  }
+
+  .switch button,
+  .collection-tabs button,
+  .group-tabs button,
+  .tabs button,
+  .control-grid button,
+  .actions button {
+    font-weight: 820;
+  }
+
+  .quote-title,
+  .values-note summary {
+    font-weight: 820;
+  }
+}

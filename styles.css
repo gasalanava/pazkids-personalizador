@@ -2837,3 +2837,124 @@ label,
     font-weight: 820;
   }
 }
+
+/* === v42: embellecimiento final de Guardar diseño y Guía de Precios === */
+.actions.final-actions {
+  margin: 14px 0 14px;
+}
+
+.actions.final-actions #download {
+  min-height: 58px;
+  border-radius: 999px;
+  border: 1px solid rgba(79, 119, 136, .12);
+  color: #4e5968;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.96), rgba(247,244,243,.92)),
+    radial-gradient(circle at 12% 20%, rgba(134,201,189,.16), transparent 10rem),
+    radial-gradient(circle at 92% 30%, rgba(235,162,168,.14), transparent 10rem);
+  box-shadow:
+    0 14px 32px rgba(38,48,67,.075),
+    inset 0 1px 0 rgba(255,255,255,.94);
+  font-weight: 860;
+  letter-spacing: .01em;
+  transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+}
+
+.actions.final-actions #download:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 18px 38px rgba(38,48,67,.095),
+    inset 0 1px 0 rgba(255,255,255,.96);
+}
+
+.actions.final-actions #download:active {
+  transform: translateY(1px) scale(.992);
+}
+
+.price-guide {
+  margin-top: 16px;
+  border-radius: 26px;
+  border: 1px solid rgba(79,119,136,.11);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.97), rgba(255,250,249,.90)),
+    radial-gradient(circle at 14% 16%, rgba(134,201,189,.12), transparent 14rem),
+    radial-gradient(circle at 92% 14%, rgba(235,162,168,.15), transparent 14rem);
+  box-shadow:
+    0 18px 40px rgba(38,48,67,.07),
+    inset 0 1px 0 rgba(255,255,255,.92);
+}
+
+.price-guide summary {
+  min-height: 56px;
+  padding: 0 18px 0 20px;
+  border-radius: 26px;
+  color: #4e5968;
+  font-weight: 860;
+  letter-spacing: .005em;
+}
+
+.price-guide summary::after {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(134,201,189,.22), rgba(235,162,168,.24));
+  color: #d9828a;
+  font-size: 1.05rem;
+  flex: 0 0 auto;
+}
+
+.price-guide[open] summary {
+  border-bottom: 1px solid rgba(79,119,136,.08);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.price-guide .values-content {
+  padding: 14px 20px 18px;
+}
+
+.price-guide .values-content p {
+  color: #687083;
+  font-weight: 560;
+}
+
+.price-guide .values-content strong {
+  color: #253043;
+  font-weight: 860;
+}
+
+.price-guide .values-final {
+  color: #4e5968;
+  font-weight: 740;
+}
+
+@media (max-width: 720px) {
+  .actions.final-actions #download {
+    min-height: 52px;
+    font-size: .92rem;
+  }
+
+  .price-guide {
+    border-radius: 22px;
+    margin-top: 13px;
+  }
+
+  .price-guide summary {
+    min-height: 52px;
+    padding: 0 14px 0 16px;
+    font-size: .88rem;
+  }
+
+  .price-guide summary::after {
+    width: 26px;
+    height: 26px;
+    font-size: .95rem;
+  }
+
+  .price-guide .values-content {
+    padding: 12px 15px 15px;
+  }
+}
